@@ -1,0 +1,154 @@
+DataSetNode b37fa8205732f748be342d5524761fe8
+    $::UINodeData
+        $::DataContainer
+        Name SetMissionSuccess
+        IsRootNode False
+        ParentGraph 2b0c952e715e097a109a990a37419748
+        ParentIsScreen False
+    In 95570089927ae545b63d27e0a58e2660
+    Out 8399de00a8255a45a94d5c72c94f0d74
+    Param True
+    SetToEmptyString False
+    DataSource::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/uicoopendofroundcomp/f1f8ff46e0ed3a4ed71fac3c7e2a8c5e
+        DataKey -150813780
+        UseDirectAccess False
+        UpdateOnInitialize True
+DataSetNode 895c358995df764ab853993e3e5f4fd0
+    $::UINodeData
+        $::DataContainer
+        Name SetMissionFailed
+        IsRootNode False
+        ParentGraph 2b0c952e715e097a109a990a37419748
+        ParentIsScreen False
+    In de3f8d9a57d8ae47bdd4bec7abc75aee
+    Out bee5756070a2ab4b9d2d4b8076865bd1
+    Param False
+    SetToEmptyString False
+    DataSource::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/uicoopendofroundcomp/f1f8ff46e0ed3a4ed71fac3c7e2a8c5e
+        DataKey -150813780
+        UseDirectAccess False
+        UpdateOnInitialize True
+InstanceInputNode bd6527d97cb1a94a9028fbafc21dbdf1
+    $::UINodeData
+        $::DataContainer
+        Name MissionSuccess
+        IsRootNode False
+        ParentGraph 2b0c952e715e097a109a990a37419748
+        ParentIsScreen False
+    Out 268555b844914d459a91048a932c0b59
+InstanceInputNode 631938625f72e44fb6abf477bcd2c8e7
+    $::UINodeData
+        $::DataContainer
+        Name MissionFailed
+        IsRootNode False
+        ParentGraph 2b0c952e715e097a109a990a37419748
+        ParentIsScreen False
+    Out 314ddc5511ece14e8d55f3ee45f1e09a
+InstanceOutputNode 425e42f9cc5b8342ae3d430e6f89bed3
+    $::UINodeData
+        $::DataContainer
+        Name ExitGraph
+        IsRootNode False
+        ParentGraph 2b0c952e715e097a109a990a37419748
+        ParentIsScreen False
+    In 1699d6616b82ef45b989916a977a0e5d
+    Id -473841527
+    DestroyGraph True
+UIGraphAsset 2b0c952e715e097a109a990a37419748 #primary instance
+    $::Asset
+        $::DataContainer
+        Name UI/Flow/Graph/General/CoopUIDataGraph
+    Nodes::array
+        member bd6527d97cb1a94a9028fbafc21dbdf1
+        member 631938625f72e44fb6abf477bcd2c8e7
+        member 425e42f9cc5b8342ae3d430e6f89bed3
+        member b37fa8205732f748be342d5524761fe8
+        member 895c358995df764ab853993e3e5f4fd0
+    GlobalNode *nullGuid*
+    Connections::array
+        member 4569227e2dd6694a99613dcceafcea45
+        member 422971260c39d64f9c64171dde57daaa
+        member cd41389c331e364da40789b721158a1d
+        member b69d90b49ce55043b21954c4870273f5
+    AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+    BundleAssetName *nullString*
+    ProtectScreens False
+    Modal False
+    EventList *nullArray*
+    IsWin32UIGraphAsset True
+    IsXenonUIGraphAsset True
+    IsPs3UIGraphAsset True
+UINodeConnection 4569227e2dd6694a99613dcceafcea45
+    $::DataContainer
+    SourceNode bd6527d97cb1a94a9028fbafc21dbdf1
+    TargetNode b37fa8205732f748be342d5524761fe8
+    SourcePort 268555b844914d459a91048a932c0b59
+    TargetPort 95570089927ae545b63d27e0a58e2660
+    NumScreensToPop 0
+UINodeConnection 422971260c39d64f9c64171dde57daaa
+    $::DataContainer
+    SourceNode b37fa8205732f748be342d5524761fe8
+    TargetNode 425e42f9cc5b8342ae3d430e6f89bed3
+    SourcePort 8399de00a8255a45a94d5c72c94f0d74
+    TargetPort 1699d6616b82ef45b989916a977a0e5d
+    NumScreensToPop 0
+UINodeConnection cd41389c331e364da40789b721158a1d
+    $::DataContainer
+    SourceNode 631938625f72e44fb6abf477bcd2c8e7
+    TargetNode 895c358995df764ab853993e3e5f4fd0
+    SourcePort 314ddc5511ece14e8d55f3ee45f1e09a
+    TargetPort de3f8d9a57d8ae47bdd4bec7abc75aee
+    NumScreensToPop 0
+UINodeConnection b69d90b49ce55043b21954c4870273f5
+    $::DataContainer
+    SourceNode 895c358995df764ab853993e3e5f4fd0
+    TargetNode 425e42f9cc5b8342ae3d430e6f89bed3
+    SourcePort bee5756070a2ab4b9d2d4b8076865bd1
+    TargetPort 1699d6616b82ef45b989916a977a0e5d
+    NumScreensToPop 0
+UINodePort 268555b844914d459a91048a932c0b59
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 314ddc5511ece14e8d55f3ee45f1e09a
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 1699d6616b82ef45b989916a977a0e5d
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 95570089927ae545b63d27e0a58e2660
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 8399de00a8255a45a94d5c72c94f0d74
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort de3f8d9a57d8ae47bdd4bec7abc75aee
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort bee5756070a2ab4b9d2d4b8076865bd1
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False

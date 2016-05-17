@@ -1,0 +1,216 @@
+ActionNode 17487f81f314b34586bdfae94e556b88
+    $::UINodeData
+        $::DataContainer
+        Name WaitForDisc1
+        IsRootNode False
+        ParentGraph e4d5f0449c00c70e797b0e444a1dc5ec
+        ParentIsScreen True
+    ActionKey -1165953095
+    Params *nullArray*
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 98de909b99073a4aad3ba7fc58025a11
+    DataInputs *nullArray*
+    Out c9a4d8a726ecc04da293e628b044c110
+InstanceInputNode 6b2332c08bdaa64e9e9c82ee66aa0868
+    $::UINodeData
+        $::DataContainer
+        Name InsertDisc1
+        IsRootNode False
+        ParentGraph e4d5f0449c00c70e797b0e444a1dc5ec
+        ParentIsScreen True
+    Out b565d6ed021a2d4f897692a538beec4a
+InstanceOutputNode 1045f0cb58012e4f8481a12d5c0f318d
+    $::UINodeData
+        $::DataContainer
+        Name Disc1Inserted
+        IsRootNode False
+        ParentGraph e4d5f0449c00c70e797b0e444a1dc5ec
+        ParentIsScreen True
+    In 4c045c6e2ee6d04983b610458aa853ee
+    Id -471593025
+    DestroyGraph True
+UIDynamicDataBinding 855495dd25d4f645856821f83a55543e
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Title
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey -1951480908
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName Text
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey 201161033
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding cc49069b3940f34fa51dfa0d96676113
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Buttons
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 018f9da37875e945af660650206b05ba
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Key
+            DataCategory ui/uicomponents/uiinstallhdcontentcomp/1617162c2dafb46be72602b879e497f0
+            DataKey 1189539888
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UINodeConnection 6ab224bd7b1888448f30bfbb2f654921
+    $::DataContainer
+    SourceNode 6b2332c08bdaa64e9e9c82ee66aa0868
+    TargetNode 17487f81f314b34586bdfae94e556b88
+    SourcePort b565d6ed021a2d4f897692a538beec4a
+    TargetPort 98de909b99073a4aad3ba7fc58025a11
+    NumScreensToPop 0
+UINodeConnection 5fe850292f125d4c819c3dd97d991ebc
+    $::DataContainer
+    SourceNode 67acfdc70007f34b94a7092e6ac098ad
+    TargetNode 1045f0cb58012e4f8481a12d5c0f318d
+    SourcePort ad6ac49525f97b46be915e77edaefdc4
+    TargetPort 4c045c6e2ee6d04983b610458aa853ee
+    NumScreensToPop 0
+UINodePort 4bae39cf5f6f434c87753c90f32d667d
+    $::DataContainer
+    Name ButtonReleased
+    InstanceName PopupButtonsManager_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort 4c045c6e2ee6d04983b610458aa853ee
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort b565d6ed021a2d4f897692a538beec4a
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 98de909b99073a4aad3ba7fc58025a11
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort c9a4d8a726ecc04da293e628b044c110
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort ad6ac49525f97b46be915e77edaefdc4
+    $::DataContainer
+    Name KeyChanged
+    InstanceName ChangeListener_01
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UIScreenAsset e4d5f0449c00c70e797b0e444a1dc5ec #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Popups/PopupDisc1Insert
+        Nodes::array
+            member ff1cdab195148b4abef37917e4367303
+            member 7a4a4b882f38d34285c5fe20b9aea96a
+            member 1045f0cb58012e4f8481a12d5c0f318d
+            member 6b2332c08bdaa64e9e9c82ee66aa0868
+            member 17487f81f314b34586bdfae94e556b88
+            member 67acfdc70007f34b94a7092e6ac098ad
+        GlobalNode *nullGuid*
+        Connections::array
+            member 6ab224bd7b1888448f30bfbb2f654921
+            member 5fe850292f125d4c819c3dd97d991ebc
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UIWidgetPathBinding 03fd8d7ae732db46ac3a32000fe33446
+    $::UIDataBinding
+        $::DataContainer
+    WidgetPathQuery::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/uiinstallhdcontentcomp/1617162c2dafb46be72602b879e497f0
+        DataKey -1949668405
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+WidgetNode ff1cdab195148b4abef37917e4367303
+    $::UINodeData
+        $::DataContainer
+        Name PopupGenericWidget
+        IsRootNode False
+        ParentGraph e4d5f0449c00c70e797b0e444a1dc5ec
+        ParentIsScreen True
+    WidgetAsset ui/assets/popupgenericwidget/2e8284918176634eac89a7406d549b32
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 855495dd25d4f645856821f83a55543e
+    InstanceName PopupGenericWidget_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs *nullArray*
+WidgetNode 7a4a4b882f38d34285c5fe20b9aea96a
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonsManager
+        IsRootNode False
+        ParentGraph e4d5f0449c00c70e797b0e444a1dc5ec
+        ParentIsScreen True
+    WidgetAsset ui/assets/popupbuttonsmanager/85eba77ee604d6e293eb6f89c0e20bb9
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding cc49069b3940f34fa51dfa0d96676113
+    InstanceName PopupButtonsManager_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 4bae39cf5f6f434c87753c90f32d667d
+    Inputs *nullArray*
+WidgetNode 67acfdc70007f34b94a7092e6ac098ad
+    $::UINodeData
+        $::DataContainer
+        Name IsDisc1Inserted
+        IsRootNode False
+        ParentGraph e4d5f0449c00c70e797b0e444a1dc5ec
+        ParentIsScreen True
+    WidgetAsset ui/assets/changelistener/c2ebd27dd24701eba1fd557ccf7a7309
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 018f9da37875e945af660650206b05ba
+    InstanceName ChangeListener_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member ad6ac49525f97b46be915e77edaefdc4
+    Inputs *nullArray*

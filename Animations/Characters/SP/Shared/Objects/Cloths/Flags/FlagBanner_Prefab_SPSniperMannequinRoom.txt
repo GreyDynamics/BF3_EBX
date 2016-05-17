@@ -1,0 +1,203 @@
+InterfaceDescriptorData 8197b4c7a628274b821f38a7ee7ba26d
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 1934054566
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LocatorEntityData cc9677155b6eff4b81629988c3ccc922
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 3
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x -0.0293322205544
+                y -2.8950150013
+                z -0.329149931669
+    Realm Realm_ClientAndServer
+ModelAnimationEntityData 313504ceb7ceff4bb0402a1a0e5bf4ea
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Realm Realm_Client
+    AutoStart False
+    Looping True
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation FlagBanner_01_Wave1
+    AnimationIndex 0
+    AnimationSet animations/characters/sp/shared/objects/cloths/flags/flagbanner_animset/93c9ca0cc7182d8485e2c0b7bf51fc66
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName AITrajectory
+    RootMeshBoneName AITrajectory
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+RandomDelayEntityData 9885e53fccb5034597c4eec33147fab6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    MinDelay 0.0
+    MaxDelay 3.0
+    Realm Realm_Client
+    AutoStart True
+    RunOnce False
+ReferenceObjectData e44a643049976b42a2986e4c03cebff6
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 2
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 3.4228538226e-08
+            y 0.0
+            z -0.999999880791
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.999999880791
+            y 0.0
+            z 3.4228538226e-08
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/sp/shared/objects/cloths/flags/flagbanner_01/d45b69e0aa039628d33fbc70a0fa3932
+    ObjectVariation animations/characters/sp/shared/objects/cloths/flags/flagbanner_01_canvas/6c1c53db4b7152ad93151c537a789037
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundEntityData 29bf24ea3f40c846b8c0397f959107cb
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 4
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/levels/shared/props/flags/shared_ambients_objects_flagbanner_01/51ded180c479ed42b7b215ffef53a7ed
+    PlayOnCreation False
+    ObstructionHandle -1
+SpatialPrefabBlueprint 4cd9f3579a35e3478f6b62c682002087 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/SP/Shared/Objects/Cloths/Flags/FlagBanner_Prefab_SPSniperMannequinRoom
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source cc9677155b6eff4b81629988c3ccc922
+                            Target 29bf24ea3f40c846b8c0397f959107cb
+                            SourceFieldId 1925266716
+                            TargetFieldId -2024647575
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 313504ceb7ceff4bb0402a1a0e5bf4ea
+                            Target e44a643049976b42a2986e4c03cebff6
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 9885e53fccb5034597c4eec33147fab6
+                        Target 313504ceb7ceff4bb0402a1a0e5bf4ea
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 8197b4c7a628274b821f38a7ee7ba26d
+                        Target e44a643049976b42a2986e4c03cebff6
+                        SourceEvent::EventSpec
+                            Id 1934054566
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 8197b4c7a628274b821f38a7ee7ba26d
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 313504ceb7ceff4bb0402a1a0e5bf4ea
+            member 9885e53fccb5034597c4eec33147fab6
+            member e44a643049976b42a2986e4c03cebff6
+            member cc9677155b6eff4b81629988c3ccc922
+            member 29bf24ea3f40c846b8c0397f959107cb

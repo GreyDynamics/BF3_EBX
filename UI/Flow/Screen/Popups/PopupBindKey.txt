@@ -1,0 +1,164 @@
+InstanceOutputNode 85bbc5eae966e647be4d6fb7c85cd0d6
+    $::UINodeData
+        $::DataContainer
+        Name KeyPressed
+        IsRootNode False
+        ParentGraph 434faed6013e6cbabfe11a6dcd1d36d8
+        ParentIsScreen True
+    In f51fee5e63be014a8b02c9598f0bcae8
+    Id -168765804
+    DestroyGraph True
+UIDynamicDataBinding 55fcd8436c2b94498e4953bea84b5d2f
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Title
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey -1951480908
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName Text
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey 201161033
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding d8a807930a2bb847bbaea8159c376795
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Key
+            DataCategory ui/uicomponents/uisettingscomp/0392a63a4e17ba09d476141a0fd4bb9d
+            DataKey 1279028100
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UIDynamicDataBinding a634fe373d000b419583b5067ce77133
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Visible
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey 1310175943
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UINodeConnection 384afeff9ad38b498be36e9213d1b32e
+    $::DataContainer
+    SourceNode aeda96ca9e284f44b60d9206c1398bb2
+    TargetNode 85bbc5eae966e647be4d6fb7c85cd0d6
+    SourcePort 351f7ea3b7825c4a8634fa1df2ae246e
+    TargetPort f51fee5e63be014a8b02c9598f0bcae8
+    NumScreensToPop 0
+UINodePort 351f7ea3b7825c4a8634fa1df2ae246e
+    $::DataContainer
+    Name KeyChanged
+    InstanceName ChangeListener_01
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UINodePort f51fee5e63be014a8b02c9598f0bcae8
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort e8574ac834a98b479d213b4a8ac5984d
+    $::DataContainer
+    Name FadeIn
+    InstanceName Dimmer_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort c0b2b1bfc3dfb9498c05256fb35c4d78
+    $::DataContainer
+    Name FadeOut
+    InstanceName Dimmer_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UIScreenAsset 434faed6013e6cbabfe11a6dcd1d36d8 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Popups/PopupBindKey
+        Nodes::array
+            member 81d1fada219c624d9c82bafb70c66656
+            member aeda96ca9e284f44b60d9206c1398bb2
+            member 85bbc5eae966e647be4d6fb7c85cd0d6
+            member 62035e530b279c45a7b95a7eb7b00175
+        GlobalNode *nullGuid*
+        Connections::array
+            member 384afeff9ad38b498be36e9213d1b32e
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal True
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode 81d1fada219c624d9c82bafb70c66656
+    $::UINodeData
+        $::DataContainer
+        Name PopupGenericWidget
+        IsRootNode False
+        ParentGraph 434faed6013e6cbabfe11a6dcd1d36d8
+        ParentIsScreen True
+    WidgetAsset ui/assets/popupgenericwidget/2e8284918176634eac89a7406d549b32
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 55fcd8436c2b94498e4953bea84b5d2f
+    InstanceName PopupGenericWidget_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs *nullArray*
+WidgetNode aeda96ca9e284f44b60d9206c1398bb2
+    $::UINodeData
+        $::DataContainer
+        Name ChangeListener
+        IsRootNode False
+        ParentGraph 434faed6013e6cbabfe11a6dcd1d36d8
+        ParentIsScreen True
+    WidgetAsset ui/assets/changelistener/c2ebd27dd24701eba1fd557ccf7a7309
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding d8a807930a2bb847bbaea8159c376795
+    InstanceName ChangeListener_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 351f7ea3b7825c4a8634fa1df2ae246e
+    Inputs *nullArray*
+WidgetNode 62035e530b279c45a7b95a7eb7b00175
+    $::UINodeData
+        $::DataContainer
+        Name Dimmer
+        IsRootNode False
+        ParentGraph 434faed6013e6cbabfe11a6dcd1d36d8
+        ParentIsScreen True
+    WidgetAsset ui/assets/dimmer/5cbbd928b6246077e7268be53524ba15
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding a634fe373d000b419583b5067ce77133
+    InstanceName Dimmer_01
+    WidgetProperties::array
+        member::UIWidgetProperty
+            Name DimFromStart
+            Value true
+        member::UIWidgetProperty
+            Name InstantDim
+            Value true
+    Outputs *nullArray*
+    Inputs::array
+        member e8574ac834a98b479d213b4a8ac5984d
+        member c0b2b1bfc3dfb9498c05256fb35c4d78

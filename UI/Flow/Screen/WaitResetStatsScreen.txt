@@ -1,0 +1,140 @@
+InstanceOutputNode c719abc4b8a490419e2b117d532b2b41
+    $::UINodeData
+        $::DataContainer
+        Name ResetDone
+        IsRootNode False
+        ParentGraph 6a525f4bfeef8934dad9fab451142bfd
+        ParentIsScreen True
+    In 9c4b5a2ef7cdf34e818e445b8fbc0d45
+    Id 1918799184
+    DestroyGraph True
+InstanceOutputNode 91eec92ebe0b9e41890ceafb290438f4
+    $::UINodeData
+        $::DataContainer
+        Name ResetFailed
+        IsRootNode False
+        ParentGraph 6a525f4bfeef8934dad9fab451142bfd
+        ParentIsScreen True
+    In 47ad069c79f0d3448a1fa9a170eaff68
+    Id -1848678189
+    DestroyGraph True
+UIDynamicDataBinding 8097209ad3850140b84e50c417bbda2d
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Key
+            DataCategory ui/uicomponents/uiconnectioncomp/730b6f549efba24a2804fc429c4abcd1
+            DataKey -112122154
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UIDynamicDataBinding 83631f645b87664f8df0314fa7949f58
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Key
+            DataCategory ui/uicomponents/uiconnectioncomp/730b6f549efba24a2804fc429c4abcd1
+            DataKey -2078803371
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UINodeConnection b5170595724d0f419a5651b5dbe01a17
+    $::DataContainer
+    SourceNode 5fa5f128101cd446bd94dca9fc6e97fd
+    TargetNode c719abc4b8a490419e2b117d532b2b41
+    SourcePort 7b8c0f191ad5c04abb6e1fedc48cfe53
+    TargetPort 9c4b5a2ef7cdf34e818e445b8fbc0d45
+    NumScreensToPop 0
+UINodeConnection ca0b7bbf1d44a740a8d7ca7f5c1a268e
+    $::DataContainer
+    SourceNode e63f5df5d7f0744d822f2b8a13d4937a
+    TargetNode 91eec92ebe0b9e41890ceafb290438f4
+    SourcePort a1a4f9534991e841a67b3e56ce829f2c
+    TargetPort 47ad069c79f0d3448a1fa9a170eaff68
+    NumScreensToPop 0
+UINodePort 7b8c0f191ad5c04abb6e1fedc48cfe53
+    $::DataContainer
+    Name KeyChanged
+    InstanceName ChangeListener_00
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UINodePort 9c4b5a2ef7cdf34e818e445b8fbc0d45
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort a1a4f9534991e841a67b3e56ce829f2c
+    $::DataContainer
+    Name KeyChanged
+    InstanceName ChangeListener_01
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UINodePort 47ad069c79f0d3448a1fa9a170eaff68
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 6a525f4bfeef8934dad9fab451142bfd #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/WaitResetStatsScreen
+        Nodes::array
+            member 5fa5f128101cd446bd94dca9fc6e97fd
+            member c719abc4b8a490419e2b117d532b2b41
+            member e63f5df5d7f0744d822f2b8a13d4937a
+            member 91eec92ebe0b9e41890ceafb290438f4
+        GlobalNode *nullGuid*
+        Connections::array
+            member b5170595724d0f419a5651b5dbe01a17
+            member ca0b7bbf1d44a740a8d7ca7f5c1a268e
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode 5fa5f128101cd446bd94dca9fc6e97fd
+    $::UINodeData
+        $::DataContainer
+        Name ChangeListener
+        IsRootNode False
+        ParentGraph 6a525f4bfeef8934dad9fab451142bfd
+        ParentIsScreen True
+    WidgetAsset ui/assets/changelistener/c2ebd27dd24701eba1fd557ccf7a7309
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 8097209ad3850140b84e50c417bbda2d
+    InstanceName ChangeListener_00
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 7b8c0f191ad5c04abb6e1fedc48cfe53
+    Inputs *nullArray*
+WidgetNode e63f5df5d7f0744d822f2b8a13d4937a
+    $::UINodeData
+        $::DataContainer
+        Name ChangeListener
+        IsRootNode False
+        ParentGraph 6a525f4bfeef8934dad9fab451142bfd
+        ParentIsScreen True
+    WidgetAsset ui/assets/changelistener/c2ebd27dd24701eba1fd557ccf7a7309
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 83631f645b87664f8df0314fa7949f58
+    InstanceName ChangeListener_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member a1a4f9534991e841a67b3e56ce829f2c
+    Inputs *nullArray*

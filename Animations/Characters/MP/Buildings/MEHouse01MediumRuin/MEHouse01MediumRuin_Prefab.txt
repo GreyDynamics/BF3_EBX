@@ -1,0 +1,129 @@
+InterfaceDescriptorData 2890c02aac1fdf44ab1511e5bc0b61a2
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 2084504595
+    OutputEvents::array
+        member::DynamicEvent
+            Id 712501883
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 2d03dbb7d6f2ae499293248140d47987
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    AutoStart False
+    Looping False
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation MEHouse01MediumRuin_anim
+    AnimationIndex 0
+    AnimationSet animations/characters/mp/buildings/mehouse01mediumruin/mehouse01mediumruin_animset/92fa7023d6b175dbcb78410a985e129b
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData b6e3991133c7284b8387e70c8afb5332
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/mp/buildings/mehouse01mediumruin/mehouse01mediumruin/9d15accb2d2f6b10d374b4d9436243ec
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint dd325a8f6ee4f7e33d7bce78df733aaf #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/MP/Buildings/MEHouse01MediumRuin/MEHouse01MediumRuin_Prefab
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 2d03dbb7d6f2ae499293248140d47987
+                            Target b6e3991133c7284b8387e70c8afb5332
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 2890c02aac1fdf44ab1511e5bc0b61a2
+                        Target 2d03dbb7d6f2ae499293248140d47987
+                        SourceEvent::EventSpec
+                            Id 2084504595
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 2d03dbb7d6f2ae499293248140d47987
+                        Target 2890c02aac1fdf44ab1511e5bc0b61a2
+                        SourceEvent::EventSpec
+                            Id -1176973715
+                        TargetEvent::EventSpec
+                            Id 712501883
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 2890c02aac1fdf44ab1511e5bc0b61a2
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member b6e3991133c7284b8387e70c8afb5332
+            member 2d03dbb7d6f2ae499293248140d47987

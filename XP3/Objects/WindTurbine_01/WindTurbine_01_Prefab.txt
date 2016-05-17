@@ -1,0 +1,263 @@
+InterfaceDescriptorData 4c5031e750577c409e6cfb9537fcc680
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 230748069
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 780b5ec9abe3cf4788e918f4af24840c
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint xp3/objects/windturbine_01/windturbine_01/851646a5cc1e7b12e698d88a02a37282
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData cf86365f2c3b88499c59037b0d4bef30
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x -3.55332994461
+            y 125.75
+            z 4.29153442383e-06
+    Blueprint xp3/objects/windturbine_01/windturbine_01_blades/ff9ae2c4a5bde5699d9a10c4ae8b123c
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData 340ee3f2822e7b46b1604bad4502a465
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 10000
+    Looping True
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks::array
+        member 0ffca1e0f87c8c4c9e91fed0673d8050
+        member e252cad86d68b04a874b18634c6d61c9
+        member c24e0f1580a01a4cb537ec7e17cc2636
+        member 4090837862a0674d831527b01a4ce8fb
+        member 83df5a134f6d224785afad265b1d709d
+        member 23be85aa9a96d84ab1bf71c63e19f0bc
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SoundEntityData d79e2857976c58488e93930d59450c4b
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/levels/xp3_shield/sfx/xp3_ambient_shield_object_windpowerplant_01/31e30d9fa93d3e3122f402f5ce7e8876
+    PlayOnCreation False
+    ObstructionHandle -1
+SpatialPrefabBlueprint 202c48940db234252bd11fe0810d8bc6 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP3/Objects/WindTurbine_01/WindTurbine_01_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 340ee3f2822e7b46b1604bad4502a465
+                            Target cf86365f2c3b88499c59037b0d4bef30
+                            SourceFieldId 1301492691
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 4c5031e750577c409e6cfb9537fcc680
+                        Target 340ee3f2822e7b46b1604bad4502a465
+                        SourceEvent::EventSpec
+                            Id 230748069
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 340ee3f2822e7b46b1604bad4502a465
+                        Target d79e2857976c58488e93930d59450c4b
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source cf86365f2c3b88499c59037b0d4bef30
+                        Target d79e2857976c58488e93930d59450c4b
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 4c5031e750577c409e6cfb9537fcc680
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 780b5ec9abe3cf4788e918f4af24840c
+            member cf86365f2c3b88499c59037b0d4bef30
+            member 340ee3f2822e7b46b1604bad4502a465
+            member d79e2857976c58488e93930d59450c4b
+TransformPartPropertyTrackData 0ffca1e0f87c8c4c9e91fed0673d8050
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/WindTurbine_01/AnimTrackData/F2E30E34-2E82-467B-B160-4BAD4502A465_animation
+    KeyStartIndex 0
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData e252cad86d68b04a874b18634c6d61c9
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/WindTurbine_01/AnimTrackData/F2E30E34-2E82-467B-B160-4BAD4502A465_animation
+    KeyStartIndex 2
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData c24e0f1580a01a4cb537ec7e17cc2636
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/WindTurbine_01/AnimTrackData/F2E30E34-2E82-467B-B160-4BAD4502A465_animation
+    KeyStartIndex 4
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 4090837862a0674d831527b01a4ce8fb
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/WindTurbine_01/AnimTrackData/F2E30E34-2E82-467B-B160-4BAD4502A465_animation
+    KeyStartIndex 6
+    KeyCount 2
+    IsStatic False
+TransformPartPropertyTrackData 83df5a134f6d224785afad265b1d709d
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/WindTurbine_01/AnimTrackData/F2E30E34-2E82-467B-B160-4BAD4502A465_animation
+    KeyStartIndex 8
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 23be85aa9a96d84ab1bf71c63e19f0bc
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/WindTurbine_01/AnimTrackData/F2E30E34-2E82-467B-B160-4BAD4502A465_animation
+    KeyStartIndex 10
+    KeyCount 2
+    IsStatic True

@@ -1,0 +1,175 @@
+InputModifierEntityData 288f3cff687f2049b32b03ed227d4e2e
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Enabled False
+    Action EIAThrottle
+    Offset -0.20000000298
+    Scale 0.649999976158
+InputModifierEntityData 1a3263ee4a201447af3e68200005ae5a
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 2
+    Enabled False
+    Action EIARoll
+    Offset 0.5
+    Scale 1.0
+InputModifierEntityData 6cd2c34c1836104bbdf296e6683d70b2
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 3
+    Enabled False
+    Action EIAYaw
+    Offset -0.300000011921
+    Scale 1.5
+InputModifierEntityData e2893693485a04438dbae53244acd51e
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 4
+    Enabled False
+    Action EIABrake
+    Offset 0.0
+    Scale 1.0
+InterfaceDescriptorData c4224af9d6a3524a9c023a22a7857de3
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -62145612
+        member::DynamicEvent
+            Id 707417003
+    OutputEvents::array
+        member::DynamicEvent
+            Id 2117264948
+        member::DynamicEvent
+            Id 1150266842
+    InputLinks::array
+        member::DynamicLink
+            Id -1585193683
+        member::DynamicLink
+            Id 2089387576
+        member::DynamicLink
+            Id 193468618
+        member::DynamicLink
+            Id 211741658
+    OutputLinks *nullArray*
+LogicPrefabBlueprint ebc1f6819fb5ce4a9f945af706293527 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/common/DisabledInputBehavior_Heli
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source d9b06a33ac94ca468ff574ebd36e84ee
+                            Target 6cd2c34c1836104bbdf296e6683d70b2
+                            SourceFieldId 193453899
+                            TargetFieldId 2662400
+                        member::PropertyConnection
+                            Source d9b06a33ac94ca468ff574ebd36e84ee
+                            Target 1a3263ee4a201447af3e68200005ae5a
+                            SourceFieldId 193453899
+                            TargetFieldId 2662400
+                        member::PropertyConnection
+                            Source d9b06a33ac94ca468ff574ebd36e84ee
+                            Target 288f3cff687f2049b32b03ed227d4e2e
+                            SourceFieldId 193453899
+                            TargetFieldId 2662400
+                        member::PropertyConnection
+                            Source d9b06a33ac94ca468ff574ebd36e84ee
+                            Target e2893693485a04438dbae53244acd51e
+                            SourceFieldId 193453899
+                            TargetFieldId 2662400
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source c4224af9d6a3524a9c023a22a7857de3
+                            Target 288f3cff687f2049b32b03ed227d4e2e
+                            SourceFieldId -1585193683
+                            TargetFieldId 0
+                        member::LinkConnection
+                            Source c4224af9d6a3524a9c023a22a7857de3
+                            Target 1a3263ee4a201447af3e68200005ae5a
+                            SourceFieldId 2089387576
+                            TargetFieldId 0
+                        member::LinkConnection
+                            Source c4224af9d6a3524a9c023a22a7857de3
+                            Target e2893693485a04438dbae53244acd51e
+                            SourceFieldId 211741658
+                            TargetFieldId 0
+                        member::LinkConnection
+                            Source c4224af9d6a3524a9c023a22a7857de3
+                            Target 6cd2c34c1836104bbdf296e6683d70b2
+                            SourceFieldId 193468618
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source d9b06a33ac94ca468ff574ebd36e84ee
+                        Target c4224af9d6a3524a9c023a22a7857de3
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 2117264948
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source d9b06a33ac94ca468ff574ebd36e84ee
+                        Target c4224af9d6a3524a9c023a22a7857de3
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id 1150266842
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source c4224af9d6a3524a9c023a22a7857de3
+                        Target d9b06a33ac94ca468ff574ebd36e84ee
+                        SourceEvent::EventSpec
+                            Id -62145612
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source c4224af9d6a3524a9c023a22a7857de3
+                        Target d9b06a33ac94ca468ff574ebd36e84ee
+                        SourceEvent::EventSpec
+                            Id 707417003
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                Descriptor c4224af9d6a3524a9c023a22a7857de3
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member d9b06a33ac94ca468ff574ebd36e84ee
+            member 288f3cff687f2049b32b03ed227d4e2e
+            member 1a3263ee4a201447af3e68200005ae5a
+            member 6cd2c34c1836104bbdf296e6683d70b2
+            member e2893693485a04438dbae53244acd51e
+SyncedBoolEntityData d9b06a33ac94ca468ff574ebd36e84ee
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    In False

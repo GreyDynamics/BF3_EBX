@@ -1,0 +1,274 @@
+EffectReferenceObjectData 14fd2cac533bba4bb98b277abf2ed4d8
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x -0.999999940395
+                y 0.0
+                z 8.7422769468e-08
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x -8.7422769468e-08
+                y 0.0
+                z -0.999999940395
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint fx/dlc/xp3/ambient/warfare/archerartillery/fx_dlc_xp3_archer_artillery_muzzleflash/5e0a0cb154d228cb76c43fb3e2aff35e
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart True
+InterfaceDescriptorData fa546dcbce914e41a9b806d1f90f2a6e
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 419113927
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 83db8fa239f5c240a18c69d159e62bad
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint xp3/objects/artillery_fh-77b-i_01/artillery_fh-77b-i_01_base/36aeb4725bb5826ecbc0abaa17674cbf
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 4c80605c39c15349944b40d300276b30
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 0.70710670948
+            z 0.70710682869
+        forward::Vec3
+            x 0.0
+            y -0.70710682869
+            z 0.70710670948
+        trans::Vec3
+            x 0.0
+            y 3.16344809532
+            z -0.676433622837
+    Blueprint xp3/objects/artillery_fh-77b-i_01/artillery_fh-77b-i_01_cannon_prefab/60b4866c4c1549f0e72af3c05376f48e
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData 33cb36a25d4812408ef6545e2baee61a
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Events::array
+        member::SequenceEventData
+            Event::EventSpec
+                Id -52483579
+            Time 0
+        member::SequenceEventData
+            Event::EventSpec
+                Id -1953847811
+            Time 2000
+    SequenceStartTime 0
+    SequenceLength 4000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks::array
+        member 4eef4e0fe6491a4ca0f7f5238658a816
+        member 2b423ca79c51c848b079c58be60ae90f
+        member 6db40de3f83c064e8d9c313293b74fb2
+        member 512d31f3a25f4e4e8a49ff27ee5664b7
+        member b117360bc3993f43a50f568f67d14919
+        member 03c46b5e57cbdc488339ea102aec2dab
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint eebd0c169ab7da8e158c7f460722e23d #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP3/Objects/Artillery_FH-77B-I_01/Artillery_FH-77B-I_01_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 33cb36a25d4812408ef6545e2baee61a
+                            Target 4c80605c39c15349944b40d300276b30
+                            SourceFieldId 807722916
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source fa546dcbce914e41a9b806d1f90f2a6e
+                        Target 33cb36a25d4812408ef6545e2baee61a
+                        SourceEvent::EventSpec
+                            Id 419113927
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 33cb36a25d4812408ef6545e2baee61a
+                        Target 14fd2cac533bba4bb98b277abf2ed4d8
+                        SourceEvent::EventSpec
+                            Id -52483579
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 33cb36a25d4812408ef6545e2baee61a
+                        Target 14fd2cac533bba4bb98b277abf2ed4d8
+                        SourceEvent::EventSpec
+                            Id -1953847811
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor fa546dcbce914e41a9b806d1f90f2a6e
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 83db8fa239f5c240a18c69d159e62bad
+            member 4c80605c39c15349944b40d300276b30
+            member 33cb36a25d4812408ef6545e2baee61a
+            member 14fd2cac533bba4bb98b277abf2ed4d8
+TransformPartPropertyTrackData 4eef4e0fe6491a4ca0f7f5238658a816
+    $::PropertyTrackData
+        $::DataContainer
+        Id 807722916
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/Artillery_FH-77B-I_01/AnimTrackData/A236CB33-485D-4012-8EF6-545E2BAEE61A_Cannon_FIRING
+    KeyStartIndex 0
+    KeyCount 3
+    IsStatic True
+TransformPartPropertyTrackData 2b423ca79c51c848b079c58be60ae90f
+    $::PropertyTrackData
+        $::DataContainer
+        Id 807722916
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/Artillery_FH-77B-I_01/AnimTrackData/A236CB33-485D-4012-8EF6-545E2BAEE61A_Cannon_FIRING
+    KeyStartIndex 3
+    KeyCount 3
+    IsStatic False
+TransformPartPropertyTrackData 6db40de3f83c064e8d9c313293b74fb2
+    $::PropertyTrackData
+        $::DataContainer
+        Id 807722916
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/Artillery_FH-77B-I_01/AnimTrackData/A236CB33-485D-4012-8EF6-545E2BAEE61A_Cannon_FIRING
+    KeyStartIndex 6
+    KeyCount 3
+    IsStatic False
+TransformPartPropertyTrackData 512d31f3a25f4e4e8a49ff27ee5664b7
+    $::PropertyTrackData
+        $::DataContainer
+        Id 807722916
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/Artillery_FH-77B-I_01/AnimTrackData/A236CB33-485D-4012-8EF6-545E2BAEE61A_Cannon_FIRING
+    KeyStartIndex 9
+    KeyCount 3
+    IsStatic True
+TransformPartPropertyTrackData b117360bc3993f43a50f568f67d14919
+    $::PropertyTrackData
+        $::DataContainer
+        Id 807722916
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/Artillery_FH-77B-I_01/AnimTrackData/A236CB33-485D-4012-8EF6-545E2BAEE61A_Cannon_FIRING
+    KeyStartIndex 12
+    KeyCount 3
+    IsStatic True
+TransformPartPropertyTrackData 03c46b5e57cbdc488339ea102aec2dab
+    $::PropertyTrackData
+        $::DataContainer
+        Id 807722916
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName XP3/Objects/Artillery_FH-77B-I_01/AnimTrackData/A236CB33-485D-4012-8EF6-545E2BAEE61A_Cannon_FIRING
+    KeyStartIndex 15
+    KeyCount 3
+    IsStatic True

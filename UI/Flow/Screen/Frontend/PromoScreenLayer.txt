@@ -1,0 +1,274 @@
+ActionNode 889390ab7d984c4bac89abaea1fbee0b
+    $::UINodeData
+        $::DataContainer
+        Name Promo hidden
+        IsRootNode False
+        ParentGraph b5f0f9622855e94030e6f4d2ae8ea96a
+        ParentIsScreen True
+    ActionKey -1428940696
+    Params::array
+        member false
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 5e9e926d22331f43a9e935a4e489d6bc
+    DataInputs *nullArray*
+    Out 6a6a849c04934444a93b749aae77c83a
+ActionNode 1bfd87112a9dda4fa1fc831f96cb471d
+    $::UINodeData
+        $::DataContainer
+        Name Promo shown
+        IsRootNode False
+        ParentGraph b5f0f9622855e94030e6f4d2ae8ea96a
+        ParentIsScreen True
+    ActionKey -1428940696
+    Params::array
+        member true
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 8e9ce80b40f4cb4a85fd2e24dff57451
+    DataInputs *nullArray*
+    Out 263b67e1c636af4c9b86af42c7c81645
+InstanceInputNode 00c1e0f88bba7a4fb1cbe21f8a186af0
+    $::UINodeData
+        $::DataContainer
+        Name HidePromo
+        IsRootNode False
+        ParentGraph b5f0f9622855e94030e6f4d2ae8ea96a
+        ParentIsScreen True
+    Out bc2c7f4d81a9484cbe432aa8c95cefeb
+InstanceOutputNode 03c810dfe4eebf4393afb81f5f39af44
+    $::UINodeData
+        $::DataContainer
+        Name Pressed
+        IsRootNode False
+        ParentGraph b5f0f9622855e94030e6f4d2ae8ea96a
+        ParentIsScreen True
+    In 645f399722b70e429dff7c1e4c17a386
+    Id -831521501
+    DestroyGraph True
+UIDynamicDataBinding 1acf88cd3b8ebe49bd0dcd906a36f80f
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Loaded
+            DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+            DataKey 1560888713
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 472bde5f0814cc4dbca6f50f9a71c5b1
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Loaded
+            DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+            DataKey 1560888713
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName Timeout
+            DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+            DataKey 524978354
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UINodeConnection 8cfd01e2b1232d4f8a895da7309caeb5
+    $::DataContainer
+    SourceNode a34f8274bbb74541bb00f121ce8d2469
+    TargetNode 03c810dfe4eebf4393afb81f5f39af44
+    SourcePort db00f0695ea5954ea7099bbe2150827c
+    TargetPort 645f399722b70e429dff7c1e4c17a386
+    NumScreensToPop 0
+UINodeConnection bf2e670849f87b44a2fc3b285e68b152
+    $::DataContainer
+    SourceNode 00c1e0f88bba7a4fb1cbe21f8a186af0
+    TargetNode 889390ab7d984c4bac89abaea1fbee0b
+    SourcePort bc2c7f4d81a9484cbe432aa8c95cefeb
+    TargetPort 5e9e926d22331f43a9e935a4e489d6bc
+    NumScreensToPop 0
+UINodeConnection ec0efea2b652a647974e48f40290a035
+    $::DataContainer
+    SourceNode 889390ab7d984c4bac89abaea1fbee0b
+    TargetNode a34f8274bbb74541bb00f121ce8d2469
+    SourcePort 6a6a849c04934444a93b749aae77c83a
+    TargetPort b995413b7807f0408b660c9c99f273d6
+    NumScreensToPop 0
+UINodeConnection a2f1acf09e4f5e479917a8347dc784d2
+    $::DataContainer
+    SourceNode a34f8274bbb74541bb00f121ce8d2469
+    TargetNode 1bfd87112a9dda4fa1fc831f96cb471d
+    SourcePort e05031a0c485c5458f28eb7d42994c4b
+    TargetPort 8e9ce80b40f4cb4a85fd2e24dff57451
+    NumScreensToPop 0
+UINodePort 4c67927d988acb479e807311827d750b
+    $::DataContainer
+    Name Pressed
+    InstanceName Promo_00
+    Query UIWidgetEventID_OnItemPressed
+    AllowManualRemove False
+UINodePort 645f399722b70e429dff7c1e4c17a386
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort db00f0695ea5954ea7099bbe2150827c
+    $::DataContainer
+    Name Pressed
+    InstanceName Promo_00
+    Query UIWidgetEventID_OnItemSelected
+    AllowManualRemove False
+UINodePort dae4b40c9ed0c54eb8da9d251c711925
+    $::DataContainer
+    Name Show
+    InstanceName Promo_00
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort b995413b7807f0408b660c9c99f273d6
+    $::DataContainer
+    Name Hide
+    InstanceName Promo_00
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort b6fe2168f11eef43b8746a8f012599c3
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort bc2c7f4d81a9484cbe432aa8c95cefeb
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort e05031a0c485c5458f28eb7d42994c4b
+    $::DataContainer
+    Name OnShow
+    InstanceName Promo_00
+    Query UIWidgetEventID_OnShow
+    AllowManualRemove False
+UINodePort 5e9e926d22331f43a9e935a4e489d6bc
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 6a6a849c04934444a93b749aae77c83a
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 8e9ce80b40f4cb4a85fd2e24dff57451
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 263b67e1c636af4c9b86af42c7c81645
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 20ce0706dc55734c9880eeec86214d88
+    $::DataContainer
+    Name Show
+    InstanceName TextField_00
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 8db52f9ae8f2b84680aaf896e351de92
+    $::DataContainer
+    Name Hide
+    InstanceName TextField_00
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UIScreenAsset b5f0f9622855e94030e6f4d2ae8ea96a #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Frontend/PromoScreenLayer
+        Nodes::array
+            member 03c810dfe4eebf4393afb81f5f39af44
+            member a34f8274bbb74541bb00f121ce8d2469
+            member 00c1e0f88bba7a4fb1cbe21f8a186af0
+            member 889390ab7d984c4bac89abaea1fbee0b
+            member 1bfd87112a9dda4fa1fc831f96cb471d
+            member 2da6a91fe13b7f429f207f0d8b012271
+        GlobalNode *nullGuid*
+        Connections::array
+            member 8cfd01e2b1232d4f8a895da7309caeb5
+            member bf2e670849f87b44a2fc3b285e68b152
+            member ec0efea2b652a647974e48f40290a035
+            member a2f1acf09e4f5e479917a8347dc784d2
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UITextDataBinding b265fd33a7c643408494cfc47ed65cbb
+    $::UIDataBinding
+        $::DataContainer
+    StaticText *nullString*
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+        DataKey 1256616389
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+        DataKey 1634961064
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess True
+WidgetNode a34f8274bbb74541bb00f121ce8d2469
+    $::UINodeData
+        $::DataContainer
+        Name Promo
+        IsRootNode False
+        ParentGraph b5f0f9622855e94030e6f4d2ae8ea96a
+        ParentIsScreen True
+    WidgetAsset ui/assets/promo/b4185c83e9eec33d445ce9af3ec2bc87
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 472bde5f0814cc4dbca6f50f9a71c5b1
+    InstanceName Promo_00
+    WidgetProperties *nullArray*
+    Outputs::array
+        member db00f0695ea5954ea7099bbe2150827c
+        member e05031a0c485c5458f28eb7d42994c4b
+    Inputs::array
+        member dae4b40c9ed0c54eb8da9d251c711925
+        member b995413b7807f0408b660c9c99f273d6
+WidgetNode 2da6a91fe13b7f429f207f0d8b012271
+    $::UINodeData
+        $::DataContainer
+        Name CL#
+        IsRootNode False
+        ParentGraph b5f0f9622855e94030e6f4d2ae8ea96a
+        ParentIsScreen True
+    WidgetAsset ui/assets/textfield/9cde2e99f6361ef321405c1ec7fcf345
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding b265fd33a7c643408494cfc47ed65cbb
+    InstanceName TextField_00
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs::array
+        member 20ce0706dc55734c9880eeec86214d88
+        member 8db52f9ae8f2b84680aaf896e351de92

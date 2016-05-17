@@ -1,0 +1,118 @@
+InterfaceDescriptorData 04e914e1dc3aca4a86af46e6ef75b393
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 901540267
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member::DynamicEvent
+            Id -117245068
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData c6eb3692d2c1e240b12363e1d3c24231
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/mp/buildings/bigradiotower/bigradiotower/e5dbca116c14747af54d83cf8782eee3
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 0630a22cb58c2b4db7290ff6f4173949
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/mp/buildings/bigradiotower/wires/ff2d5daf26edf4a77a7b6c3f59ad8b1d
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 710d982e7682bd48a7e9736c2e12f4a8 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/MP/Buildings/BigRadioTower/BigRadioTowerMP_Serverside
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 04e914e1dc3aca4a86af46e6ef75b393
+                            Target c6eb3692d2c1e240b12363e1d3c24231
+                            SourceFieldId 901540267
+                            TargetFieldId 901540267
+                        member::PropertyConnection
+                            Source 04e914e1dc3aca4a86af46e6ef75b393
+                            Target 0630a22cb58c2b4db7290ff6f4173949
+                            SourceFieldId 901540267
+                            TargetFieldId 901540267
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 04e914e1dc3aca4a86af46e6ef75b393
+                        Target c6eb3692d2c1e240b12363e1d3c24231
+                        SourceEvent::EventSpec
+                            Id -117245068
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 04e914e1dc3aca4a86af46e6ef75b393
+                        Target 0630a22cb58c2b4db7290ff6f4173949
+                        SourceEvent::EventSpec
+                            Id -117245068
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 04e914e1dc3aca4a86af46e6ef75b393
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member c6eb3692d2c1e240b12363e1d3c24231
+            member 0630a22cb58c2b4db7290ff6f4173949

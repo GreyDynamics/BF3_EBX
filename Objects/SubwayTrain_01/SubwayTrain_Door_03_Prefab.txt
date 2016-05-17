@@ -1,0 +1,105 @@
+InterfaceDescriptorData 0983405a49267442839d947940ea2a38
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -3142077
+        member::DynamicEvent
+            Id -274579609
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 52bea706399090408a65aef54f841a02
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/subwaytrain_01/subwaytrain_door_03/0eeea72be2bc6b4ad29d8354bf1afe3a
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 5c6201401501d840b183c6364c8bdd02
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 1.40129846432e-45
+            z -2.59319435056e-25
+        up::Vec3
+            x 2.77415056982e-41
+            y 1.0
+            z 1.06978514233e-16
+        forward::Vec3
+            x 2.59319435056e-25
+            y -1.06978514233e-16
+            z 1.0
+        trans::Vec3
+            x 0.142055183649
+            y 1.05078125
+            z -0.134887695312
+    Blueprint objects/subwaytrain_01/subwaytrain_window_01/a21743650723b58637f71452c7ea470a
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 78a434d43606be51bef3eb495805401b #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/SubwayTrain_01/SubwayTrain_Door_03_Prefab
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 0983405a49267442839d947940ea2a38
+                        Target 5c6201401501d840b183c6364c8bdd02
+                        SourceEvent::EventSpec
+                            Id -3142077
+                        TargetEvent::EventSpec
+                            Id -3142077
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 0983405a49267442839d947940ea2a38
+                        Target 5c6201401501d840b183c6364c8bdd02
+                        SourceEvent::EventSpec
+                            Id -274579609
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 0983405a49267442839d947940ea2a38
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 52bea706399090408a65aef54f841a02
+            member 5c6201401501d840b183c6364c8bdd02

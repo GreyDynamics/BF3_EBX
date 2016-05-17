@@ -1,0 +1,240 @@
+HavokAsset be815ce43ff014a5401ed423230ceab4
+    $::Asset
+        $::DataContainer
+        Name Vehicles/BMP2/TOW_Projectile_SP007_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+MissileEntityData c14af363eb20a441afd3458367992082
+    $::MeshProjectileEntityData
+        $::ProjectileEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled False
+                    Components *nullArray*
+                    RuntimeComponentCount 0
+                PhysicsData 518e206da8c41347ad42690f27c4b511
+            InitialSpeed 30.0
+            TimeToLive 20.0
+            MaxCount 0
+            InitMeshHideTime 0.0
+            VisualConvergeDistance 50.0
+            DetonateOnTimeout False
+            ServerProjectileDisabled False
+            Explosion a4d059598cb5f645872b4a75e02f8a1b
+            SuppressionData *nullGuid*
+            AmmunitionType *nullString*
+            MaterialPair materials/materialcontainer/46cfcc58feea8e4798eb7898dd469680
+            HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+            SuppressOwnerVehicleDamage False
+        Mesh vehicles/bmp2/tow_projectile_sp007_mesh/eeace08ab6afeb45beab285919036206
+        TrailEffect fx/ambient/warfare/trails/fx_ambwar_at_trail/a366b1b94144e2a2479aac9afcada0eb
+        IsAttachable False
+        MaxAttachableInclination 45.0
+        ExtraDamping False
+        InitialAngularVelocity::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    EngineEffect fx/weapons/trailengine/fx_trailengine_tow_sp/b3cd3677b2fd1f499e1248e750c01427
+    DudExplosion *nullGuid*
+    FlyBySound *nullGuid*
+    EngineStrength 10.0
+    MaxSpeed 40.0
+    EngineTimeToIgnition 0.0
+    EngineTimeToLive 30.0
+    TimeToActivateGuidingSystem 0.10000000149
+    TimeToArm 0.0
+    MaxTurnAngle 3.0
+    Drag 0.0
+    Gravity -9.80000019073
+    ApplyGravityWhenGuided True
+    FlyBySoundRadius 5.0
+    FlyBySoundSpeed 10.0
+    ImpactImpulse 200.0
+    Damage 225.0
+    DefaultTeam TeamNeutral
+    WarnTarget wtWarnVehicle
+    WarnOnPointingMissile False
+    LockingController *nullGuid*
+    LockableInfo::MissileLockableInfoData
+        HeatSignature 0.0
+        RadarSignature 0.0
+    UnguidedData::MissileUnguidedData
+        UseStaticPosition False
+        StaticPosition::Vec2
+            x 0.0
+            y 0.0
+        UseTargetPosition False
+        TargetPositionOffset::Vec2
+            x 0.0
+            y 0.0
+    NearTargetDetonation::NearTargetDetonationData
+        DetonateNearTarget False
+        DetonationRadius 10.0
+        MaxDetonationDelay 3.0
+        MinDetonationDelay 0.0
+PhysicsEntityData 518e206da8c41347ad42690f27c4b511
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+    Asset *nullGuid*
+    ScaledAssets::array
+        member be815ce43ff014a5401ed423230ceab4
+    RigidBodies::array
+        member 828bd51b5ac6f046b109aad04bf27f9d
+        member 601420b753c78f49a16017eb02755ed3
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ProjectileBlueprint 64dd433284de83428460acb4f21aee47 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/BMP2/TOW_Projectile_SP007
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object c14af363eb20a441afd3458367992082
+RigidBodyData 828bd51b5ac6f046b109aad04bf27f9d
+    $::DataContainer
+    RigidBodyType RBTypeRaycast
+    Mass 0.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Fixed
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+RigidBodyData 601420b753c78f49a16017eb02755ed3
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 1.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Dynamic
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+VeniceExplosionEntityData a4d059598cb5f645872b4a75e02f8a1b
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint -1
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect sound/explosions/modularmodel/sfx_explosion_at/076fff3a83d593af1441d303c6586e1e
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair materials/materialcontainer/c5745e6774a1094e83b6118a7c3da788
+        DamageIndicationType DamageIndicationType_GiverPlayer
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.5
+        InnerBlastRadius 0.5
+        BlastDamage 100.0
+        BlastRadius 3.0
+        BlastImpulse 60.0
+        HasStunEffect False
+        ShockwaveDamage 3.0
+        ShockwaveRadius 6.0
+        ShockwaveImpulse 150.0
+        ShockwaveTime 0.140000000596
+        DisableOcclusion False
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 3.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0

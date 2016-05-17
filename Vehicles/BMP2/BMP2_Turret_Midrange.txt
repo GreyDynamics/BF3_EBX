@@ -1,0 +1,261 @@
+DelayEntityData 22fdb3185eb44141bf9dd920749f8328
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Delay 0.20000000298
+    Realm Realm_Client
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+EffectComponentData 9a4c863a7324814c9ad75a4c22c3b96f
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 5.96046518808e-08
+                z 0.999999940395
+            forward::Vec3
+                x 0.0
+                y -0.999999940395
+                z 5.96046518808e-08
+            trans::Vec3
+                x -0.0500000007451
+                y 0.319999992847
+                z 3.02669596672
+        Components *nullArray*
+        Excluded False
+    Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_cannon_slow_fillout_3p/efc28604153ac04291882877b639c30e
+    AutoStart False
+    SnapToWaterSurface False
+    EmitterParameter1 0.0
+    EmitterParameter2 0.0
+    EmitterParameter3 0.0
+EffectComponentData ee8c5014b7e3b54ebfd7e068870f00de
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 5.96046447754e-08
+                z 0.999999940395
+            forward::Vec3
+                x 0.0
+                y -0.999999940395
+                z 5.96046447754e-08
+            trans::Vec3
+                x -0.0500000007451
+                y 0.319999992847
+                z 3.0266957283
+        Components *nullArray*
+        Excluded False
+    Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_cannon_slow_3p/b84e5e558f648c4aa44eaf9df3831803
+    AutoStart False
+    SnapToWaterSurface False
+    EmitterParameter1 0.0
+    EmitterParameter2 0.0
+    EmitterParameter3 0.0
+HealthStateData 360d8a8009335b941bec21bb769ef353
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 10000.0
+    PartIndex 1
+    CanSupportOtherParts True
+HealthStateData cb482e92d6edba4a9da5054796e341e6
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 0.0
+    PartIndex 0
+    CanSupportOtherParts False
+InterfaceDescriptorData 6299e12c46e23e42aa1a9f91145a2819
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 2058611105
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ObjectBlueprint 07b2562ad9924185eb659df4f836cba4 #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name Vehicles/BMP2/BMP2_Turret_Midrange
+                PropertyConnections *nullArray*
+                LinkConnections *nullArray*
+            EventConnections::array
+                member::EventConnection
+                    Source 6299e12c46e23e42aa1a9f91145a2819
+                    Target 9a4c863a7324814c9ad75a4c22c3b96f
+                    SourceEvent::EventSpec
+                        Id 2058611105
+                    TargetEvent::EventSpec
+                        Id 230748069
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 6299e12c46e23e42aa1a9f91145a2819
+                    Target ee8c5014b7e3b54ebfd7e068870f00de
+                    SourceEvent::EventSpec
+                        Id 2058611105
+                    TargetEvent::EventSpec
+                        Id 230748069
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 6299e12c46e23e42aa1a9f91145a2819
+                    Target 22fdb3185eb44141bf9dd920749f8328
+                    SourceEvent::EventSpec
+                        Id 2058611105
+                    TargetEvent::EventSpec
+                        Id 5862146
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 22fdb3185eb44141bf9dd920749f8328
+                    Target ee8c5014b7e3b54ebfd7e068870f00de
+                    SourceEvent::EventSpec
+                        Id 193453899
+                    TargetEvent::EventSpec
+                        Id 2089401213
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 22fdb3185eb44141bf9dd920749f8328
+                    Target 9a4c863a7324814c9ad75a4c22c3b96f
+                    SourceEvent::EventSpec
+                        Id 193453899
+                    TargetEvent::EventSpec
+                        Id 2089401213
+                    TargetType EventConnectionTargetType_Client
+            Descriptor 6299e12c46e23e42aa1a9f91145a2819
+            NeedNetworkId False
+            InterfaceHasConnections True
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Object 382b41b5cabde011b102ebab140c0dda
+PartComponentData ae7db81655622e9556571910d57c17b0
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components *nullArray*
+        Excluded False
+    HealthStates::array
+        member 360d8a8009335b941bec21bb769ef353
+        member cb482e92d6edba4a9da5054796e341e6
+    PartLinks *nullArray*
+    IsSupported False
+    IsFragile False
+    IsNetworkable True
+    IsWindow False
+    AnimatePhysics False
+StaticModelEntityData 382b41b5cabde011b102ebab140c0dda
+    $::GamePhysicsEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components::array
+                member ae7db81655622e9556571910d57c17b0
+                member ee8c5014b7e3b54ebfd7e068870f00de
+                member 9a4c863a7324814c9ad75a4c22c3b96f
+                member 22fdb3185eb44141bf9dd920749f8328
+            RuntimeComponentCount 3
+        PhysicsData *nullGuid*
+    PartLinks *nullArray*
+    Mesh vehicles/bmp2/bmp2_turret_midrange_mesh/7cec2cc0c325bade6045b8f82b96e1f1
+    BoneCount 0
+    BasePoseTransforms *nullArray*
+    ExcludeFromNearbyObjectDestruction False
+    PhysicsPartInfos::array
+        member::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 1
+        member::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 0
+    NetworkInfo::StaticModelNetworkInfo
+        PartNetworkIdRanges::array
+            member::IndexRange
+                First 0
+                Last 0
+        NetworkIdCount 1
+        ChildNetworkInfos *nullArray*
+        ChildNetworkIdCount 0
+    AnimatePhysics False
+    Visible True

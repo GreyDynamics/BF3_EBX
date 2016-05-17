@@ -1,0 +1,171 @@
+InstanceOutputNode 62cf3b642a995a4da957c53f41ec4b8f
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonReleased
+        IsRootNode False
+        ParentGraph feb7e2e4322debeb08aeebf069d37072
+        ParentIsScreen True
+    In 850b9df2a421ce47b45ec47924c91a23
+    Id 1352178388
+    DestroyGraph True
+UIDynamicDataBinding a9cc5a73a74cd7448023284f51eaef43
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Buttons
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey -1192680079
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 40d329bc0be44543abc06e2825c8714e
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Text
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey 201161033
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName Visible
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UINodeConnection 7674fe56e1ef0b49a8c48b5e385584a0
+    $::DataContainer
+    SourceNode 5fc0111a828d2d4ab437df9d7c82a98d
+    TargetNode 62cf3b642a995a4da957c53f41ec4b8f
+    SourcePort 08104c97fabda5428aef8dcd12e14cac
+    TargetPort 850b9df2a421ce47b45ec47924c91a23
+    NumScreensToPop 0
+UINodePort 25b1b0dfb326264abaa300e70de4cf16
+    $::DataContainer
+    Name Show
+    InstanceName TextField_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 205c9f3485b73743bf21fd91c0eb157f
+    $::DataContainer
+    Name Hide
+    InstanceName TextField_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort 08104c97fabda5428aef8dcd12e14cac
+    $::DataContainer
+    Name ButtonReleased
+    InstanceName PopupButtonsManager_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort 850b9df2a421ce47b45ec47924c91a23
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset feb7e2e4322debeb08aeebf069d37072 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Popups/PopupLongText
+        Nodes::array
+            member e476c614192d414dabc65dc9857c4a0c
+            member 16ae1f7671854e43a8f381148900d4c6
+            member 5fc0111a828d2d4ab437df9d7c82a98d
+            member 62cf3b642a995a4da957c53f41ec4b8f
+        GlobalNode *nullGuid*
+        Connections::array
+            member 7674fe56e1ef0b49a8c48b5e385584a0
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal True
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UITextDataBinding c04daba76de4b64f9faba90cd8dde430
+    $::UIDataBinding
+        $::DataContainer
+    StaticText *nullString*
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+        DataKey -1951480908
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess False
+WidgetNode e476c614192d414dabc65dc9857c4a0c
+    $::UINodeData
+        $::DataContainer
+        Name TextBox
+        IsRootNode False
+        ParentGraph feb7e2e4322debeb08aeebf069d37072
+        ParentIsScreen True
+    WidgetAsset ui/assets/textbox/b7d2f32926220dfb6ca51f8c90ae689d
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 40d329bc0be44543abc06e2825c8714e
+    InstanceName TextBox_01
+    WidgetProperties::array
+        member::UIWidgetProperty
+            Name UseEulaFont
+            Value true
+        member::UIWidgetProperty
+            Name UseStoreFont
+            Value false
+    Outputs *nullArray*
+    Inputs *nullArray*
+WidgetNode 16ae1f7671854e43a8f381148900d4c6
+    $::UINodeData
+        $::DataContainer
+        Name Title
+        IsRootNode False
+        ParentGraph feb7e2e4322debeb08aeebf069d37072
+        ParentIsScreen True
+    WidgetAsset ui/assets/textfield/9cde2e99f6361ef321405c1ec7fcf345
+    FocusIndex 1
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding c04daba76de4b64f9faba90cd8dde430
+    InstanceName TextField_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs::array
+        member 25b1b0dfb326264abaa300e70de4cf16
+        member 205c9f3485b73743bf21fd91c0eb157f
+WidgetNode 5fc0111a828d2d4ab437df9d7c82a98d
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonsManager
+        IsRootNode False
+        ParentGraph feb7e2e4322debeb08aeebf069d37072
+        ParentIsScreen True
+    WidgetAsset ui/assets/popupbuttonsmanager/85eba77ee604d6e293eb6f89c0e20bb9
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding a9cc5a73a74cd7448023284f51eaef43
+    InstanceName PopupButtonsManager_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 08104c97fabda5428aef8dcd12e14cac
+    Inputs *nullArray*

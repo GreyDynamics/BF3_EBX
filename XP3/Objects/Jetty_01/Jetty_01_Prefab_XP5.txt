@@ -1,0 +1,173 @@
+FloatEntityData 01dabd74012e4d41a4d5d41a9eb93d7d
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Client
+    DefaultValue 1.0
+    IncDecValue 0.5
+FloatEntityData a58311b36822f043b9604988bf9f202f
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Realm Realm_Client
+    DefaultValue 0.0
+    IncDecValue 1.0
+MathOpEntityData e492c901f0ea62468a448a1fe49d74b1
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 3
+    Realm Realm_Client
+    Operators::array
+        member *nullEnum*
+ReferenceObjectData cc27d58926465842a86d1bd74c9584b6
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 5
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint xp3/objects/jetty_01/jetty_01_destructible/48aae4d018be23897dbd3a7e1cb76314
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundAreaEntityData 68c47de2572cbc419d3784c686d5c41e
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 1
+    Sound sound/levels/shared/props/objects_misc/xp3_alborz_shared_ambient_object_ext_jetty_01/8ec9f3115fc06c44b05702b136ce2913
+    BigWorld *nullGuid*
+    FadeWidth 2.0
+    ProximityMultiplier 1.0
+    FadeCurve FadeCurveType_SineAmplitude
+SpatialPrefabBlueprint 3e3bbc92515586419c42fe1c07eefb50 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP3/Objects/Jetty_01/Jetty_01_Prefab_XP5
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source a58311b36822f043b9604988bf9f202f
+                            Target e492c901f0ea62468a448a1fe49d74b1
+                            SourceFieldId 225375086
+                            TargetFieldId 193450867
+                        member::PropertyConnection
+                            Source 01dabd74012e4d41a4d5d41a9eb93d7d
+                            Target e492c901f0ea62468a448a1fe49d74b1
+                            SourceFieldId 225375086
+                            TargetFieldId 193450866
+                        member::PropertyConnection
+                            Source e492c901f0ea62468a448a1fe49d74b1
+                            Target 68c47de2572cbc419d3784c686d5c41e
+                            SourceFieldId 193453899
+                            TargetFieldId 1947336347
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 68c47de2572cbc419d3784c686d5c41e
+                            Target f438035eaa09cc4c8bfbe2a851f343ba
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source cc27d58926465842a86d1bd74c9584b6
+                        Target a58311b36822f043b9604988bf9f202f
+                        SourceEvent::EventSpec
+                            Id -847278421
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_NetworkedClient
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member f438035eaa09cc4c8bfbe2a851f343ba
+            member 68c47de2572cbc419d3784c686d5c41e
+            member 01dabd74012e4d41a4d5d41a9eb93d7d
+            member e492c901f0ea62468a448a1fe49d74b1
+            member a58311b36822f043b9604988bf9f202f
+            member cc27d58926465842a86d1bd74c9584b6
+VolumeVectorShapeData f438035eaa09cc4c8bfbe2a851f343ba
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 0
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Points::array
+            member::Vec3
+                x 0.745413661003
+                y -2.03920793533
+                z 9.55648708344
+            member::Vec3
+                x -0.692202270031
+                y -2.03920793533
+                z 9.58413791656
+            member::Vec3
+                x -0.689803779125
+                y -2.03920793533
+                z 0.372025191784
+            member::Vec3
+                x 0.743307650089
+                y -2.03920793533
+                z 0.340331792831
+        Normals::array
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 5.0

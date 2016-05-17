@@ -1,0 +1,5201 @@
+EntityVoiceOverInfo 4e69b751e0d1e04993bbbb3a35e310a5
+    $::DataContainer
+    VoiceOverType sound/vo/vo_system/94178596767a5a45af2fd2668ac03d78
+    Labels::array
+        member sound/vo/vo_system/36be9c0c8d36c64bae87dcabfc0376a5
+FiringFunctionData 025aea23c78463419210b26e6cb37dc4
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 3.0
+            MaxAngle 3.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 3.0
+            MaxAngle 3.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 3.0
+            MaxAngle 3.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_1p/9639bc4f82ed904b9ae7c29cbe063cc8
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            UseZoomOffset True
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_3p/b7d90b07a3b2a546817db27ab6ee7431
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    Sound sound/weapons/handheld/remington870/weapon_shotgun_remington870/536cb86e78990b4fa6f45f1ebd6fc9bc
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 300.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData weapons/common/bullets/12g_buckshot/47d4ac50cd1b6343ab61312840d5d28b
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 12
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.0
+            BoltActionTime 0.479999989271
+            HoldBoltActionUntilFireRelease False
+            HoldBoltActionUntilZoomRelease False
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction False
+            ReturnToZoomAfterBoltAction False
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.75
+        RateOfFire 600.0
+        RateOfFireForBurst 600.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 1.14999997616
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 0.670000016689
+        ReloadTimeBulletsLeft -1.0
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+        ReloadType rtSingleBullet
+        FireLogicType fltSingleFireWithBoltAction
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 5
+        NumberOfMagazines 7
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.0
+        AmmoBagPickupAmount 4
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+FiringFunctionData a676ed62b3d4d646887cf720e2fa3147
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 2.5
+            MaxAngle 2.5
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 2.5
+            MaxAngle 2.5
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 2.5
+            MaxAngle 2.5
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_1p/9639bc4f82ed904b9ae7c29cbe063cc8
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            UseZoomOffset True
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_3p/b7d90b07a3b2a546817db27ab6ee7431
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    Sound sound/weapons/handheld/remington870/weapon_shotgun_remington870/536cb86e78990b4fa6f45f1ebd6fc9bc
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 450.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData weapons/common/bullets/12g_flechette/846cfaa458fd844a9cc182ea53ade4e0
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 12
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.0
+            BoltActionTime 0.479999989271
+            HoldBoltActionUntilFireRelease False
+            HoldBoltActionUntilZoomRelease False
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction False
+            ReturnToZoomAfterBoltAction False
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.75
+        RateOfFire 600.0
+        RateOfFireForBurst 600.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 1.14999997616
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 0.670000016689
+        ReloadTimeBulletsLeft -1.0
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+        ReloadType rtSingleBullet
+        FireLogicType fltSingleFireWithBoltAction
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 5
+        NumberOfMagazines 7
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.0
+        AmmoBagPickupAmount 4
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+FiringFunctionData 0a6577dcafa5e448b2efbce2fb8bd54a
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_1p/9639bc4f82ed904b9ae7c29cbe063cc8
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            UseZoomOffset True
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_3p/b7d90b07a3b2a546817db27ab6ee7431
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    Sound sound/weapons/handheld/remington870/weapon_shotgun_remington870/536cb86e78990b4fa6f45f1ebd6fc9bc
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 150.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData weapons/common/bullets/12g_frag_pump/6a5e00ed89a4854cba5267eb7a4458fb
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 1
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.0
+            BoltActionTime 0.550000011921
+            HoldBoltActionUntilFireRelease False
+            HoldBoltActionUntilZoomRelease False
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction False
+            ReturnToZoomAfterBoltAction False
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.75
+        RateOfFire 600.0
+        RateOfFireForBurst 600.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 1.14999997616
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 0.670000016689
+        ReloadTimeBulletsLeft -1.0
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+        ReloadType rtSingleBullet
+        FireLogicType fltSingleFireWithBoltAction
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 5
+        NumberOfMagazines 7
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.5
+        AmmoBagPickupAmount 4
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+FiringFunctionData 01e8e1712c31e743886d30ab75acc629
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_1p/9639bc4f82ed904b9ae7c29cbe063cc8
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            UseZoomOffset True
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_3p/b7d90b07a3b2a546817db27ab6ee7431
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    Sound sound/weapons/handheld/remington870/weapon_shotgun_remington870/536cb86e78990b4fa6f45f1ebd6fc9bc
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 300.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData weapons/common/bullets/12g_slug_pump/59679073129c2b4b91c3f42db8be9a1b
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 1
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.0
+            BoltActionTime 0.479999989271
+            HoldBoltActionUntilFireRelease False
+            HoldBoltActionUntilZoomRelease False
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction False
+            ReturnToZoomAfterBoltAction False
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.75
+        RateOfFire 600.0
+        RateOfFireForBurst 600.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 1.14999997616
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 0.670000016689
+        ReloadTimeBulletsLeft -1.0
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+        ReloadType rtSingleBullet
+        FireLogicType fltSingleFireWithBoltAction
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 5
+        NumberOfMagazines 7
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.0
+        AmmoBagPickupAmount 4
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+FiringFunctionData 579b256efb5d814481743be63709329a
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 2.0
+            MaxAngle 2.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 2.0
+            MaxAngle 2.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 2.0
+            MaxAngle 2.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_1p/9639bc4f82ed904b9ae7c29cbe063cc8
+            Offset::Vec3
+                x 0.0
+                y 0.15000000596
+                z 1.20000004768
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_3p/b7d90b07a3b2a546817db27ab6ee7431
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    Sound sound/weapons/handheld/remington870/weapon_shotgun_remington870/536cb86e78990b4fa6f45f1ebd6fc9bc
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 200.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData weapons/common/aibullets/ai_buckshot/360aec8c566ffd45ac4656f9630ab151
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 12
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.0
+            BoltActionTime 0.5
+            HoldBoltActionUntilFireRelease False
+            HoldBoltActionUntilZoomRelease True
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction False
+            ReturnToZoomAfterBoltAction False
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.75
+        RateOfFire 600.0
+        RateOfFireForBurst 600.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 1.29999995232
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 0.670000016689
+        ReloadTimeBulletsLeft -1.0
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+        ReloadType rtSingleBullet
+        FireLogicType fltSingleFireWithBoltAction
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 8
+        NumberOfMagazines 16
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.0
+        AmmoBagPickupAmount 4
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+ShaderParameterComponentData 312a3564390b0b4da19534c737711d9c
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components *nullArray*
+        Excluded False
+    ShaderParameterVectors::array
+        member::ShaderParameterVector
+            ParameterName ScopeOcc
+            Value::Vec4
+                x 1.0
+                y 1.0
+                z 1.0
+                w 1.0
+SocketData dd44aaf8d46dd44a9e17683c68035fdf
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_acog/8e43e0ce2b06bfe1582c20db3f413ddc
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 5504b1536e314e40854bd7594f7641e3
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData 1046151521799541baf64fcbedb3631b
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_ballistic_scope/45a8b830346bebd211c821c98ee5c3f6
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 03b5eb2c02ec4248ba647e3cb3400b77
+        member d94a810f9bc34142b806b92502f6bb41
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled True
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData b98cbe1546a50a43becaea25dd566764
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_flash_light/deb43512809876070e55220f0d63553a
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member da0add65e876c349885c17aa229d1a8e
+        member c0cb694537fb05499bae962cc82fd918
+        member 331fad105c166642a4bdae0656eac832
+        member 5180d15dbf2ee94ca7f56ac18d5c6f05
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData 29cd2a4471cd064dbcd0d185d56f9365
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_irnv/4fe0af1b41ac51c3f9c3038480696d75
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member aa2a553e55e50e47a8f2824790ed10fc
+        member d87aff8ccb39244a80401d5d0c0d8ad2
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData c01e6bf863df7a4abf47ea33e00352b3
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_kobra/03338e063cfcc19349e789ee4e00c86d
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 77a16e8d767d7e4eb6d729a7658d13fe
+        member 8a30bfb8ac5989408227bc0167ffdf9d
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData ed15c654d8a97f4cad4a5023adec0128
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_m145/a7cd50747b06239a05c616d644de3d12
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 59f07a6a95da2445abafc0bc15b2f670
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData d50f3a028cd97a4db235034cb1a31c39
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_pka/c40ac4cb1584140676bdb933cf8bf2db
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member ae08f3bc97be5a42927c93a0ea936001
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData cb0cfe71e7a94e42a6b4ccc559dfafff
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_pk-as/ede9afa453548b0031fd537e061e74df
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member a1cbf9126265f446a0afc997d18f20ea
+        member 9f442ab75152fc4ebe5499255c9cc79d
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData 57e8dca2bc7d1745bc67ec71feabe944
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_pks-07/1af5d5085cbc15919b99b3dd6dd6ef40
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member f375ea0988967b498db58dd9e254ff1a
+        member 9e2bcf53adff3a46a5dcd5d0445066e4
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled True
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData 3ba85b1732d29f4487ef52fa4122260b
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_pso-1/0bbb278933f5a9446a81de7511845715
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 27e810659e403049ba4fb684a4c3a5f0
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData 44842dc474c0074a8b7d6c6c50dece3d
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_rifle_scope/ca6263278845f775f9c27ae89d8907da
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 620a8403d12a1d42b0d09d3675ce8526
+        member 88969403358c4e48ad3ffd89351cd33b
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled True
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData 48ab084387d00b46968b8e4fe434b211
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_rx01/08493f9cdd6a929a2ed6813d4f1baa7c
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 66a70e3cb7b90842a26c51c5b3563b0f
+        member 07f19549bc7c8e49930621e011e5020c
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData e66bebd4470fa2418a9de9096ba47336
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_target_pointer/540c968853875d97325495435b285084
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 6c4e75f6ef5ba447b11bb3b4ed328655
+        member 38a1c0f01bba504399f2d4c9fd277dcd
+        member 08368159489a7040be91e7d5028d3cb1
+        member 399fb72b92987f4e92a97738db59c8e6
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData ff889f58ced1d448980db2db86610547
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_eotech/b36b614e59fc00476b9f06ba21a2b47c
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member ca29eb4cd498764ca1867cef3184ad8d
+        member 57b7a5631c675e40bd568b115dabfb23
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition False
+    HideByLightToggle False
+SocketData 630c08b546c1264ebabc0e6d0e913624
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_flashsuppressor/12a0ba46f4b1219817a81557a08419c1
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member fa0ab2d16d3cc84997d230b065cf731c
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData 90f33247ac64a04fa682c793979d0f1e
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_extendedmag/444b4f52bfea4f499a1c87a790ca65e6
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member c3dfb1c0b881aa459e8426ceb096df49
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData 6c9314ec30837c40b6d9f349c8e73bc4
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/common/ai_torch/988df263495740429b89945b4b271af0
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member a74ced4a5908424698ad651c333d268e
+        member da0add65e876c349885c17aa229d1a8e
+        member c0cb694537fb05499bae962cc82fd918
+        member 331fad105c166642a4bdae0656eac832
+        member 5180d15dbf2ee94ca7f56ac18d5c6f05
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData 7e1c0caec7b10d43b8dc134d2b6fd426
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_silencer/904d2583947e0b4da9acacc57862c495
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 159369ce590b2c4c9689a72bdd8ea246
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData 7e7359445e809b4ebc4d815722c75495
+    $::DataContainer
+    Excluded False
+    UnlockAsset *nullGuid*
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 31733123cf63f34b819231caaa19707c
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities False
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle False
+SocketData 031d20c1f667d34fab4f4d68d0b19297
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_target_pointer/540c968853875d97325495435b285084
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 1a20cdf8a05d5b47b90462d0f71371ce
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle True
+SocketData 977e6601647e8949874c0c3e50cb5195
+    $::DataContainer
+    Excluded False
+    UnlockAsset weapons/remington870/u_870_flash_light/deb43512809876070e55220f0d63553a
+    BoneName Wep_Root
+    BoneId -1
+    BoneRigidTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AvailableObjects::array
+        member 11b6de799f49ee46938a70c41337adaf
+    GearSlot GearSlot_NotEquipped
+    SocketType SocketType_Undefined
+    UsesDefaultObject False
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    DefaultEnableSocketEntities True
+    ForceSocketEntitiesEnabled False
+    HideByZoomTransition True
+    HideByLightToggle True
+SoldierWeaponBlueprint 61766db712c8c264322ca269e40a1cd7 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Weapons/Remington870/Remington870MCS
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object 6a6d590bd16cecfe18facacd5ae43f03
+SoldierWeaponData 6a6d590bd16cecfe18facacd5ae43f03
+    $::WeaponEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components::array
+                member 21f54acf63d293469319c854b888ecde
+            RuntimeComponentCount 2
+        WeaponClass wc12gauge
+        WeaponStates::array
+            member::WeaponStateData
+                ReferencedAssetHashes::array
+                    member 2614873979
+                    member 3621890041
+                BoneFakePhysics *nullArray*
+                Mesh1p weapons/remington870/remington870mcs_1p_mesh/41ed9051a7850bade2f52a870f462db8
+                MeshZoom1p weapons/remington870/remington870mcs_1p_mesh/41ed9051a7850bade2f52a870f462db8
+                Mesh3p weapons/remington870/remington870mcs_3p_mesh/832a2bb7148bb3f53a31844b2ec15eb6
+                Weapon::AntRef
+                    AssetId 357079869
+                ZoomMeshTransitionFactor 1.0
+                ZoomScaleFactor 1.0
+                ZoomInOutMeshTransitionFactors *nullArray*
+                ZoomedScopeFilter *nullGuid*
+                NonZoomedScopeFilter *nullGuid*
+                KeepAimingTime 3.0
+                AlwaysAimHead True
+                AnimatedFireType AnimatedFireSingle
+                AnimatedAimingType AnimatedAimingTwoHanded
+                IsOneHanded False
+                PlayDeployAfterFire False
+                SkipDeployAnimation False
+                SkipReloadAnimation False
+                SkipFireAnimation False
+                HideProjectileAfterFireTime 0.0
+                ProjectileBoneName *nullString*
+                Mesh3pTransforms::array
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.00115106557496
+                            y -0.0808000713587
+                            z 0.229178607464
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.120825618505
+                            z 0.177798822522
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.265620231628
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y -0.0108697973192
+                            z -0.0957023799419
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y -0.0108697935939
+                            z -0.0957023799419
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 6.86353642661e-17
+                            y 0.159426406026
+                            z 0.379468560219
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 6.86353642661e-17
+                            y 0.178188711405
+                            z 0.379468560219
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.86264514923e-09
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -2.98023223877e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -2.98023223877e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -2.98023223877e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -2.98023223877e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -2.98023223877e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 5.96046447754e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 5.96046447754e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 5.96046447754e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Mesh3pRigidMeshSocketObjectTransforms::array
+                    member::RigidMeshSocketTransform
+                        SocketObject 5504b1536e314e40854bd7594f7641e3
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.415014594793
+                    member::RigidMeshSocketTransform
+                        SocketObject 03b5eb2c02ec4248ba647e3cb3400b77
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.421141207218
+                    member::RigidMeshSocketTransform
+                        SocketObject d94a810f9bc34142b806b92502f6bb41
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 4.48226928711e-05
+                                y 0.161339148879
+                                z 0.608885347843
+                    member::RigidMeshSocketTransform
+                        SocketObject da0add65e876c349885c17aa229d1a8e
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.774109482765
+                    member::RigidMeshSocketTransform
+                        SocketObject c0cb694537fb05499bae962cc82fd918
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0300935767591
+                                y 0.101216934621
+                                z 0.866333603859
+                    member::RigidMeshSocketTransform
+                        SocketObject 331fad105c166642a4bdae0656eac832
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0300935767591
+                                y 0.101216934621
+                                z 0.91930025816
+                    member::RigidMeshSocketTransform
+                        SocketObject 5180d15dbf2ee94ca7f56ac18d5c6f05
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.804399430752
+                    member::RigidMeshSocketTransform
+                        SocketObject aa2a553e55e50e47a8f2824790ed10fc
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.421141207218
+                    member::RigidMeshSocketTransform
+                        SocketObject d87aff8ccb39244a80401d5d0c0d8ad2
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.119999997318
+                                z 0.758776128292
+                    member::RigidMeshSocketTransform
+                        SocketObject 77a16e8d767d7e4eb6d729a7658d13fe
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.438224583864
+                    member::RigidMeshSocketTransform
+                        SocketObject 8a30bfb8ac5989408227bc0167ffdf9d
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.120999999344
+                                z 0.758776128292
+                    member::RigidMeshSocketTransform
+                        SocketObject 59f07a6a95da2445abafc0bc15b2f670
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.418224751949
+                    member::RigidMeshSocketTransform
+                        SocketObject ae08f3bc97be5a42927c93a0ea936001
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.441566288471
+                    member::RigidMeshSocketTransform
+                        SocketObject a1cbf9126265f446a0afc997d18f20ea
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.441566288471
+                    member::RigidMeshSocketTransform
+                        SocketObject 9f442ab75152fc4ebe5499255c9cc79d
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.119999997318
+                                z 0.758776128292
+                    member::RigidMeshSocketTransform
+                        SocketObject f375ea0988967b498db58dd9e254ff1a
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.434231221676
+                    member::RigidMeshSocketTransform
+                        SocketObject 9e2bcf53adff3a46a5dcd5d0445066e4
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.180578544736
+                                z 0.552348017693
+                    member::RigidMeshSocketTransform
+                        SocketObject 27e810659e403049ba4fb684a4c3a5f0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.421267449856
+                    member::RigidMeshSocketTransform
+                        SocketObject 620a8403d12a1d42b0d09d3675ce8526
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.431822061539
+                    member::RigidMeshSocketTransform
+                        SocketObject 88969403358c4e48ad3ffd89351cd33b
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.163383826613
+                                z 0.596494913101
+                    member::RigidMeshSocketTransform
+                        SocketObject 66a70e3cb7b90842a26c51c5b3563b0f
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.436414629221
+                    member::RigidMeshSocketTransform
+                        SocketObject 07f19549bc7c8e49930621e011e5020c
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.120499998331
+                                z 0.758776128292
+                    member::RigidMeshSocketTransform
+                        SocketObject 6c4e75f6ef5ba447b11bb3b4ed328655
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 3.4228538226e-08
+                                y 0.999999880791
+                                z 0.0
+                            up::Vec3
+                                x -0.999999880791
+                                y 3.4228538226e-08
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.83509105444
+                    member::RigidMeshSocketTransform
+                        SocketObject 38a1c0f01bba504399f2d4c9fd277dcd
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0268815997988
+                                y 0.101261042058
+                                z 0.865669667721
+                    member::RigidMeshSocketTransform
+                        SocketObject 08368159489a7040be91e7d5028d3cb1
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 0.999986290932
+                                z 0.0052359639667
+                            forward::Vec3
+                                x 0.0
+                                y -0.0052359639667
+                                z 0.999986290932
+                            trans::Vec3
+                                x 0.0
+                                y 0.129795446992
+                                z 1.0
+                    member::RigidMeshSocketTransform
+                        SocketObject 399fb72b92987f4e92a97738db59c8e6
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.804399430752
+                    member::RigidMeshSocketTransform
+                        SocketObject ca29eb4cd498764ca1867cef3184ad8d
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.122812442482
+                                z 0.439403176308
+                    member::RigidMeshSocketTransform
+                        SocketObject 57b7a5631c675e40bd568b115dabfb23
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.119999997318
+                                z 0.758776128292
+                    member::RigidMeshSocketTransform
+                        SocketObject fa0ab2d16d3cc84997d230b065cf731c
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.101623535156
+                                z 0.9658203125
+                    member::RigidMeshSocketTransform
+                        SocketObject c3dfb1c0b881aa459e8426ceb096df49
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x -0.000399271026254
+                                y 0.0758749470115
+                                z 0.879045069218
+                    member::RigidMeshSocketTransform
+                        SocketObject a74ced4a5908424698ad651c333d268e
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0300935767591
+                                y 0.101216934621
+                                z 0.866333603859
+                    member::RigidMeshSocketTransform
+                        SocketObject da0add65e876c349885c17aa229d1a8e
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.774109482765
+                    member::RigidMeshSocketTransform
+                        SocketObject c0cb694537fb05499bae962cc82fd918
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0300935767591
+                                y 0.101216934621
+                                z 0.866333603859
+                    member::RigidMeshSocketTransform
+                        SocketObject 331fad105c166642a4bdae0656eac832
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0300935767591
+                                y 0.101216934621
+                                z 0.91930025816
+                    member::RigidMeshSocketTransform
+                        SocketObject 5180d15dbf2ee94ca7f56ac18d5c6f05
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.804399430752
+                    member::RigidMeshSocketTransform
+                        SocketObject 159369ce590b2c4c9689a72bdd8ea246
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x -0.000419616699219
+                                y 0.101623535156
+                                z 0.955476284027
+                    member::RigidMeshSocketTransform
+                        SocketObject 31733123cf63f34b819231caaa19707c
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 3.42285524368e-08
+                                y 0.999999940395
+                                z 0.0
+                            up::Vec3
+                                x -0.999999940395
+                                y 3.42285524368e-08
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x -0.000424385070801
+                                y 0.122812442482
+                                z 0.437260985374
+                    member::RigidMeshSocketTransform
+                        SocketObject 1a20cdf8a05d5b47b90462d0f71371ce
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0268815997988
+                                y 0.101261042058
+                                z 0.865669667721
+                    member::RigidMeshSocketTransform
+                        SocketObject 11b6de799f49ee46938a70c41337adaf
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0145982764661
+                                y 0.101336978376
+                                z 0.774109482765
+                AnimationConfiguration::AnimationConfigurationData
+                    ShootModuleData::AnimationConfigurationShootModuleData
+                        ZoomedKickbackFactor 1.0
+                    WeaponOffsetModuleData 07bf1f04d7135b44b06fc54255a451d4
+                    WeaponSpeedModuleData acf580cf0b2276409df80945a2f47e69
+        WeaponFiring dd99bf47141f7b4e91104cf196425f86
+        CustomWeaponType *nullGuid*
+        AIData ai/weapons/handheld_shg_ai_weapon/384a5945f37d4e4483b31849e0e9624b
+    DamageGiverName 870MCS
+    WeaponModifierData::array
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_acog/8e43e0ce2b06bfe1582c20db3f413ddc
+            Modifiers::array
+                member 330e7e9d4b493d4cb5e89c35ea44fdfa
+                member 426c848b7f17eb4cab7ee87087d6e1ef
+                member 2556680752c1da49a4225e6d30a5f095
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_ballistic_scope/45a8b830346bebd211c821c98ee5c3f6
+            Modifiers::array
+                member e71176b183c6f14aaf9f09a768938a8e
+                member 6b86840045b9434fa858f45134de0445
+                member 99770e5ee1a6194c9e455ca2d79f2424
+                member f5db8b4a30a73b498d7df4e6ca67c534
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_eotech/b36b614e59fc00476b9f06ba21a2b47c
+            Modifiers::array
+                member 6d322bfae99d6a4c8f5994a3406addff
+                member fd44bc8179ce384791e193a0c39e56ff
+                member 3e406e344a2ace45b406fdaf30792274
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_irnv/4fe0af1b41ac51c3f9c3038480696d75
+            Modifiers::array
+                member bc57a868cfd6d64282815a2762c55cac
+                member c05484a8ff94864f8e86259275c50640
+                member bbf6a2db22df8245bbdb1e91699de9d8
+                member 13072b81d03f694ab1203700b0076455
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_kobra/03338e063cfcc19349e789ee4e00c86d
+            Modifiers::array
+                member 258b5b7dc84bef49b2d9350731a80f45
+                member 57a84ac6ecc4cb47a4b3c7f3c86691f4
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_m145/a7cd50747b06239a05c616d644de3d12
+            Modifiers::array
+                member adfc42c355ce304990eb6a9e2a7be856
+                member 90bdb7f94b9e724bafaa8b40502e90df
+                member b2057161aca4d74a8c5abe5d02f8b3bc
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_pk-as/ede9afa453548b0031fd537e061e74df
+            Modifiers::array
+                member cfd83e37d7e3d548ad17bd155eeebb06
+                member d2a2e166a6eaa443a5739b6a4a094f96
+                member ab5c978973b86e438c003127fadc778e
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_pka/c40ac4cb1584140676bdb933cf8bf2db
+            Modifiers::array
+                member 46efaa75d1b3204fa9cae622e2bfb4ce
+                member 0780324fe91c4f4c89ff91a1a8eba5bb
+                member 6d27af508fcad94eb881f20e089b89fd
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_pks-07/1af5d5085cbc15919b99b3dd6dd6ef40
+            Modifiers::array
+                member cde9584543bd9c4b91a0bd6dd62ae39e
+                member 5fcbbe7979d49647886504d08c4b6733
+                member 2bbd05782d9b5f469877ae592c514f26
+                member 9f3fecf37a486a4a98ba2ddf7f7c9fc8
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_pso-1/0bbb278933f5a9446a81de7511845715
+            Modifiers::array
+                member 9d42bd0336e516498fc80cc5acfcd0c1
+                member b3a1cc27acc6714491dd4156be73f8c9
+                member 6438c691ccb13d44914c846c68798be1
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_rifle_scope/ca6263278845f775f9c27ae89d8907da
+            Modifiers::array
+                member 838d833ab18cb94396f291ce228b59c2
+                member 919880193876964a97524f0fcd81911e
+                member ca2f58425845a7499492fc29fd740b58
+                member 0a76576f75612f45875d37334c442435
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_rx01/08493f9cdd6a929a2ed6813d4f1baa7c
+            Modifiers::array
+                member 89377f1fd2a44646968550d90ec1cd75
+                member 6ecc81492e5c0b4194578b5958d6d81d
+                member a94834dbc3b8b84c8b3fcbb2e0a2bc25
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_extendedmag/444b4f52bfea4f499a1c87a790ca65e6
+            Modifiers::array
+                member ef4b77dea7ae5d4a80465ed66391f828
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_flechette/f4a348b97862a5e8d025b19363194ad7
+            Modifiers::array
+                member 1b3be1220301e84894ecdcdd14c31c1c
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_frag/cdb1d54752180c9b40e28bc55c7e0d0b
+            Modifiers::array
+                member 425144bb054b9745acb35e8e687b7216
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_slug/16c15bdf4522ade20a97bb8da7452208
+            Modifiers::array
+                member 4162389c180b8b428ce37b1308facd5a
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_flashsuppressor/12a0ba46f4b1219817a81557a08419c1
+            Modifiers::array
+                member cd8926baf4ebe44395f73143c67d8c26
+        member::WeaponModifierData
+            UnlockAsset weapons/remington870/u_870_silencer/904d2583947e0b4da9acacc57862c495
+            Modifiers::array
+                member 31e4a3b236d2a446bb132f33e41db658
+                member 54e0e0292016b9449e5edc0d6d5248dc
+                member 3bfa1a278d85204db870d80fa80b651b
+                member af6873fd0415804cb0489d5a54f929c1
+        member::WeaponModifierData
+            UnlockAsset weapons/common/ai_unlock/e17c9c84baef5747ac3e0555298198e5
+            Modifiers::array
+                member e7347d6cd38dcb4083a5b3d7aa167cf2
+        member::WeaponModifierData
+            UnlockAsset gameplay/xp2/gm_deploytime/11e0f070c774d7290548fa77d8360394
+            Modifiers::array
+                member 7eb8a9af52413b4a93dd6d343e8d8914
+                member 6f8b88ed8ab1fc499cc940791f54e492
+    AimingController weapons/common/aimingcontrollers/aim_fastmove_ironsight/239e5f8670cbb74ebbaf24331b9acc66
+    FirstPersonCamera weapons/common/defaultfirstpersoncameradata/7bb9056fe0d2d842ba0b9f6982886fa1
+    Hud::HudData
+        CrosshairScaleMin 0.0
+        CrosshairScaleMax 5.0
+        CrosshairOpacityMin 1.0
+        CrosshairOpacityMax 0.10000000149
+        CrosshairOpacityModifier 1.0
+        CrosshairTypeId *nullString*
+        WeaponClass *nullString*
+        ShowMinimap True
+        HideAmmo False
+        LowAmmoWarning 0.5
+        ReloadPrompt 0.5
+        InfiniteAmmo False
+        HideCrosshairWhenAimOnFriend True
+        UseRenderTarget False
+        RenderTargetIndex 0
+        HudPropertyList *nullGuid*
+        UseRangeMeter False
+        UseAimWarning False
+        UsePredictedSight False
+        UseWeaponOrientations False
+        UseVelocityVectorMarker False
+        UseLockingController False
+        UseThrust False
+        UseGForce False
+        UseSkidSlip False
+        UseClimbRate False
+        SeaLevelAltFreq 0.0
+        CameraShakeModifier 1.0
+    PickupSettings::PickupSettingsData
+        MeshRenderOffset::Vec3
+            x 0.0
+            y 0.0250000003725
+            z 0.0
+        MeshRenderRotation::Vec3
+            x 0.0
+            y 0.0
+            z 90.0
+    StreamGroup1p *nullGuid*
+    AnimBaseSet wabsRif
+    AnimationData animations/antanimations/remington870/90197a92481f4e84bf831ea931e74fc5
+    RenderFov 55.0
+    ZoomRenderFov 25.0
+    HideWhenOutOfAmmo False
+    AllowSwitchingToWeaponOutOfAmmo True
+    AllowSwitchingToWeaponReloading True
+    SwitchToPrimaryWhenOutOfAmmo True
+    AllowSwitchingToWeaponInVehicles True
+    InteractionOffset::Vec3
+        x 0.0
+        y 0.0
+        z 0.449999988079
+    LowerOnOwnTeam True
+    RedeployWhenSwitchingWeaponStates True
+    UseQuickThrowOnAutomaticSwitchback False
+    QuickThrowType QttHand
+    SoldierWeaponBlueprint 61766db712c8c264322ca269e40a1cd7
+    PersistenceId *nullString*
+    Customization weapons/remington870/870_customization/91524f402e2b66e45b7f4e245a9ce7e0
+    Sockets::array
+        member dd44aaf8d46dd44a9e17683c68035fdf
+        member 1046151521799541baf64fcbedb3631b
+        member b98cbe1546a50a43becaea25dd566764
+        member 29cd2a4471cd064dbcd0d185d56f9365
+        member c01e6bf863df7a4abf47ea33e00352b3
+        member ed15c654d8a97f4cad4a5023adec0128
+        member d50f3a028cd97a4db235034cb1a31c39
+        member cb0cfe71e7a94e42a6b4ccc559dfafff
+        member 57e8dca2bc7d1745bc67ec71feabe944
+        member 3ba85b1732d29f4487ef52fa4122260b
+        member 44842dc474c0074a8b7d6c6c50dece3d
+        member 48ab084387d00b46968b8e4fe434b211
+        member e66bebd4470fa2418a9de9096ba47336
+        member ff889f58ced1d448980db2db86610547
+        member 630c08b546c1264ebabc0e6d0e913624
+        member 90f33247ac64a04fa682c793979d0f1e
+        member 6c9314ec30837c40b6d9f349c8e73bc4
+        member 7e1c0caec7b10d43b8dc134d2b6fd426
+        member 7e7359445e809b4ebc4d815722c75495
+        member 031d20c1f667d34fab4f4d68d0b19297
+        member 977e6601647e8949874c0c3e50cb5195
+    EnableBreathControl False
+    CanBeInSupportedShooting False
+    SwitchWeaponStateInputAction EIAReload
+    VoiceOverInfo 4e69b751e0d1e04993bbbb3a35e310a5
+    WeaponFloatParam 1.0
+    IsSilenced False
+UnlockComponentData 21f54acf63d293469319c854b888ecde
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components::array
+            member 312a3564390b0b4da19534c737711d9c
+        Excluded False
+    UnlockAsset weapons/common/nooptics/6217ada156c8d7f566b55e485460d3df
+    InvertUnlockTest True
+    UnlockableFromAllEntries False
+    UnlockDataKey 0
+WeaponAimingSimulationModifier 330e7e9d4b493d4cb5e89c35ea44fdfa
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_default_4x/70573dbe7331804c83a336e3b3ada1b2
+WeaponAimingSimulationModifier e71176b183c6f14aaf9f09a768938a8e
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_slow_10x/044666816934d547a4e58306fe898051
+WeaponAimingSimulationModifier 6d322bfae99d6a4c8f5994a3406addff
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_fastmove_eotech/5fb9641fb8a3ea448ef1d2d537d9e989
+WeaponAimingSimulationModifier bc57a868cfd6d64282815a2762c55cac
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_default_envg/74b67847cb61ab4fa45c963dac5192f6
+WeaponAimingSimulationModifier 838d833ab18cb94396f291ce228b59c2
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_slow_6x/79ba074488eb8b4092c8646e48ad77ef
+WeaponAimingSimulationModifier 9d42bd0336e516498fc80cc5acfcd0c1
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_default_4x/70573dbe7331804c83a336e3b3ada1b2
+WeaponAimingSimulationModifier cde9584543bd9c4b91a0bd6dd62ae39e
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_slow_7x/7d6b19a74af27447a4948e2d36412294
+WeaponAimingSimulationModifier 46efaa75d1b3204fa9cae622e2bfb4ce
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_default_3_4x/2bbcdecadf35a24196f8553f8eb1dd8f
+WeaponAimingSimulationModifier adfc42c355ce304990eb6a9e2a7be856
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_default_3_4x/2bbcdecadf35a24196f8553f8eb1dd8f
+WeaponAimingSimulationModifier a94834dbc3b8b84c8b3fcbb2e0a2bc25
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_fastmove_ironsight/239e5f8670cbb74ebbaf24331b9acc66
+WeaponAimingSimulationModifier cfd83e37d7e3d548ad17bd155eeebb06
+    $::WeaponModifierBase
+        $::DataContainer
+    AimingController weapons/common/aimingcontrollers/aim_fastmove_eotech/5fb9641fb8a3ea448ef1d2d537d9e989
+WeaponAnimationConfigurationModifier 426c848b7f17eb4cab7ee87087d6e1ef
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.75
+        WeaponOffsetModuleData c405a4412d8a6748850ebb1f199a874d
+        WeaponSpeedModuleData d21685c62df37f429830d877a620e454
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 6b86840045b9434fa858f45134de0445
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors::array
+        member 1.0
+        member 1.0
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.5
+        WeaponOffsetModuleData 055a61f42738d846a4bd6fe6ec74003a
+        WeaponSpeedModuleData b61d3422627af34ebbe5d8e70a6d4905
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier fd44bc8179ce384791e193a0c39e56ff
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 1.0
+        WeaponOffsetModuleData aa9d15f9c6478047bbfdad4de504590d
+        WeaponSpeedModuleData 9ee44c8c99892348bcaf603e8a94da3a
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier c05484a8ff94864f8e86259275c50640
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors::array
+        member 1.0
+        member 1.0
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 1.0
+        WeaponOffsetModuleData 562ad7296c17f94c8e76be1ed2b2016a
+        WeaponSpeedModuleData 87c1bdb199b67447925698521a94c5e5
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 258b5b7dc84bef49b2d9350731a80f45
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 1.0
+        WeaponOffsetModuleData 821ff2e185840f4c830f3a365380a3d6
+        WeaponSpeedModuleData 9d8db58ae0ec054a99c74692c7ea7b96
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 89377f1fd2a44646968550d90ec1cd75
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 1.0
+        WeaponOffsetModuleData 57f9a2210c48b247a8a044102793ade4
+        WeaponSpeedModuleData c625f6201ea4e546a654c458adaf34a2
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 919880193876964a97524f0fcd81911e
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors::array
+        member 1.0
+        member 1.0
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.5
+        WeaponOffsetModuleData d0c8a81a576e204cb740af0371bc6619
+        WeaponSpeedModuleData 04761cc8211cab40874b7b04f0e29402
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier b3a1cc27acc6714491dd4156be73f8c9
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.75
+        WeaponOffsetModuleData e190200f62b9c943812c44ffe00250aa
+        WeaponSpeedModuleData 072530cef5e2854a8a204d0dcabd5739
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 5fcbbe7979d49647886504d08c4b6733
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors::array
+        member 1.0
+        member 1.0
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.5
+        WeaponOffsetModuleData 7dd5706bdf2b1e4ca9012b321bbbd651
+        WeaponSpeedModuleData c6ef8c7ed3944f4a96794da14e1e3110
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 0780324fe91c4f4c89ff91a1a8eba5bb
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.75
+        WeaponOffsetModuleData d65c0448b0a8a6428236f016c48b00e9
+        WeaponSpeedModuleData ca89af61da57b44596561419131d3abe
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier 90bdb7f94b9e724bafaa8b40502e90df
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 0.75
+        WeaponOffsetModuleData 57a5faf86e314942a8223e1d789edeab
+        WeaponSpeedModuleData 9964b7465ff3a645a5c6fb3367bcd611
+    AnimatedFireType AnimatedFireAutomatic
+WeaponAnimationConfigurationModifier d2a2e166a6eaa443a5739b6a4a094f96
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomInOutMeshTransitionFactors *nullArray*
+    AnimationConfiguration::AnimationConfigurationData
+        ShootModuleData::AnimationConfigurationShootModuleData
+            ZoomedKickbackFactor 1.0
+        WeaponOffsetModuleData 7185ee79aa598b46aaa886ecee1d3272
+        WeaponSpeedModuleData e58338c1e0393248984913e8b4ae470e
+    AnimatedFireType AnimatedFireAutomatic
+WeaponDeployTimeModifier 7eb8a9af52413b4a93dd6d343e8d8914
+    $::WeaponModifierBase
+        $::DataContainer
+    DeployTime 0.20000000298
+    DisableZoomOnDeployTime -1.0
+    AltDeployTime 0.0
+    AltDeployId -2
+WeaponFiringData dd99bf47141f7b4e91104cf196425f86
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire 025aea23c78463419210b26e6cb37dc4
+    DeployTime 0.72000002861
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.15000000596
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway weapons/remington870/870_gunsway/b805c4e4043674468b0820c6d9dca109
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 1.0
+        HighRumble 1.0
+        RumbleDuration 0.40000000596
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags False
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponFiringData 28a47a3cd037964ca4baaa82f672ac9f
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire a676ed62b3d4d646887cf720e2fa3147
+    DeployTime 0.72000002861
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.15000000596
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway weapons/remington870/870_gunsway/b805c4e4043674468b0820c6d9dca109
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 1.0
+        HighRumble 1.0
+        RumbleDuration 0.40000000596
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags False
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponFiringData 8ff509560ac15546ae706a2508d1dab8
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire 0a6577dcafa5e448b2efbce2fb8bd54a
+    DeployTime 0.72000002861
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.15000000596
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway weapons/remington870/870_gunsway/b805c4e4043674468b0820c6d9dca109
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 1.0
+        HighRumble 1.0
+        RumbleDuration 0.40000000596
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags False
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponFiringData 086d461278b4944585c842f4bb342834
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire 01e8e1712c31e743886d30ab75acc629
+    DeployTime 0.72000002861
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.15000000596
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway weapons/remington870/870_gunsway/b805c4e4043674468b0820c6d9dca109
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 1.0
+        HighRumble 1.0
+        RumbleDuration 0.40000000596
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags False
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponFiringData 932c32374c479f4c87a93bc21a9b15cc
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire 579b256efb5d814481743be63709329a
+    DeployTime 0.699999988079
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.25
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway *nullGuid*
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 0.0
+        HighRumble 0.0
+        RumbleDuration 0.20000000298
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags False
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponFiringDataModifier 1b3be1220301e84894ecdcdd14c31c1c
+    $::WeaponModifierBase
+        $::DataContainer
+    WeaponFiring 28a47a3cd037964ca4baaa82f672ac9f
+WeaponFiringDataModifier 425144bb054b9745acb35e8e687b7216
+    $::WeaponModifierBase
+        $::DataContainer
+    WeaponFiring 8ff509560ac15546ae706a2508d1dab8
+WeaponFiringDataModifier 4162389c180b8b428ce37b1308facd5a
+    $::WeaponModifierBase
+        $::DataContainer
+    WeaponFiring 086d461278b4944585c842f4bb342834
+WeaponFiringDataModifier e7347d6cd38dcb4083a5b3d7aa167cf2
+    $::WeaponModifierBase
+        $::DataContainer
+    WeaponFiring 932c32374c479f4c87a93bc21a9b15cc
+WeaponFiringEffectsModifier 31e4a3b236d2a446bb132f33e41db658
+    $::WeaponModifierBase
+        $::DataContainer
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_silencer_singleshot_1p/37c6814477714242888260c0195e0fc3
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.20000004768
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 1.20000004768
+            UseZoomOffset True
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_silencer_singleshot_3p/16e32b7de9afb54ca2da80abed18fdec
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.20000004768
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+WeaponFiringEffectsModifier cd8926baf4ebe44395f73143c67d8c26
+    $::WeaponModifierBase
+        $::DataContainer
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_silencer_singleshot_1p/37c6814477714242888260c0195e0fc3
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            UseZoomOffset True
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_silencer_singleshot_3p/16e32b7de9afb54ca2da80abed18fdec
+            Offset::Vec3
+                x 0.0
+                y 0.10000000149
+                z 1.20000004768
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+WeaponMagazineModifier ef4b77dea7ae5d4a80465ed66391f828
+    $::WeaponModifierBase
+        $::DataContainer
+    MagazineCapacity 7
+    NumberOfMagazines 5
+WeaponMagazineModifier 6f8b88ed8ab1fc499cc940791f54e492
+    $::WeaponModifierBase
+        $::DataContainer
+    MagazineCapacity 5
+    NumberOfMagazines -1
+WeaponMiscModifier 99770e5ee1a6194c9e455ca2d79f2424
+    $::WeaponModifierBase
+        $::DataContainer
+    EnableBreathControl True
+    CanBeInSupportedShooting False
+    UnZoomOnBoltAction True
+    HoldBoltActionUntilZoomRelease True
+    IsSilenced False
+WeaponMiscModifier bbf6a2db22df8245bbdb1e91699de9d8
+    $::WeaponModifierBase
+        $::DataContainer
+    EnableBreathControl True
+    CanBeInSupportedShooting False
+    UnZoomOnBoltAction True
+    HoldBoltActionUntilZoomRelease True
+    IsSilenced False
+WeaponMiscModifier ca2f58425845a7499492fc29fd740b58
+    $::WeaponModifierBase
+        $::DataContainer
+    EnableBreathControl True
+    CanBeInSupportedShooting False
+    UnZoomOnBoltAction True
+    HoldBoltActionUntilZoomRelease True
+    IsSilenced False
+WeaponMiscModifier 2bbd05782d9b5f469877ae592c514f26
+    $::WeaponModifierBase
+        $::DataContainer
+    EnableBreathControl True
+    CanBeInSupportedShooting False
+    UnZoomOnBoltAction True
+    HoldBoltActionUntilZoomRelease True
+    IsSilenced False
+WeaponMiscModifier 3bfa1a278d85204db870d80fa80b651b
+    $::WeaponModifierBase
+        $::DataContainer
+    EnableBreathControl False
+    CanBeInSupportedShooting False
+    UnZoomOnBoltAction False
+    HoldBoltActionUntilZoomRelease False
+    IsSilenced True
+WeaponOffsetData 07bf1f04d7135b44b06fc54255a451d4
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY 0.0
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0
+    WeaponZoomedOffsetY -0.00999999977648
+    WeaponZoomedOffsetZ 0.34999999404
+WeaponOffsetData c405a4412d8a6748850ebb1f199a874d
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY -0.20000000298
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0649999976158
+    WeaponZoomedOffsetY -0.236000001431
+    WeaponZoomedOffsetZ 0.46099999547
+WeaponOffsetData 055a61f42738d846a4bd6fe6ec74003a
+    $::DataContainer
+    WeaponOffsetX 0.308999985456
+    WeaponOffsetY -0.122000001371
+    WeaponOffsetZ 0.296000003815
+    WeaponZoomedOffsetX 0.070000000298
+    WeaponZoomedOffsetY -0.264999985695
+    WeaponZoomedOffsetZ 0.521000027657
+WeaponOffsetData aa9d15f9c6478047bbfdad4de504590d
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY 0.0
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0599999986589
+    WeaponZoomedOffsetY -0.25
+    WeaponZoomedOffsetZ 0.536000013351
+WeaponOffsetData 562ad7296c17f94c8e76be1ed2b2016a
+    $::DataContainer
+    WeaponOffsetX 0.0930000022054
+    WeaponOffsetY -0.224000006914
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.054999999702
+    WeaponZoomedOffsetY -0.312999993563
+    WeaponZoomedOffsetZ -0.0640000030398
+WeaponOffsetData 821ff2e185840f4c830f3a365380a3d6
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY -0.0399999991059
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0500000007451
+    WeaponZoomedOffsetY -0.333000004292
+    WeaponZoomedOffsetZ -0.123999997973
+WeaponOffsetData 57a5faf86e314942a8223e1d789edeab
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY -0.234999999404
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0599999986589
+    WeaponZoomedOffsetY -0.287000000477
+    WeaponZoomedOffsetZ 0.31099998951
+WeaponOffsetData d65c0448b0a8a6428236f016c48b00e9
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY 0.159999996424
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.070000000298
+    WeaponZoomedOffsetY -0.201000005007
+    WeaponZoomedOffsetZ 0.0860000029206
+WeaponOffsetData 7dd5706bdf2b1e4ca9012b321bbbd651
+    $::DataContainer
+    WeaponOffsetX 0.240999996662
+    WeaponOffsetY -0.43900001049
+    WeaponOffsetZ 0.217999994755
+    WeaponZoomedOffsetX 0.0379999987781
+    WeaponZoomedOffsetY -0.273999989033
+    WeaponZoomedOffsetZ 0.777000010014
+WeaponOffsetData e190200f62b9c943812c44ffe00250aa
+    $::DataContainer
+    WeaponOffsetX 0.184000000358
+    WeaponOffsetY -0.31400001049
+    WeaponOffsetZ 0.16099999845
+    WeaponZoomedOffsetX 0.0590000003576
+    WeaponZoomedOffsetY -0.24699999392
+    WeaponZoomedOffsetZ 0.939999997616
+WeaponOffsetData d0c8a81a576e204cb740af0371bc6619
+    $::DataContainer
+    WeaponOffsetX 0.252000004053
+    WeaponOffsetY -0.347999989986
+    WeaponOffsetZ 0.194999992847
+    WeaponZoomedOffsetX 0.0729999989271
+    WeaponZoomedOffsetY -0.29699999094
+    WeaponZoomedOffsetZ 0.20000000298
+WeaponOffsetData 57f9a2210c48b247a8a044102793ade4
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY 0.0
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0599999986589
+    WeaponZoomedOffsetY -0.263000011444
+    WeaponZoomedOffsetZ -0.243000000715
+WeaponOffsetData 7185ee79aa598b46aaa886ecee1d3272
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY -0.211999997497
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0599999986589
+    WeaponZoomedOffsetY -0.365000009537
+    WeaponZoomedOffsetZ 0.0410000011325
+WeaponRegularSocketObjectData 5504b1536e314e40854bd7594f7641e3
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 17753607
+            member 693347194
+            member 1691154936
+        Asset1p weapons/accessories/acog/acog_scope_1p_mesh/1413fb58e8355c11374d5dd28254def9
+        Asset1pzoom weapons/accessories/acog/acog_zoom_1p_mesh/72328a8173626e9fc23e0b9abae39a17
+        Asset3p weapons/accessories/acog/acog_scope_3p_mesh/6b5b87d7f1375d4c60cd273dda3e553f
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.415014594793
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData ca29eb4cd498764ca1867cef3184ad8d
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1313050810
+            member 3748792888
+        Asset1p weapons/accessories/eotech/eotech_scope_1p_mesh/95a74917317fc343bb1c1087b5bd6b07
+        Asset1pzoom weapons/accessories/eotech/eotech_scope_1p_mesh/95a74917317fc343bb1c1087b5bd6b07
+        Asset3p weapons/accessories/eotech/eotech_scope_3p_mesh/f43af6a4255359b91f9c1a9ab32a5fb7
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.439403176308
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 03b5eb2c02ec4248ba647e3cb3400b77
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 2220818733
+            member 2523483000
+            member 4089252271
+        Asset1p weapons/accessories/ballistic_scope/ballistic_scope_1p_mesh/65bb75b9f0ac797cca14b0ee1f0787fb
+        Asset1pzoom weapons/accessories/ballistic_scope/ballisticscope_zoom_1p_mesh/5ccbded20e23d4bc916866f4e110ec57
+        Asset3p weapons/accessories/ballistic_scope/ballistic_scope_3p_mesh/e15466f9dcd0295cfcb3bd7fac2f63e8
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.421141207218
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData aa2a553e55e50e47a8f2824790ed10fc
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 610108903
+            member 2198505839
+            member 3205521901
+        Asset1p weapons/accessories/irnv/irnv_1p_mesh/2a492a9e53c1420432af3b0d536a55cd
+        Asset1pzoom weapons/accessories/irnv/irnv_zoom_1p_mesh/f7740e337c9856c028418f0d96b0c699
+        Asset3p weapons/accessories/irnv/irnv_3p_mesh/de776f992b94dd331c7f04637f245f8b
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.421141207218
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 77a16e8d767d7e4eb6d729a7658d13fe
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 2840256367
+            member 3847272429
+        Asset1p weapons/accessories/kobra/kobra_1p_mesh/b3cbb98d392227501f193401e537ce93
+        Asset1pzoom weapons/accessories/kobra/kobra_1p_mesh/b3cbb98d392227501f193401e537ce93
+        Asset3p weapons/accessories/kobra/kobra_3p_mesh/fe9cf567f4bf031d0bd18f934c07817c
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.438224583864
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 59f07a6a95da2445abafc0bc15b2f670
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 700107053
+            member 2141202087
+            member 2568540591
+        Asset1p weapons/accessories/m145/m145_1p_mesh/d05c1801b01675eef0be2ce4fd719724
+        Asset1pzoom weapons/accessories/m145/m145_zoom_1p_mesh/04aea6952b93bb178d682a3c71428a99
+        Asset3p weapons/accessories/m145/m145_3p_mesh/4f60589bf4120040bc7c7ae50ad47723
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.418224751949
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData ae08f3bc97be5a42927c93a0ea936001
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 19840879
+            member 261323751
+            member 1026856941
+        Asset1p weapons/accessories/pka/pka_1p_mesh/77f18d0822d78d89ecc0bccf65a6956a
+        Asset1pzoom weapons/accessories/pka/pka_zoom_1p_mesh/89c34c21f6ca80d4e29665503837884d
+        Asset3p weapons/accessories/pka/pka_3p_mesh/c377b262bdd11533dbdbb4240bbc06e7
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.441566288471
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData a1cbf9126265f446a0afc997d18f20ea
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 199704047
+            member 1206720109
+            member 2715748967
+        Asset1p weapons/accessories/pka-s/pka-s_1p_mesh/50e44db07c00ca6327354429fd72c523
+        Asset1pzoom weapons/accessories/pka-s/pka-s_zoom_1p_mesh/d97201c5751b5c01e07bf39c7c862fb7
+        Asset3p weapons/accessories/pka-s/pka-s_3p_mesh/d6a7fff710b97a943ca61f2127fae4b1
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.441566288471
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData f375ea0988967b498db58dd9e254ff1a
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 994387533
+            member 2853621199
+            member 3869677127
+        Asset1p weapons/accessories/pks-07/pks-07_1p_mesh/b5a8b0378fec5ed4cdded5e079a53a9d
+        Asset1pzoom weapons/accessories/pks-07/pks-07_zoom_1p_mesh/6c25a52302d26fbcd538e5dc7b5f460d
+        Asset3p weapons/accessories/pks-07/pks-07_3p_mesh/10f9f82677b74f23a8f22f948de9da32
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.434231221676
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 27e810659e403049ba4fb684a4c3a5f0
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 2311492207
+            member 3204919015
+            member 3318508269
+        Asset1p weapons/accessories/pso-1/pso-1_1p_mesh/c87670db1b3b0b465861b5c43c43e247
+        Asset1pzoom weapons/accessories/pso-1/pso-1_zoom_1p_mesh/98db99ffdd89a570cde87a4b73417571
+        Asset3p weapons/accessories/pso-1/pso-1_3p_mesh/60822cab25a8dc62b79a1514a6a4918e
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.421267449856
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 620a8403d12a1d42b0d09d3675ce8526
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 118255087
+            member 1125271149
+            member 1405237863
+        Asset1p weapons/accessories/rifle_scope/rifle_scope_1p_mesh/1f96c0f461807266ebfe1fe9847d5248
+        Asset1pzoom weapons/accessories/rifle_scope/rifle_scope_zoom_1p_mesh/1ffe76c10855aa1c9996a6610617fc09
+        Asset3p weapons/accessories/rifle_scope/rifle_scope_3p_mesh/9e3c00b0966ab2ba32d9bb2287ffa784
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.431822061539
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 66a70e3cb7b90842a26c51c5b3563b0f
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 297318704
+            member 2156543922
+        Asset1p weapons/accessories/rx01/rx_01_1p_mesh/3c442f003d5c880335e5a9e4fc3dc1c4
+        Asset1pzoom weapons/accessories/rx01/rx_01_1p_mesh/3c442f003d5c880335e5a9e4fc3dc1c4
+        Asset3p weapons/accessories/rx01/rx_01_3p_mesh/617e36de8ce8f29a840262546b45e6c6
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.122812442482
+            z 0.436414629221
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 6c4e75f6ef5ba447b11bb3b4ed328655
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 2384113774
+            member 3381921516
+        Asset1p weapons/accessories/targetpointer/pistol_laser_1p_mesh/71fa7f67659b878f545d1137b56e3cba
+        Asset1pzoom weapons/accessories/targetpointer/pistol_laser_1p_mesh/71fa7f67659b878f545d1137b56e3cba
+        Asset3p weapons/accessories/targetpointer/pistol_laser_3p_mesh/8290a1d6dcdd9a0f6c900064588ca2fe
+    Transform::LinearTransform
+        right::Vec3
+            x 3.4228538226e-08
+            y 0.999999880791
+            z 0.0
+        up::Vec3
+            x -0.999999880791
+            y 3.4228538226e-08
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0145982764661
+            y 0.101336978376
+            z 0.83509105444
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData da0add65e876c349885c17aa229d1a8e
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 145234962
+            member 2571777168
+        Asset1p weapons/accessories/flashlight/flash_light_1p_mesh/ab1f297c855c687c73727b8dc77566c3
+        Asset1pzoom weapons/accessories/flashlight/flash_light_1p_mesh/ab1f297c855c687c73727b8dc77566c3
+        Asset3p weapons/accessories/flashlight/flash_light_3p_mesh/6b4d244abf31744c887077170b844046
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0145982764661
+            y 0.101336978376
+            z 0.774109482765
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData c0cb694537fb05499bae962cc82fd918
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p *nullGuid*
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/flashlight/flashlight_3p/13eda7849515ae47af1279fd67b97572
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0300935767591
+            y 0.101216934621
+            z 0.866333603859
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 331fad105c166642a4bdae0656eac832
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p weapons/accessories/flashlight/flashlight_1p/8bc364f28f9cc36115e0f98aae912ad5
+        Asset1pzoom weapons/accessories/flashlight/flashlight_1p/8bc364f28f9cc36115e0f98aae912ad5
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0300935767591
+            y 0.101216934621
+            z 0.91930025816
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 38a1c0f01bba504399f2d4c9fd277dcd
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p *nullGuid*
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/anpeq2/pistol_laser/02714d7412b6fa438aff523fa3e1b39f
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0268815997988
+            y 0.101261042058
+            z 0.865669667721
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 08368159489a7040be91e7d5028d3cb1
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p weapons/accessories/anpeq2/anpeq2/43c67bce5bf2254b814a373043add82a
+        Asset1pzoom weapons/accessories/anpeq2/anpeq2/43c67bce5bf2254b814a373043add82a
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 0.999986290932
+            z 0.0052359639667
+        forward::Vec3
+            x 0.0
+            y -0.0052359639667
+            z 0.999986290932
+        trans::Vec3
+            x 0.0
+            y 0.129795446992
+            z 1.0
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 5180d15dbf2ee94ca7f56ac18d5c6f05
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1182194863
+            member 3608728621
+        Asset1p weapons/accessories/siderail/siderail_1p_mesh/98998543859a982f4d81ff670c419791
+        Asset1pzoom weapons/accessories/siderail/siderail_1p_mesh/98998543859a982f4d81ff670c419791
+        Asset3p weapons/accessories/siderail/siderail_3p_mesh/76eaca0f90a83c0ffdd48f75190f01cd
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0145982764661
+            y 0.101336978376
+            z 0.804399430752
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 399fb72b92987f4e92a97738db59c8e6
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1182194863
+            member 3608728621
+        Asset1p weapons/accessories/siderail/siderail_1p_mesh/98998543859a982f4d81ff670c419791
+        Asset1pzoom weapons/accessories/siderail/siderail_1p_mesh/98998543859a982f4d81ff670c419791
+        Asset3p weapons/accessories/siderail/siderail_3p_mesh/76eaca0f90a83c0ffdd48f75190f01cd
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0145982764661
+            y 0.101336978376
+            z 0.804399430752
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData fa0ab2d16d3cc84997d230b065cf731c
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 3157209455
+            member 4164225517
+        Asset1p weapons/accessories/flashsuppressor/flashsuppressor_1p_mesh/ad5152a6de45f8867393c813d959d317
+        Asset1pzoom weapons/accessories/flashsuppressor/flashsuppressor_1p_mesh/ad5152a6de45f8867393c813d959d317
+        Asset3p weapons/accessories/flashsuppressor/flashsuppressor_3p_mesh/6cad31598d9ab0607d0b93c3afb45796
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.101623535156
+            z 0.9658203125
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData c3dfb1c0b881aa459e8426ceb096df49
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1864693544
+            member 3723918762
+        Asset1p weapons/remington870/rem870mcs_magunlock_1p_mesh/cf1e5926169cc7eb4b052cab19398f2e
+        Asset1pzoom weapons/remington870/rem870mcs_magunlock_1p_mesh/cf1e5926169cc7eb4b052cab19398f2e
+        Asset3p weapons/remington870/rem870mcs_magunlock_3p_mesh/5e45b4660e27d551a4522525bb57a994
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x -0.000399271026254
+            y 0.0758749470115
+            z 0.879045069218
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData d94a810f9bc34142b806b92502f6bb41
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p *nullGuid*
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/scopeglint/scopeglint/91bee00975457b4bac81ee91bd17c905
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 4.48226928711e-05
+            y 0.161339148879
+            z 0.608885347843
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 88969403358c4e48ad3ffd89351cd33b
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p *nullGuid*
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/scopeglint/scopeglint/91bee00975457b4bac81ee91bd17c905
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.163383826613
+            z 0.596494913101
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 9e2bcf53adff3a46a5dcd5d0445066e4
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p *nullGuid*
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/scopeglint/scopeglint/91bee00975457b4bac81ee91bd17c905
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.180578544736
+            z 0.552348017693
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData a74ced4a5908424698ad651c333d268e
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes *nullArray*
+        Asset1p *nullGuid*
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/flashlight/flashlight_3p_ai/28105eeadcee314182d5987f3feb0349
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0300935767591
+            y 0.101216934621
+            z 0.866333603859
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData d87aff8ccb39244a80401d5d0c0d8ad2
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 947771642
+        Asset1p *nullGuid*
+        Asset1pzoom weapons/accessories/irnv/irnv_dotreticule_1p_mesh/133ac69699b8ea235a408b51eec85c7a
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.119999997318
+            z 0.758776128292
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 159369ce590b2c4c9689a72bdd8ea246
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1822594470
+            member 4258336548
+        Asset1p weapons/accessories/silencer/rifle_silencer_1p_mesh/90ab8908d7102c2b4763fa4197be5662
+        Asset1pzoom weapons/accessories/silencer/rifle_silencer_1p_mesh/90ab8908d7102c2b4763fa4197be5662
+        Asset3p weapons/accessories/silencer/rifle_silencer_3p_mesh/1ccf9b9c725e9366605452c79823d9db
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x -0.000419616699219
+            y 0.101623535156
+            z 0.955476284027
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 31733123cf63f34b819231caaa19707c
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1182194863
+            member 3608728621
+        Asset1p weapons/accessories/siderail/siderail_1p_mesh/98998543859a982f4d81ff670c419791
+        Asset1pzoom weapons/accessories/siderail/siderail_1p_mesh/98998543859a982f4d81ff670c419791
+        Asset3p weapons/accessories/siderail/siderail_3p_mesh/76eaca0f90a83c0ffdd48f75190f01cd
+    Transform::LinearTransform
+        right::Vec3
+            x 3.42285524368e-08
+            y 0.999999940395
+            z 0.0
+        up::Vec3
+            x -0.999999940395
+            y 3.42285524368e-08
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x -0.000424385070801
+            y 0.122812442482
+            z 0.437260985374
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 57b7a5631c675e40bd568b115dabfb23
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 224733701
+        Asset1p *nullGuid*
+        Asset1pzoom weapons/accessories/eotech/eotech_reticule_1p_mesh/949996f7d41a1eb6f8162508de8bf2a9
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.119999997318
+            z 0.758776128292
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 8a30bfb8ac5989408227bc0167ffdf9d
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 2734200357
+        Asset1p *nullGuid*
+        Asset1pzoom weapons/accessories/kobra/kobra_reticule_1p_mesh/713582e83c72f23e87f712a177136c55
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.120999999344
+            z 0.758776128292
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 9f442ab75152fc4ebe5499255c9cc79d
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 4067762728
+        Asset1p *nullGuid*
+        Asset1pzoom weapons/accessories/pka-s/pkas_reticule_1p_mesh/0d9b6b80de154efe4f20e8f75ef99e58
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.119999997318
+            z 0.758776128292
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 07f19549bc7c8e49930621e011e5020c
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 3404892965
+        Asset1p *nullGuid*
+        Asset1pzoom weapons/accessories/rx01/rx01_reticule_1p_mesh/c81342ca9e88278c8cf5e4454fdb99b7
+        Asset3p *nullGuid*
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.120499998331
+            z 0.758776128292
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 1a20cdf8a05d5b47b90462d0f71371ce
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 2384785135
+            member 3391801197
+        Asset1p weapons/accessories/laserbeam/laserbeam_1p_mesh/f3c06facdbd250ffda29c0d8a7ec6123
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/laserbeam/laserbeam_3p_mesh/b09a46fe24f92d372e3c7740b02e2081
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0268815997988
+            y 0.101261042058
+            z 0.865669667721
+    Mesh3pTransforms *nullArray*
+WeaponRegularSocketObjectData 11b6de799f49ee46938a70c41337adaf
+    $::WeaponSocketObjectData
+        $::SocketObjectDataBase
+            $::DataContainer
+        ReferencedAssetHashes::array
+            member 1446994470
+            member 3882736548
+        Asset1p weapons/accessories/flashlight/flashlightbeam_1p_mesh/665c680d9e7f527300289d81add8cd5c
+        Asset1pzoom *nullGuid*
+        Asset3p weapons/accessories/flashlight/flashlightbeam_3p_mesh/0b9b7c58a1b875260cc820d6f0f14347
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0145982764661
+            y 0.101336978376
+            z 0.774109482765
+    Mesh3pTransforms *nullArray*
+WeaponShotModifier af6873fd0415804cb0489d5a54f929c1
+    $::WeaponModifierBase
+        $::DataContainer
+    InitialSpeed::Vec3
+        x 0.0
+        y 0.0
+        z 150.0
+    NumberOfBulletsPerShell -1
+WeaponSoundModifier 54e0e0292016b9449e5edc0d6d5248dc
+    $::WeaponModifierBase
+        $::DataContainer
+    Sound sound/weapons/handheld/remington870/weapon_shotgun_remington870_silenced/b00a73ff7883c8489b418078c09cdc13
+WeaponSpeedData acf580cf0b2276409df80945a2f47e69
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 2.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData d21685c62df37f429830d877a620e454
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.5
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData b61d3422627af34ebbe5d8e70a6d4905
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData 9ee44c8c99892348bcaf603e8a94da3a
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.75
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData 87c1bdb199b67447925698521a94c5e5
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 0.850000023842
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData 9d8db58ae0ec054a99c74692c7ea7b96
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 2.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData 9964b7465ff3a645a5c6fb3367bcd611
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.75
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData ca89af61da57b44596561419131d3abe
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.75
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData c6ef8c7ed3944f4a96794da14e1e3110
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData 072530cef5e2854a8a204d0dcabd5739
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.5
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData 04761cc8211cab40874b7b04f0e29402
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData c625f6201ea4e546a654c458adaf34a2
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 2.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponSpeedData e58338c1e0393248984913e8b4ae470e
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.75
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0
+WeaponZoomModifier 2556680752c1da49a4225e6d30a5f095
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier f5db8b4a30a73b498d7df4e6ca67c534
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier 3e406e344a2ace45b406fdaf30792274
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 20.0
+WeaponZoomModifier 13072b81d03f694ab1203700b0076455
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 20.0
+WeaponZoomModifier 57a84ac6ecc4cb47a4b3c7f3c86691f4
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 18.0
+WeaponZoomModifier 6ecc81492e5c0b4194578b5958d6d81d
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 17.0
+WeaponZoomModifier 0a76576f75612f45875d37334c442435
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier 6438c691ccb13d44914c846c68798be1
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier 9f3fecf37a486a4a98ba2ddf7f7c9fc8
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier 6d27af508fcad94eb881f20e089b89fd
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier b2057161aca4d74a8c5abe5d02f8b3bc
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0
+WeaponZoomModifier ab5c978973b86e438c003127fadc778e
+    $::WeaponModifierBase
+        $::DataContainer
+    ZoomRenderFov 15.0

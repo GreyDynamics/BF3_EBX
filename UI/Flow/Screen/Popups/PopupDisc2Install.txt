@@ -1,0 +1,114 @@
+InstanceOutputNode 6097e8fd17662746bc476251834d87fd
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonReleased
+        IsRootNode False
+        ParentGraph 489e06959300b6e3a9a507d83aeec466
+        ParentIsScreen True
+    In ae721747e496f54189a644b015fbd075
+    Id 1352178388
+    DestroyGraph True
+UIDynamicDataBinding 486706168172b74b946fde26d7c53528
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Title
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey -1951480908
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName Text
+            DataCategory ui/uicomponents/uiinstallhdcontentcomp/1617162c2dafb46be72602b879e497f0
+            DataKey -1947303584
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding dc17fe75a007b2429ddf857a52e69d69
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Buttons
+            DataCategory ui/uicomponents/uipopupcomp/6d639c3787a9777411d0458076f632d4
+            DataKey -1192680079
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UINodeConnection 83e052ed77195f469eadc3eba3a08f9d
+    $::DataContainer
+    SourceNode c8c401b928400a4f8073df202f85ca95
+    TargetNode 6097e8fd17662746bc476251834d87fd
+    SourcePort 7a962f99379f6147b7bf4cb5858b052e
+    TargetPort ae721747e496f54189a644b015fbd075
+    NumScreensToPop 0
+UINodePort 7a962f99379f6147b7bf4cb5858b052e
+    $::DataContainer
+    Name ButtonReleased
+    InstanceName PopupButtonsManager_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort ae721747e496f54189a644b015fbd075
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 489e06959300b6e3a9a507d83aeec466 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Popups/PopupDisc2Install
+        Nodes::array
+            member bd2ef5891bbc36408e016e8d459f0e1a
+            member c8c401b928400a4f8073df202f85ca95
+            member 6097e8fd17662746bc476251834d87fd
+        GlobalNode *nullGuid*
+        Connections::array
+            member 83e052ed77195f469eadc3eba3a08f9d
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode bd2ef5891bbc36408e016e8d459f0e1a
+    $::UINodeData
+        $::DataContainer
+        Name PopupGenericWidget
+        IsRootNode False
+        ParentGraph 489e06959300b6e3a9a507d83aeec466
+        ParentIsScreen True
+    WidgetAsset ui/assets/popupgenericwidget/2e8284918176634eac89a7406d549b32
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 486706168172b74b946fde26d7c53528
+    InstanceName PopupGenericWidget_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs *nullArray*
+WidgetNode c8c401b928400a4f8073df202f85ca95
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonsManager
+        IsRootNode False
+        ParentGraph 489e06959300b6e3a9a507d83aeec466
+        ParentIsScreen True
+    WidgetAsset ui/assets/popupbuttonsmanager/85eba77ee604d6e293eb6f89c0e20bb9
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding dc17fe75a007b2429ddf857a52e69d69
+    InstanceName PopupButtonsManager_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 7a962f99379f6147b7bf4cb5858b052e
+    Inputs *nullArray*

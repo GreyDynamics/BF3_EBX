@@ -1,0 +1,43 @@
+CompositeMeshAsset 748e55e1ad9ae4b148414092d0b6f842 #primary instance
+    $::MeshAsset
+        $::Asset
+            $::DataContainer
+            Name vehicles/venom/venom_wrecktail_Mesh
+        LodGroup lodgroups/vehicle_wreck/d44ddd78b71e6047b097f1d2058bd61c
+        LodScale 1.0
+        CullScale 1.0
+        StreamingEnable True
+        OccluderMeshEnable False
+        OccluderHighPriority False
+        DestructionMaterialEnable False
+        EnlightenType EnlightenType_Dynamic
+        Materials::array
+            member 1f135d5c0f71af776777dc1168d6057b
+            member 55cd7fdf689cc64b976876903954b735
+        NameHash 891912037
+MeshMaterial 1f135d5c0f71af776777dc1168d6057b
+    $::DataContainer
+    ShaderInstance *nullGuid*
+    Shader::SurfaceShaderInstanceDataStruct
+        Shader vehicles/shaders/vehiclepreset_wreckage/dcf2ec429a711443bc74a19da82d20fd
+        BoolParameters *nullArray*
+        VectorParameters::array
+            member::VectorShaderParameter
+                ParameterName WearAmount
+                ParameterType ShaderParameterType_Scalar
+                Value::Vec4
+                    x 10.0
+                    y 0.0
+                    z 0.0
+                    w 0.0
+        VectorArrayParameters *nullArray*
+        TextureParameters *nullArray*
+MeshMaterial 55cd7fdf689cc64b976876903954b735
+    $::DataContainer
+    ShaderInstance *nullGuid*
+    Shader::SurfaceShaderInstanceDataStruct
+        Shader vehicles/shaders/wreckinteriordetail/882ad2f84a16d94886755ac769285973
+        BoolParameters *nullArray*
+        VectorParameters *nullArray*
+        VectorArrayParameters *nullArray*
+        TextureParameters *nullArray*

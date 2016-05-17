@@ -1,0 +1,159 @@
+InterfaceDescriptorData 78c5600ee92dae40a4f93a2c15a833c3
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 230748069
+    OutputEvents::array
+        member::DynamicEvent
+            Id -1176973715
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 99645f4deda2064886772180d60d0cea
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    AutoStart False
+    Looping False
+    ResetAfterStop False
+    PlayFirstFrame True
+    DefaultAnimation ME_StorefrontsProps_GarageDoor_Open
+    AnimationIndex 0
+    AnimationSet animations/characters/sp/sp_bank/house_opengaragedoor/me_storefrontsprops_garagedoor_animset/82ebd540864cd9ed3582388f27b7f4ea
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData 797ba8b7e2ee4c40abfb0daf4c9e6ae1
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/sp/sp_bank/house_opengaragedoor/me_storefrontsprops_garagedoor_model/127bedee4b486670e0d09f2cfcb59646
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 481744ccbaf21c45a71d097a51a5ec2f
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 2
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint architecture/me_storefrontprops/me_storeprops_garageframe_01/f0d12f9b2aa1f67b86848419726edc17
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint d0e6e1ac13f311ba636d1b179cf1bec5 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Bank/Prefabs/anim/House_OpenGarageDoor
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 99645f4deda2064886772180d60d0cea
+                            Target 797ba8b7e2ee4c40abfb0daf4c9e6ae1
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 78c5600ee92dae40a4f93a2c15a833c3
+                        Target 99645f4deda2064886772180d60d0cea
+                        SourceEvent::EventSpec
+                            Id 230748069
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 99645f4deda2064886772180d60d0cea
+                        Target 78c5600ee92dae40a4f93a2c15a833c3
+                        SourceEvent::EventSpec
+                            Id -1176973715
+                        TargetEvent::EventSpec
+                            Id -1176973715
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 78c5600ee92dae40a4f93a2c15a833c3
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 797ba8b7e2ee4c40abfb0daf4c9e6ae1
+            member 99645f4deda2064886772180d60d0cea
+            member 481744ccbaf21c45a71d097a51a5ec2f

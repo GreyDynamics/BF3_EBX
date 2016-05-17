@@ -1,0 +1,164 @@
+IrReverbEntityData dd8465595f88aa4f8f6f09a9136972b6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 3
+    ImpulseResponse sound/impulse_responses/ir_indoor_big_room/47a1bd93ff83f524bd289b07c65b541a
+    Gain -20.0
+    Volume 0.0
+    FadeCurve FadeCurveType_SineAmplitude
+MixerEntityData 9302f65bbc8fa94d86e10121546958b4
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 4
+    ActivateOnCreation True
+    Mixer sound/mixers/ambienttype_mixer/2a4dbe633068ee45be474c5d662e508c
+MixerEntityData 57220324f2c93d4d8c33c1b51a25d3d3
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 5
+    ActivateOnCreation True
+    Mixer sound/mixers/areatype_mixer/28eb2ae0ad4f4647aa5b882f6a2bc4ee
+ReferenceObjectData e829437c615a524c873ac7090fc29592
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint architecture/me_storefronts/me_storefronts_twoopeningbackcellaropening_01_destruction/9d2ba46b419721fca69f2976e6812ce8
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable False
+    Excluded False
+SoundAreaEntityData 40ca08e71dcead419a1e68d9982ff711
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Sound sound/levels/xp4_earthquake/ambients/xp4_amb_earthquake_passage_01/50b52f58aca2c142aa7b63c19b89c660
+    BigWorld *nullGuid*
+    FadeWidth 1.5
+    ProximityMultiplier 1.0
+    FadeCurve FadeCurveType_SineAmplitude
+SpatialPrefabBlueprint 57e31cc83f6797c2d659cc5d116e11e8 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP4/Architecture/Me_Storefronts/XP4_TwoOpenBackCellarOpen_01_Dest
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 40ca08e71dcead419a1e68d9982ff711
+                            Target dd8465595f88aa4f8f6f09a9136972b6
+                            SourceFieldId 258157264
+                            TargetFieldId -1136955571
+                        member::PropertyConnection
+                            Source 40ca08e71dcead419a1e68d9982ff711
+                            Target 57220324f2c93d4d8c33c1b51a25d3d3
+                            SourceFieldId 258157264
+                            TargetFieldId -2120426542
+                        member::PropertyConnection
+                            Source 40ca08e71dcead419a1e68d9982ff711
+                            Target 9302f65bbc8fa94d86e10121546958b4
+                            SourceFieldId 258157264
+                            TargetFieldId -1774245558
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 40ca08e71dcead419a1e68d9982ff711
+                            Target 1aaa967c6db27942b2cb57a056d91c91
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member e829437c615a524c873ac7090fc29592
+            member 1aaa967c6db27942b2cb57a056d91c91
+            member 40ca08e71dcead419a1e68d9982ff711
+            member dd8465595f88aa4f8f6f09a9136972b6
+            member 9302f65bbc8fa94d86e10121546958b4
+            member 57220324f2c93d4d8c33c1b51a25d3d3
+VolumeVectorShapeData 1aaa967c6db27942b2cb57a056d91c91
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 0
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Points::array
+            member::Vec3
+                x 0.934796154499
+                y -0.2630597651
+                z -4.17691612244
+            member::Vec3
+                x 0.889386475086
+                y -0.263059616089
+                z -0.829600691795
+            member::Vec3
+                x 8.97036933899
+                y -0.263059616089
+                z -0.800817251205
+            member::Vec3
+                x 9.09441566467
+                y -0.263059616089
+                z -4.1313829422
+        Normals::array
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 4.0

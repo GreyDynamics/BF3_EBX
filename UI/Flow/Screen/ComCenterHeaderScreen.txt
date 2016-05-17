@@ -1,0 +1,226 @@
+InstanceOutputNode f91ab8f4bfaa55499d70672ab0330344
+    $::UINodeData
+        $::DataContainer
+        Name ShowFriends
+        IsRootNode False
+        ParentGraph 54ba98e8c8ca2e2420a56e19285ae5f5
+        ParentIsScreen True
+    In e55c6e6ffe2842468d8821c2154d4a15
+    Id -1360010681
+    DestroyGraph True
+InstanceOutputNode 5c6182f108b32f4881d3b81beb2e412d
+    $::UINodeData
+        $::DataContainer
+        Name ShowInvites
+        IsRootNode False
+        ParentGraph 54ba98e8c8ca2e2420a56e19285ae5f5
+        ParentIsScreen True
+    In 09262c9f2ab67c4aab06335ba38d59bd
+    Id 2100030652
+    DestroyGraph True
+UIDynamicDataBinding a959afcfcf2a794198bb4671fd61539c
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName FriendsNum
+            DataCategory ui/uicomponents/uifriendscomp/3bfccc1098933d5e18727f6624b2e309
+            DataKey 2143423323
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName InvitesNum
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName ComCenterEnabled
+            DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+            DataKey 94576896
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding f7f620a19180404584ebf7092acaeeb9
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName NewsArray
+            DataCategory ui/uicomponents/uibattlelogcomp/b13aea678e11a99262b28eb6feaf49a9
+            DataKey 630076375
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName Visible
+            DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+            DataKey 1634961064
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UINodeConnection 0670a6fb02639d469ecd8e1fc86f07db
+    $::DataContainer
+    SourceNode 8a94bbfd3252704c9895c328360ca449
+    TargetNode f91ab8f4bfaa55499d70672ab0330344
+    SourcePort a82c627a31cd144da715754aa76d8194
+    TargetPort e55c6e6ffe2842468d8821c2154d4a15
+    NumScreensToPop 0
+UINodeConnection 6cb98bd10514f94596c18f3375f27a8e
+    $::DataContainer
+    SourceNode 8a94bbfd3252704c9895c328360ca449
+    TargetNode 5c6182f108b32f4881d3b81beb2e412d
+    SourcePort 5b36ec3c491af1469bf490ffc83c7bef
+    TargetPort 09262c9f2ab67c4aab06335ba38d59bd
+    NumScreensToPop 0
+UINodePort 0f883f9aebbe8646855ec1ca1d18825e
+    $::DataContainer
+    Name ShowList
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort d99f82005039374b955d833bb3e8e76b
+    $::DataContainer
+    Name HideList
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_OnHide
+    AllowManualRemove False
+UINodePort dcea64073f966b4db76167e198113216
+    $::DataContainer
+    Name EnterFriends
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_OnNavigateRight
+    AllowManualRemove False
+UINodePort 7f7b591a94cc074983b1bb9f76457249
+    $::DataContainer
+    Name EnterInvites
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_OnNavigateLeft
+    AllowManualRemove False
+UINodePort e55c6e6ffe2842468d8821c2154d4a15
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 09262c9f2ab67c4aab06335ba38d59bd
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 7bd45b013ee37d43a101c92bac0e3e76
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort a82c627a31cd144da715754aa76d8194
+    $::DataContainer
+    Name ShowFriends
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UINodePort 5b36ec3c491af1469bf490ffc83c7bef
+    $::DataContainer
+    Name ShowInvites
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_OnToggle
+    AllowManualRemove False
+UINodePort 730bcb75664f7245a6c7c66f012e9dbf
+    $::DataContainer
+    Name HideComCenter
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort 318d8491b95caa4cb134285a40c54041
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 9e7089f67f3b7044b307bf56b3d425dd
+    $::DataContainer
+    Name EnterFriends
+    InstanceName ComCenter_01
+    Query UIWidgetEventID_EnterTop
+    AllowManualRemove False
+UIScreenAsset 54ba98e8c8ca2e2420a56e19285ae5f5 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/ComCenterHeaderScreen
+        Nodes::array
+            member 8a94bbfd3252704c9895c328360ca449
+            member f91ab8f4bfaa55499d70672ab0330344
+            member 5c6182f108b32f4881d3b81beb2e412d
+            member 896b6ee6ca11754186f9e06650b25034
+        GlobalNode *nullGuid*
+        Connections::array
+            member 0670a6fb02639d469ecd8e1fc86f07db
+            member 6cb98bd10514f94596c18f3375f27a8e
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UITextDataBinding 662594dc4109654e8fae8f4ae41bf109
+    $::UIDataBinding
+        $::DataContainer
+    StaticText *nullString*
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+        DataKey 1256616389
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/frontendcomp/a5b3464817f135f51392e75875bbf734
+        DataKey 1634961064
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess True
+WidgetNode 8a94bbfd3252704c9895c328360ca449
+    $::UINodeData
+        $::DataContainer
+        Name ComCenter
+        IsRootNode False
+        ParentGraph 54ba98e8c8ca2e2420a56e19285ae5f5
+        ParentIsScreen True
+    WidgetAsset ui/assets/comcenter/4680b43eb287acd2ed426cc52627c82c
+    FocusIndex 0
+    AlwaysInFocus True
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding a959afcfcf2a794198bb4671fd61539c
+    InstanceName ComCenter_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member d99f82005039374b955d833bb3e8e76b
+        member a82c627a31cd144da715754aa76d8194
+        member 5b36ec3c491af1469bf490ffc83c7bef
+    Inputs::array
+        member 9e7089f67f3b7044b307bf56b3d425dd
+WidgetNode 896b6ee6ca11754186f9e06650b25034
+    $::UINodeData
+        $::DataContainer
+        Name NewsTicker
+        IsRootNode False
+        ParentGraph 54ba98e8c8ca2e2420a56e19285ae5f5
+        ParentIsScreen True
+    WidgetAsset ui/assets/newsticker/93a2c9331499ddb77574fed5d271f5e5
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding f7f620a19180404584ebf7092acaeeb9
+    InstanceName NewsTicker_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs *nullArray*

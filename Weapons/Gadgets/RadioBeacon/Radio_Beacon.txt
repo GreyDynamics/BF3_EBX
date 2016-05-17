@@ -1,0 +1,930 @@
+AIWeaponData 87a80b0634605cdef51410dd35a9c4ef
+    $::GameAIWeaponData
+        $::Asset
+            $::DataContainer
+            Name *nullString*
+    Strengths::Strengths
+        Infantry 0.0
+        LightArmour 0.0
+        HeavyArmour 0.0
+        Helicopter 0.0
+    Indirect False
+    IsAiAllowed True
+    UseFromCover False
+    DisableWeaponSway False
+    MinRange 0.0
+    MaxRange 0.0
+    OptimalRangePercentage 0.0
+    ReloadBehavior RbInCover
+    MinExtraReloadTime 0.0
+    MaxExtraReloadTime 0.0
+    AllowedAgainstImmortals True
+    CanSuppress True
+    CanAltAttack False
+    IsStandStill False
+    IsMelee False
+    IsBlindFireAllowed True
+    WaitTimeBeforeFire 0.0
+    BurstLimitNear::BurstLimit
+        Min 0
+        Max 0
+    BurstLimitFar::BurstLimit
+        Min 0
+        Max 0
+    MinBurstCoolDownTime 1.0
+    MaxBurstCoolDownTime 2.0
+    LostTargetBurstCoolDownModifier 2.0
+    AimTransitionFireDelay 0.34999999404
+    AimAngularVelocity 0.0
+    AngleToTargetSnap 0.0
+    AimWhileReloading True
+    UseZoom False
+    AimOrigin AoDefault
+    GravityModifier 1.0
+    AimHighIndirectPath False
+    MinimumAccuracyBeforeFiring 7.0
+    AdditionalMinimumAccuracyAtMinRange 0.0
+    SweepFirstAttack False
+    SweepType SstTargetLost
+    SweepDistance 0.0
+    SweepTime 0.5
+    InnerInaccurateDistance 5.0
+    OuterInaccurateDistance 10.0
+    InaccuracyFollowsTarget True
+    UseInaccuracyAtCloseRange False
+    StartAccuracyPercentage 0.5
+    FinalAccuracyPercentage 0.5
+EntityVoiceOverInfo a8e63b022421c548974ff722fa8a344e
+    $::DataContainer
+    VoiceOverType sound/vo/vo_system/94178596767a5a45af2fd2668ac03d78
+    Labels *nullArray*
+FiringFunctionData 044cf7d75097ed488c9c1344de6a038a
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p *nullArray*
+    FireEffects3p *nullArray*
+    Sound sound/weapons/handheld/radio_beacon/radio_beacon_fire_1p/00cab144d7612347a6adc7be4021039a
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.20000000298
+        InitialDirection::Vec3
+            x 0.0
+            y 1.0
+            z 0.10000000149
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData 9b34456dda84e046b41bc82c8c4bed07
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.300000011921
+        NumberOfBulletsPerShell 1
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 3.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 1.75
+            PowerIncreasePerSecond 0.25
+            Delay 0.75
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.5
+            BoltActionTime 1.0
+            HoldBoltActionUntilFireRelease True
+            HoldBoltActionUntilZoomRelease True
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction True
+            ReturnToZoomAfterBoltAction True
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.10000000149
+        RateOfFire 600.0
+        RateOfFireForBurst 550.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 0.0
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 0.75
+        ReloadTimeBulletsLeft 0.75
+        ReloadThreshold 0.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlReloadUnaffectedByWeaponSwitch
+        ReloadType rtMagazine
+        FireLogicType fltSingleFire
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 1
+        NumberOfMagazines 1
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 2.5
+        AmmoBagPickupAmount -1
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.0
+        OverHeatPenaltyTime 0.0
+        OverHeatThreshold 0.0
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+FirstPersonCameraData fac45c4d6a05cf00c54770f6b1352bd1
+    $::DataContainer
+    Offset::Vec3
+        x 0.10000000149
+        y -1.5
+        z 0.20000000298
+    WeaponBaseOffset::Vec3
+        x -0.0900000035763
+        y 0.0
+        z 0.0
+    WeaponLagRotationOffset::Vec3
+        x -0.0900000035763
+        y 0.0
+        z 0.20000000298
+    Rotation::Vec3
+        x 0.0
+        y 0.0
+        z 0.0
+    WeaponSpringEffect *nullGuid*
+    CameraSpringEffect *nullGuid*
+    MoveStrafeModifier 0.0
+    MoveForwardModifier 0.0
+    RotateYawModifier 0.0
+    RotatePitchModifier 0.0
+    RotateRollModifier 0.0
+    ZoomMoveStrafeModifier 0.0
+    ZoomMoveForwardModifier 0.0
+    ZoomRotateYawModifier 0.0
+    ZoomRotatePitchModifier 0.0
+    ZoomRotateRollModifier 0.0
+    ReleaseModifier 0.0
+    ReleaseModifierPitch -1.0
+    ReleaseModifierYaw -1.0
+    ReleaseModifierRoll -1.0
+    OffsetReleaseModifier -1.0
+    ZoomReleaseModifierPitch -1.0
+    ZoomReleaseModifierYaw -1.0
+    ZoomReleaseModifierRoll -1.0
+    ZoomOffsetReleaseModifier -1.0
+    RotationAdditionToOffset 1.0
+SoldierWeaponBlueprint b87cef7ce8c2ba7c80406b47632d94bc #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Weapons/Gadgets/RadioBeacon/Radio_Beacon
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object 000a8c801b656daee64269180fc7101f
+SoldierWeaponData 000a8c801b656daee64269180fc7101f
+    $::WeaponEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        WeaponClass wcRadioBeacon
+        WeaponStates::array
+            member::WeaponStateData
+                ReferencedAssetHashes::array
+                    member 1549076273
+                    member 3417509811
+                BoneFakePhysics *nullArray*
+                Mesh1p weapons/gadgets/radiobeacon/radio_beacon_1p_mesh/7f07028788ee4cd9cf7408d83454e175
+                MeshZoom1p weapons/gadgets/radiobeacon/radio_beacon_1p_mesh/7f07028788ee4cd9cf7408d83454e175
+                Mesh3p weapons/gadgets/radiobeacon/radio_beacon_3p_mesh/8577d7df9f52a999a4cb77e50427de02
+                Weapon::AntRef
+                    AssetId 357049632
+                ZoomMeshTransitionFactor 1.0
+                ZoomScaleFactor 1.0
+                ZoomInOutMeshTransitionFactors *nullArray*
+                ZoomedScopeFilter *nullGuid*
+                NonZoomedScopeFilter *nullGuid*
+                KeepAimingTime 3.0
+                AlwaysAimHead True
+                AnimatedFireType AnimatedFireSingle
+                AnimatedAimingType AnimatedAimingTwoHanded
+                IsOneHanded False
+                PlayDeployAfterFire False
+                SkipDeployAnimation False
+                SkipReloadAnimation False
+                SkipFireAnimation False
+                HideProjectileAfterFireTime 0.0
+                ProjectileBoneName *nullString*
+                Mesh3pTransforms::array
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -1.49011611938e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 1.86264514923e-09
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 3.72529029846e-09
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -0.106510199606
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z -0.106510199606
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.86264514923e-09
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0776749849319
+                            y 0.234189093113
+                            z -0.308668196201
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0776749849319
+                            y 0.368517816067
+                            z -0.308668196201
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0776749849319
+                            y 0.512770414352
+                            z -0.308668196201
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0776749849319
+                            y 0.654349684715
+                            z -0.308668196201
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0776749849319
+                            y 0.776684761047
+                            z -0.308668196201
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 5.96046447754e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 5.96046447754e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 5.96046447754e-08
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                    member::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Mesh3pRigidMeshSocketObjectTransforms *nullArray*
+                AnimationConfiguration::AnimationConfigurationData
+                    ShootModuleData::AnimationConfigurationShootModuleData
+                        ZoomedKickbackFactor 1.0
+                    WeaponOffsetModuleData dc9cfd9c8054fb4797678b837d3d22d5
+                    WeaponSpeedModuleData 22961a1e7ea3fa49b2a41317bcbbb297
+        WeaponFiring 0661645684ce0f43bd0119e75a0c67be
+        CustomWeaponType a1268ee3c58f5a4690f49b8a554ece38
+        AIData 87a80b0634605cdef51410dd35a9c4ef
+    DamageGiverName Weapons/Gadgets/RadioBeacon/Radio_Beacon
+    WeaponModifierData *nullArray*
+    AimingController weapons/common/aimingcontrollers/aim_default_nozoom/6ac82fc850ae604d8e801aa3613c6f83
+    FirstPersonCamera fac45c4d6a05cf00c54770f6b1352bd1
+    Hud::HudData
+        CrosshairScaleMin 0.0
+        CrosshairScaleMax 5.0
+        CrosshairOpacityMin 1.0
+        CrosshairOpacityMax 0.10000000149
+        CrosshairOpacityModifier 1.0
+        CrosshairTypeId *nullString*
+        WeaponClass *nullString*
+        ShowMinimap True
+        HideAmmo False
+        LowAmmoWarning 0.300000011921
+        ReloadPrompt 0.300000011921
+        InfiniteAmmo False
+        HideCrosshairWhenAimOnFriend True
+        UseRenderTarget False
+        RenderTargetIndex 0
+        HudPropertyList *nullGuid*
+        UseRangeMeter False
+        UseAimWarning False
+        UsePredictedSight False
+        UseWeaponOrientations False
+        UseVelocityVectorMarker False
+        UseLockingController False
+        UseThrust False
+        UseGForce False
+        UseSkidSlip False
+        UseClimbRate False
+        SeaLevelAltFreq 0.0
+        CameraShakeModifier 1.0
+    PickupSettings::PickupSettingsData
+        MeshRenderOffset::Vec3
+            x 0.0
+            y 0.019999999553
+            z 0.0
+        MeshRenderRotation::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    StreamGroup1p *nullGuid*
+    AnimBaseSet wabsRif
+    AnimationData animations/antanimations/radiobeacon/5b3c3e551f7e29f30cb7805ccafab073
+    RenderFov 55.0
+    ZoomRenderFov 10.0
+    HideWhenOutOfAmmo True
+    AllowSwitchingToWeaponOutOfAmmo False
+    AllowSwitchingToWeaponReloading True
+    SwitchToPrimaryWhenOutOfAmmo True
+    AllowSwitchingToWeaponInVehicles False
+    InteractionOffset::Vec3
+        x 0.0
+        y 0.0
+        z 0.449999988079
+    LowerOnOwnTeam False
+    RedeployWhenSwitchingWeaponStates True
+    UseQuickThrowOnAutomaticSwitchback False
+    QuickThrowType QttHand
+    SoldierWeaponBlueprint b87cef7ce8c2ba7c80406b47632d94bc
+    PersistenceId *nullString*
+    Customization *nullGuid*
+    Sockets *nullArray*
+    EnableBreathControl False
+    CanBeInSupportedShooting False
+    SwitchWeaponStateInputAction EIAReload
+    VoiceOverInfo a8e63b022421c548974ff722fa8a344e
+    WeaponFloatParam 1.0
+    IsSilenced True
+VehicleDeployWeaponData a1268ee3c58f5a4690f49b8a554ece38
+    $::WeaponData
+        $::ToolData
+            $::DataContainer
+            IsAlwaysActive False
+        ShowLaserPaintedVehicles False
+    CanRemoteEnterVehicle False
+    UsePreview False
+    CheckClearSky False
+    DeployAreaRadius 0.10000000149
+    DeployAreaGroundRayLength 3.09999990463
+    DeployAreaGroundFlatness 0.5
+    PreviewObject *nullGuid*
+VehicleProjectileEntityData 9b34456dda84e046b41bc82c8c4bed07
+    $::ProjectileEntityData
+        $::GamePhysicsEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 3
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint -1
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            PhysicsData *nullGuid*
+        InitialSpeed 350.0
+        TimeToLive 0.0
+        MaxCount 1
+        InitMeshHideTime 0.0
+        VisualConvergeDistance 30.0
+        DetonateOnTimeout False
+        ServerProjectileDisabled False
+        Explosion *nullGuid*
+        SuppressionData *nullGuid*
+        AmmunitionType *nullString*
+        MaterialPair *nullGuid*
+        HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+        SuppressOwnerVehicleDamage False
+    Vehicle weapons/gadgets/radiobeacon/radiobeacon_projectile/251a30aa1f7bf200b999f2cb464e3e6b
+    AutoEnter False
+    EnterDelay 0.0
+    AlignWithGround True
+    AlignWithGroundRayLength 3.09999990463
+    NoVehicleCollisionTime 0.0
+    CheckGroundWhenSpawned True
+    DeployInsideNeutralCombatAreaOnly False
+WeaponFiringData 0661645684ce0f43bd0119e75a0c67be
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire 044cf7d75097ed488c9c1344de6a038a
+    DeployTime 0.649999976158
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.25
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway *nullGuid*
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 0.0
+        HighRumble 0.0
+        RumbleDuration 0.20000000298
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags True
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponOffsetData dc9cfd9c8054fb4797678b837d3d22d5
+    $::DataContainer
+    WeaponOffsetX 0.0
+    WeaponOffsetY 0.0
+    WeaponOffsetZ 0.0
+    WeaponZoomedOffsetX 0.0
+    WeaponZoomedOffsetY 0.0
+    WeaponZoomedOffsetZ 0.0
+WeaponSpeedData 22961a1e7ea3fa49b2a41317bcbbb297
+    $::DataContainer
+    ZoomOutSpeed 1.0
+    ZoomInSpeed 1.0
+    UnDeploySpeed 1.0
+    DeploySpeed 1.0

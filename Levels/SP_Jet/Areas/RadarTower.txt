@@ -1,0 +1,242 @@
+InterfaceDescriptorData 9714c56b5a4f3a409f3e2866d9f6444f
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 688477518
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData cf26e42eb813da4e94cdcae472637f11
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint levels/sp_jet/areas/building_radartower/9970e5ab4c536c384c8e3563eaafe67b
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 10148fe3ff0e6e4ba6a900a5941e4d08
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint levels/sp_jet/areas/building_radartower_radar/f03a91a47cb1a514f5dded706c43814a
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData 67062e6120024741a4a3e54345380cae
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 5000
+    Looping True
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks::array
+        member 019ecc9a7c85d84eb577ff953e20f789
+        member 7a30f44535790a4b9603cf25026a6a1c
+        member bf281cfcef29cc41a880d120174b1fed
+        member c37949df22a71f46b8be74506cc5ca0d
+        member 01dcf835d2dc444a9fd31948e046d40c
+        member b102d878aeb9d540bf9664a1ace07de4
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint f6a6afa84e5d3dbd87ae03ca97e599ea #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Jet/Areas/RadarTower
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 67062e6120024741a4a3e54345380cae
+                            Target 10148fe3ff0e6e4ba6a900a5941e4d08
+                            SourceFieldId 48673745
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 10148fe3ff0e6e4ba6a900a5941e4d08
+                        Target 67062e6120024741a4a3e54345380cae
+                        SourceEvent::EventSpec
+                            Id -62145612
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 10148fe3ff0e6e4ba6a900a5941e4d08
+                        Target 67062e6120024741a4a3e54345380cae
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 9714c56b5a4f3a409f3e2866d9f6444f
+                        Target 67062e6120024741a4a3e54345380cae
+                        SourceEvent::EventSpec
+                            Id 688477518
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source cf26e42eb813da4e94cdcae472637f11
+                        Target 10148fe3ff0e6e4ba6a900a5941e4d08
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -3142077
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 9714c56b5a4f3a409f3e2866d9f6444f
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member cf26e42eb813da4e94cdcae472637f11
+            member 10148fe3ff0e6e4ba6a900a5941e4d08
+            member 67062e6120024741a4a3e54345380cae
+TransformPartPropertyTrackData 019ecc9a7c85d84eb577ff953e20f789
+    $::PropertyTrackData
+        $::DataContainer
+        Id 48673745
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Jet/Areas/AnimTrackData/612E0667-0220-4147-A4A3-E54345380CAE_Rotation
+    KeyStartIndex 0
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 7a30f44535790a4b9603cf25026a6a1c
+    $::PropertyTrackData
+        $::DataContainer
+        Id 48673745
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Jet/Areas/AnimTrackData/612E0667-0220-4147-A4A3-E54345380CAE_Rotation
+    KeyStartIndex 2
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData bf281cfcef29cc41a880d120174b1fed
+    $::PropertyTrackData
+        $::DataContainer
+        Id 48673745
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Jet/Areas/AnimTrackData/612E0667-0220-4147-A4A3-E54345380CAE_Rotation
+    KeyStartIndex 4
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData c37949df22a71f46b8be74506cc5ca0d
+    $::PropertyTrackData
+        $::DataContainer
+        Id 48673745
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Jet/Areas/AnimTrackData/612E0667-0220-4147-A4A3-E54345380CAE_Rotation
+    KeyStartIndex 6
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 01dcf835d2dc444a9fd31948e046d40c
+    $::PropertyTrackData
+        $::DataContainer
+        Id 48673745
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Jet/Areas/AnimTrackData/612E0667-0220-4147-A4A3-E54345380CAE_Rotation
+    KeyStartIndex 8
+    KeyCount 2
+    IsStatic False
+TransformPartPropertyTrackData b102d878aeb9d540bf9664a1ace07de4
+    $::PropertyTrackData
+        $::DataContainer
+        Id 48673745
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Linear
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Jet/Areas/AnimTrackData/612E0667-0220-4147-A4A3-E54345380CAE_Rotation
+    KeyStartIndex 10
+    KeyCount 2
+    IsStatic True

@@ -1,0 +1,219 @@
+DamageAreaTriggerEntityData 0ca1cdbfd322ec4a8d11c3fcb1577159
+    $::TriggerEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 1
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 1
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        Delay 0.0
+        RunOnce False
+    DamageCharacters True
+    DamageVehicles False
+    DamageBangers False
+    DamagePerSecond 9999.0
+    DamageTime 0.0
+    ExcludeImmortalCharactersInTeam True
+    TeamOfImmortalCharacters Team1
+    ExcludeShieldedSoldiers False
+GeometryTriggerEntityData bda68a4a8f99f342a7da099a84d052d4
+    $::AreaTriggerEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 3
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 0
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce False
+        GeometryTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Include ATAI_Enemies
+        UseCharacterEntity False
+        Radius 0.0
+        InsideAreaEventRepeatTime 0.0
+        OneInsideAreaEventPerSoldier False
+        TriggerOnlyOnLeave False
+        ResetOnEnable False
+        TriggerOnLeaveOnDeath True
+        TriggerOnLeaveOnDisable False
+InterfaceDescriptorData a2a7247f9e90754da1956ebcecb9cc5c
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks::array
+        member::DynamicLink
+            Id 838548383
+LoggingEntityData b4b550cfe58fd246a32d05bf2b1376fe
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Strings::array
+        member COOP_DEBUG_AI FELL THROUGH WORLD
+    Realm Realm_Server
+    FloatValue 0.0
+    IntValue 0
+    TransformValue::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Vec2Value::Vec2
+        x 0.0
+        y 0.0
+    Vec3Value::Vec3
+        x 0.0
+        y 0.0
+        z 0.0
+    BoolValue False
+LogicPrefabBlueprint dd1411bead60e25712aeba76111bc8c0 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/COOP_KillAI_FailSafe
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source bda68a4a8f99f342a7da099a84d052d4
+                            Target a2a7247f9e90754da1956ebcecb9cc5c
+                            SourceFieldId 838548383
+                            TargetFieldId 838548383
+                        member::LinkConnection
+                            Source 0ca1cdbfd322ec4a8d11c3fcb1577159
+                            Target a2a7247f9e90754da1956ebcecb9cc5c
+                            SourceFieldId 838548383
+                            TargetFieldId 838548383
+                EventConnections::array
+                    member::EventConnection
+                        Source bda68a4a8f99f342a7da099a84d052d4
+                        Target 0ca1cdbfd322ec4a8d11c3fcb1577159
+                        SourceEvent::EventSpec
+                            Id -80368276
+                        TargetEvent::EventSpec
+                            Id -713836199
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source bda68a4a8f99f342a7da099a84d052d4
+                        Target 3f07dae50cb66b468b5119f58e1b1e5b
+                        SourceEvent::EventSpec
+                            Id -80368276
+                        TargetEvent::EventSpec
+                            Id 231942004
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source bda68a4a8f99f342a7da099a84d052d4
+                        Target b4b550cfe58fd246a32d05bf2b1376fe
+                        SourceEvent::EventSpec
+                            Id -80368276
+                        TargetEvent::EventSpec
+                            Id 550586970
+                        TargetType EventConnectionTargetType_Server
+                Descriptor a2a7247f9e90754da1956ebcecb9cc5c
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member bda68a4a8f99f342a7da099a84d052d4
+            member 0ca1cdbfd322ec4a8d11c3fcb1577159
+            member 3f07dae50cb66b468b5119f58e1b1e5b
+            member b4b550cfe58fd246a32d05bf2b1376fe
+PrintDebugTextEntityData 3f07dae50cb66b468b5119f58e1b1e5b
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Server
+    Text AI FELL THROUGH WORLD
+    TextColor::Vec3
+        x 1.0
+        y 0.0
+        z 0.0
+    Enabled True

@@ -1,0 +1,123 @@
+BoolToEventEntityData 521da728c23e394bad3f069780827ad4
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 0
+    Realm Realm_Client
+    Value True
+    InitalEvent False
+BoolToEventEntityData e86f2ccf1d8f954995bfa5fd30a56b5e
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Realm Realm_Client
+    Value False
+    InitalEvent False
+InterfaceDescriptorData 6758d7c98f750943b9a466720fa83237
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 5859428
+                AccessType FieldAccessType_Target
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 5859366
+                AccessType FieldAccessType_Target
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint e43f8e436e788c4eafad0e79e5e05eb7 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/common/LogicalPrefabs/AircraftNearPlane
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 6758d7c98f750943b9a466720fa83237
+                            Target e86f2ccf1d8f954995bfa5fd30a56b5e
+                            SourceFieldId 5859428
+                            TargetFieldId 225375086
+                        member::PropertyConnection
+                            Source 6758d7c98f750943b9a466720fa83237
+                            Target 521da728c23e394bad3f069780827ad4
+                            SourceFieldId 5859366
+                            TargetFieldId 225375086
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source e86f2ccf1d8f954995bfa5fd30a56b5e
+                        Target bdf0c94d4c21be428807fad0dc3b4213
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 521da728c23e394bad3f069780827ad4
+                        Target 995d5135737eda4caeeac4dd39af9c8c
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 521da728c23e394bad3f069780827ad4
+                        Target 995d5135737eda4caeeac4dd39af9c8c
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source e86f2ccf1d8f954995bfa5fd30a56b5e
+                        Target bdf0c94d4c21be428807fad0dc3b4213
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 6758d7c98f750943b9a466720fa83237
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 521da728c23e394bad3f069780827ad4
+            member e86f2ccf1d8f954995bfa5fd30a56b5e
+            member bdf0c94d4c21be428807fad0dc3b4213
+            member 995d5135737eda4caeeac4dd39af9c8c
+LogicVisualEnvironmentEntityData bdf0c94d4c21be428807fad0dc3b4213
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    VisualEnvironment vehicles/common/ve_aircraft_nearplane_1p/f424824116982d4dbabdf7ff7e943d4c
+    Visibility 1.0
+LogicVisualEnvironmentEntityData 995d5135737eda4caeeac4dd39af9c8c
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    VisualEnvironment vehicles/common/ve_aircraft_nearplane_3p/85ada29137d4014b99df669b07a9f4b2
+    Visibility 1.0

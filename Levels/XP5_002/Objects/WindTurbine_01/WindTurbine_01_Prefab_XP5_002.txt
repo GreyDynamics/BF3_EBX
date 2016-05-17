@@ -1,0 +1,263 @@
+InterfaceDescriptorData fec4ae27c50e3f4e84aff4b0f98d1fc4
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 230748069
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 6f8efbd44a211c43a5ed8b193440b1e3
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 2
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 0.600000023842
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 0.600000023842
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 0.600000023842
+        trans::Vec3
+            x 2.08945322037
+            y -0.0222320556641
+            z -2.57492069977e-06
+    Blueprint levels/xp5_002/objects/windturbine_01/windturbine_01_xp5_002/d81e0d13e6ab474cb78bd53eb9747e05
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData bcd558db661fb744ab4da1d46743eea3
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 3
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 75.6609573364
+            z 0.0
+    Blueprint levels/xp5_002/objects/windturbine_01/windturbine_01_blades_xp5_002/e0456297e1244b4496672e96b12d55cb
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData a65dab15c86c9b4987bd20936c9e8282
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 10000
+    Looping True
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks::array
+        member 07305346f5598f4fa1805b19522d5550
+        member 7dcc9f12c7cc274c95d7d97e549e1200
+        member 20a06b63d14d4a4f95d171626d545d2b
+        member 33bd82c491f3a94fb8c1313fcfe312b4
+        member 4ae05fcf18243741938b3d13d91846a0
+        member 04e594a9a473074a8b233de41e06c634
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SoundEntityData b84d21ddabf3fe45910e4bc51fb2c3dc
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/levels/xp3_shield/sfx/xp3_ambient_shield_object_windpowerplant_01/31e30d9fa93d3e3122f402f5ce7e8876
+    PlayOnCreation False
+    ObstructionHandle -1
+SpatialPrefabBlueprint cbd7fe9aba2ad34f82b022bf601c305b #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/XP5_002/Objects/WindTurbine_01/WindTurbine_01_Prefab_XP5_002
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source a65dab15c86c9b4987bd20936c9e8282
+                            Target bcd558db661fb744ab4da1d46743eea3
+                            SourceFieldId 1301492691
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source fec4ae27c50e3f4e84aff4b0f98d1fc4
+                        Target a65dab15c86c9b4987bd20936c9e8282
+                        SourceEvent::EventSpec
+                            Id 230748069
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source a65dab15c86c9b4987bd20936c9e8282
+                        Target b84d21ddabf3fe45910e4bc51fb2c3dc
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source bcd558db661fb744ab4da1d46743eea3
+                        Target b84d21ddabf3fe45910e4bc51fb2c3dc
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor fec4ae27c50e3f4e84aff4b0f98d1fc4
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member a65dab15c86c9b4987bd20936c9e8282
+            member b84d21ddabf3fe45910e4bc51fb2c3dc
+            member 6f8efbd44a211c43a5ed8b193440b1e3
+            member bcd558db661fb744ab4da1d46743eea3
+TransformPartPropertyTrackData 07305346f5598f4fa1805b19522d5550
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False
+TransformPartPropertyTrackData 7dcc9f12c7cc274c95d7d97e549e1200
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/XP5_002/Objects/WindTurbine_01/AnimTrackData/15AB5DA6-6CC8-499B-87BD-20936C9E8282_animation
+    KeyStartIndex 0
+    KeyCount 1
+    IsStatic True
+TransformPartPropertyTrackData 20a06b63d14d4a4f95d171626d545d2b
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False
+TransformPartPropertyTrackData 33bd82c491f3a94fb8c1313fcfe312b4
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/XP5_002/Objects/WindTurbine_01/AnimTrackData/15AB5DA6-6CC8-499B-87BD-20936C9E8282_animation
+    KeyStartIndex 1
+    KeyCount 2
+    IsStatic False
+TransformPartPropertyTrackData 4ae05fcf18243741938b3d13d91846a0
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False
+TransformPartPropertyTrackData 04e594a9a473074a8b233de41e06c634
+    $::PropertyTrackData
+        $::DataContainer
+        Id 1301492691
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False

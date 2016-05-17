@@ -1,0 +1,122 @@
+BoolEntityData 2294a6de5ce78145a4f90e49c404ae05
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_ClientAndServer
+    DefaultValue True
+CustomizeSoldierEntityData 8a0a732dbcbf334db8e6c7c694094124
+    $::CustomizeBaseEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 1
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Realm Realm_Server
+    CustomizeSoldierData characters/soldiers/customizations/sp_rus_alexey_gasmask/5acdb9402f680546a27c24784a589354
+CustomizeSoldierEntityData d5583fd2b64aa8469eee169aea7f0ab1
+    $::CustomizeBaseEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 1
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Realm Realm_Server
+    CustomizeSoldierData characters/soldiers/customizations/sp_rus_alexey/16f2cc6cec7e394f913dad73dda44bb0
+InterfaceDescriptorData 999b6a8246f34345877f99d413b9416a
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 495955022
+                AccessType FieldAccessType_Source
+    InputEvents::array
+        member::DynamicEvent
+            Id 996092901
+        member::DynamicEvent
+            Id -1488672277
+        member::DynamicEvent
+            Id 1077549735
+        member::DynamicEvent
+            Id -1584155022
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks::array
+        member::DynamicLink
+            Id 1408929797
+SpatialPrefabBlueprint 8867a2d16401cb7fed65f1066871231a #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Paris/Prefabs/VladFunctions
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 2294a6de5ce78145a4f90e49c404ae05
+                            Target 999b6a8246f34345877f99d413b9416a
+                            SourceFieldId 225375086
+                            TargetFieldId 495955022
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 8a0a732dbcbf334db8e6c7c694094124
+                            Target 999b6a8246f34345877f99d413b9416a
+                            SourceFieldId 1085151375
+                            TargetFieldId 1408929797
+                        member::LinkConnection
+                            Source d5583fd2b64aa8469eee169aea7f0ab1
+                            Target 999b6a8246f34345877f99d413b9416a
+                            SourceFieldId 1085151375
+                            TargetFieldId 1408929797
+                EventConnections::array
+                    member::EventConnection
+                        Source 999b6a8246f34345877f99d413b9416a
+                        Target 8a0a732dbcbf334db8e6c7c694094124
+                        SourceEvent::EventSpec
+                            Id 996092901
+                        TargetEvent::EventSpec
+                            Id 206074481
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 999b6a8246f34345877f99d413b9416a
+                        Target d5583fd2b64aa8469eee169aea7f0ab1
+                        SourceEvent::EventSpec
+                            Id -1488672277
+                        TargetEvent::EventSpec
+                            Id 206074481
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 999b6a8246f34345877f99d413b9416a
+                        Target 2294a6de5ce78145a4f90e49c404ae05
+                        SourceEvent::EventSpec
+                            Id 1077549735
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member::EventConnection
+                        Source 999b6a8246f34345877f99d413b9416a
+                        Target 2294a6de5ce78145a4f90e49c404ae05
+                        SourceEvent::EventSpec
+                            Id -1584155022
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                Descriptor 999b6a8246f34345877f99d413b9416a
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member 8a0a732dbcbf334db8e6c7c694094124
+            member d5583fd2b64aa8469eee169aea7f0ab1
+            member 2294a6de5ce78145a4f90e49c404ae05

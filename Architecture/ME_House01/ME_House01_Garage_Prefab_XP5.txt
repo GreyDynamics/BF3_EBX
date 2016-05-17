@@ -1,0 +1,413 @@
+FloatEntityData 9163b9c14b14a94a822c28f556631a51
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 6
+    Realm Realm_Client
+    DefaultValue 0.0
+    IncDecValue 1.0
+FloatEntityData 78cbfc44d2721043954377f86450dfef
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 8
+    Realm Realm_Client
+    DefaultValue 1.0
+    IncDecValue 0.125
+InterfaceDescriptorData 39e6d72d6073e9458ba72e938adafaec
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member::DynamicEvent
+            Id 848795827
+        member::DynamicEvent
+            Id 848795824
+        member::DynamicEvent
+            Id 848795826
+        member::DynamicEvent
+            Id 848795825
+        member::DynamicEvent
+            Id 848795830
+        member::DynamicEvent
+            Id 848795831
+        member::DynamicEvent
+            Id 848795828
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+IrReverbEntityData 3a38dee7fd2014469612ff38f6bca864
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 2
+    ImpulseResponse sound/impulse_responses/ir_indoor_big_room/47a1bd93ff83f524bd289b07c65b541a
+    Gain -18.0
+    Volume 0.0
+    FadeCurve FadeCurveType_SineAmplitude
+MathOpEntityData 00bf9f9268837a42a11c9558d5627248
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 7
+    Realm Realm_Client
+    Operators::array
+        member *nullEnum*
+MixerEntityData 6b4fa864da827642a2b20c4224664039
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 4
+    ActivateOnCreation True
+    Mixer sound/mixers/ambienttype_mixer/2a4dbe633068ee45be474c5d662e508c
+MixerEntityData 625cf62701220a49aaf901354ae1fe2d
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 5
+    ActivateOnCreation True
+    Mixer sound/mixers/areatype_mixer/28eb2ae0ad4f4647aa5b882f6a2bc4ee
+ReferenceObjectData 905d24c0e40be549ac00dad5e992db6d
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 3
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint architecture/me_house01/me_house01_garage_destruction/2992d84f2673486192c3aa6750c1bc2c
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundAreaEntityData 1bdebc7a3e2bac40872d4e2fdc3181d2
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 1
+    Sound sound/levels/xp5_kiasarrail/ambients/xp5_amb_kiasarrail_object_int_mehouse_01_garage_01/ed544b275eaafc4cbd3afde6f12bc1b3
+    BigWorld *nullGuid*
+    FadeWidth 2.0
+    ProximityMultiplier 0.850000023842
+    FadeCurve FadeCurveType_SineAmplitude
+SpatialPrefabBlueprint 7ba13c95585292489e04abe7a5063f2e #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Architecture/ME_House01/ME_House01_Garage_Prefab_XP5
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 1bdebc7a3e2bac40872d4e2fdc3181d2
+                            Target 3a38dee7fd2014469612ff38f6bca864
+                            SourceFieldId 258157264
+                            TargetFieldId -1136955571
+                        member::PropertyConnection
+                            Source 1bdebc7a3e2bac40872d4e2fdc3181d2
+                            Target 6b4fa864da827642a2b20c4224664039
+                            SourceFieldId 258157264
+                            TargetFieldId 1579081631
+                        member::PropertyConnection
+                            Source 1bdebc7a3e2bac40872d4e2fdc3181d2
+                            Target 625cf62701220a49aaf901354ae1fe2d
+                            SourceFieldId 258157264
+                            TargetFieldId -2120426542
+                        member::PropertyConnection
+                            Source 9163b9c14b14a94a822c28f556631a51
+                            Target 00bf9f9268837a42a11c9558d5627248
+                            SourceFieldId 225375086
+                            TargetFieldId 193450867
+                        member::PropertyConnection
+                            Source 78cbfc44d2721043954377f86450dfef
+                            Target 00bf9f9268837a42a11c9558d5627248
+                            SourceFieldId 225375086
+                            TargetFieldId 193450866
+                        member::PropertyConnection
+                            Source 00bf9f9268837a42a11c9558d5627248
+                            Target 1bdebc7a3e2bac40872d4e2fdc3181d2
+                            SourceFieldId 193453899
+                            TargetFieldId 1947336347
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 1bdebc7a3e2bac40872d4e2fdc3181d2
+                            Target abf52ba9922bbf41b2b4c82136b3ddf0
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 9163b9c14b14a94a822c28f556631a51
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795826
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795827
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795824
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795825
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795830
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795831
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 78cbfc44d2721043954377f86450dfef
+                        SourceEvent::EventSpec
+                            Id 848795828
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795827
+                        TargetEvent::EventSpec
+                            Id 848795827
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795824
+                        TargetEvent::EventSpec
+                            Id 848795824
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795826
+                        TargetEvent::EventSpec
+                            Id 848795826
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795825
+                        TargetEvent::EventSpec
+                            Id 848795825
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795830
+                        TargetEvent::EventSpec
+                            Id 848795830
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795831
+                        TargetEvent::EventSpec
+                            Id 848795831
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 848795828
+                        TargetEvent::EventSpec
+                            Id 848795828
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795826
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795827
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795824
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795825
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795830
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795831
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 905d24c0e40be549ac00dad5e992db6d
+                        Target 39e6d72d6073e9458ba72e938adafaec
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795828
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 39e6d72d6073e9458ba72e938adafaec
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member abf52ba9922bbf41b2b4c82136b3ddf0
+            member 1bdebc7a3e2bac40872d4e2fdc3181d2
+            member 3a38dee7fd2014469612ff38f6bca864
+            member 905d24c0e40be549ac00dad5e992db6d
+            member 6b4fa864da827642a2b20c4224664039
+            member 625cf62701220a49aaf901354ae1fe2d
+            member 9163b9c14b14a94a822c28f556631a51
+            member 00bf9f9268837a42a11c9558d5627248
+            member 78cbfc44d2721043954377f86450dfef
+VolumeVectorShapeData abf52ba9922bbf41b2b4c82136b3ddf0
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 0
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Points::array
+            member::Vec3
+                x -6.26087474823
+                y -0.313446044922
+                z 4.23497438431
+            member::Vec3
+                x 1.62653744221
+                y -0.313446044922
+                z 4.23497486115
+            member::Vec3
+                x 1.626537323
+                y -0.313446044922
+                z -10.5426368713
+            member::Vec3
+                x -6.2608757019
+                y -0.313446044922
+                z -10.5426368713
+        Normals::array
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 4.0

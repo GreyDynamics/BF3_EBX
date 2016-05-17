@@ -1,0 +1,277 @@
+EmitterDocument 0cc7801dcbcf8b4f8b446421f07de5cc
+    $::EmitterAsset
+        $::Asset
+            $::DataContainer
+            Name FX/Weapons/Shells/Em_ShellEjection_L_KORD
+    RootProcessor 8cd4a499a5f7d0468fce4e7944b8cdc6
+    TemplateData d02b91d6ec331848b85806b05c764542
+EmitterTemplateData d02b91d6ec331848b85806b05c764542 #primary instance
+    $::DataContainer
+    RootProcessor 8cd4a499a5f7d0468fce4e7944b8cdc6
+    MaxCount 1
+    Name FX/Weapons/Shells/Em_ShellEjection_L_KORD
+    Lifetime 0.10000000149
+    TimeScale 1.0
+    RepeatParticleSpawning False
+    LifetimeFrameCount 0
+    FollowSpawnSource False
+    KillParticlesWithEmitter False
+    VisibleAfterDistance 0.0
+    ExclusionVolumeCullEnable False
+    EmittableType ParticleMesh
+    Mesh fx/meshparticles/weapons/shells_large_mesh/80bcf3b5085ab1d1b712db2ca7069445
+    Emissive False
+    Opaque True
+    VertexPixelLightingBlendFactor 0.0
+    GlobalLocalNormalBlendFactor 0.0
+    SoftParticlesFadeDistanceMultiplier 0.0
+    LightWrapAroundFactor 0.5
+    LightMultiplier 1.0
+    ForceNiceSorting False
+    LocalSpace False
+    TransparencySunShadowEnable False
+    ForceFullRes False
+    ActAsPointLight False
+    PointLightColor::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    PointLightRadius 20.0
+    PointLightPivot::Vec3
+        x 0.0
+        y 0.0
+        z 0.0
+    PointLightRandomIntensityMin 1.0
+    PointLightRandomIntensityMax 1.0
+    PointLightIntensity::Vec4
+        x 0.0
+        y 0.0
+        z 0.0
+        w 1.0
+    PointLightMinClamp 0.0
+    PointLightMaxClamp 1.0
+    ParticleCullingFactor 0.800000011921
+    MaxSpawnDistance 80.0
+    MinScreenArea 1.0
+    MeshCullingDistance 0.0
+    DistanceScaleLength 1.0
+    DistanceScaleNearValue 1.0
+    DistanceScaleFarValue 2.0
+    ZOcclusionLookup *nullArray*
+GravityData facadbdb07efcc4caef20cb619fd4740
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor d1787e7278c6ee4e8f8360258aaa2c41
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Gravity 8.0
+RandomEvaluatorData 0ea02a108548c64b910da223c706fbdb
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Max 3.0
+    Min 1.0
+RandomEvaluatorData 15e170e4915e4448877cb9525a7ca8e4
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Max 3.0
+    Min 1.0
+RandomXYZEvaluatorData 49378a2dd7b4eb47a1789909a3204683
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    MaxX -0.600000023842
+    MinX -1.0
+    MaxY 0.0
+    MinY 0.0
+    MaxZ -0.5
+    MinZ -0.300000011921
+RotateVectorData 15ba00298e528941b0a9524ee68435a8
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Angle 120.0
+    InputAffectsPhi True
+    RotateWithinPlane False
+SpawnDirectionData 317bb9843be8b64d956cc0143beb73d3
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 49378a2dd7b4eb47a1789909a3204683
+        NextProcessor ade4f34e4899d24284b1c854fe6b4519
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x -1.0
+            y 0.0
+            z -0.5
+            w 0.0
+    InheritSpeedAndDirectionFromEmitter False
+    DirectionFromEmitterOrigin 0.0
+SpawnOrientationData 3dad5c9bc7316d48a94a6aeb324186f6
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 19735e1299381043b85b511d13aa3dba
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 0.0
+SpawnPositionData ade4f34e4899d24284b1c854fe6b4519
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 7669b8f109245046a0a052a74d9cc609
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+SpawnRateData 28948794b40c814eb4ac87d07019a00c
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 317bb9843be8b64d956cc0143beb73d3
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    SpawnRate 8.0
+    TrailSegmentLength 5.0
+    DistributeOverTime False
+    DistributeOverDistance False
+SpawnRotationData d1787e7278c6ee4e8f8360258aaa2c41
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 15ba00298e528941b0a9524ee68435a8
+        NextProcessor f02c81775e5e814fad0248c4bf50085e
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 0.0
+    Rotation 1.0
+SpawnRotationSpeedData 093b2cb8656a024bbc0487c71aa103cb
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 0ea02a108548c64b910da223c706fbdb
+        NextProcessor 98f02933cbd46f4e9b729c678423b088
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    RotationSpeed 2.0
+SpawnSizeData 98f02933cbd46f4e9b729c678423b088
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor facadbdb07efcc4caef20cb619fd4740
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Size 1.10000002384
+SpawnSpeedData 7669b8f109245046a0a052a74d9cc609
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 15e170e4915e4448877cb9525a7ca8e4
+        NextProcessor 093b2cb8656a024bbc0487c71aa103cb
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Speed 2.0
+UpdateAgeData 8cd4a499a5f7d0468fce4e7944b8cdc6
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 28948794b40c814eb4ac87d07019a00c
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Lifetime 0.75
+UpdateLinearVelocityData 125e25fe3cb450d64340094287e047ea
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor *nullGuid*
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+UpdateRotationData f02c81775e5e814fad0248c4bf50085e
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 3dad5c9bc7316d48a94a6aeb324186f6
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 0.0
+            z 0.0
+            w 0.0
+UpdateSizeData 19735e1299381043b85b511d13aa3dba
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 125e25fe3cb450d64340094287e047ea
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Pivot::Vec2
+        x 0.0
+        y 0.0

@@ -1,0 +1,348 @@
+DriverStaticObjectComponentData d6551fe1bf4345428ef0778b92cb0c58
+    $::DriverComponentData
+        $::ComponentData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 3
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 0.0
+                    z 0.0
+            Components *nullArray*
+            Excluded False
+        WantedSpeed 17.0
+        Settings ai/driversettings/car/71383812365fc036137b16607fac7bcd
+    Acceleration 5.0
+    Deceleration 10.0
+    TurningRadius 10.0
+    TurnWhileStill True
+    AlignWithGroundNormal False
+EffectComponentData 264092d4657d8b448fd4e6bfdff2f368
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y -0.0871560424566
+                z -0.996194720268
+            forward::Vec3
+                x 0.0
+                y 0.996194720268
+                z -0.0871560424566
+            trans::Vec3
+                x -2.98023223877e-08
+                y -1.08886986538e-07
+                z 1.78801214695
+        Components *nullArray*
+        Excluded False
+    Effect fx/ambient/levelspecific/sp_tank/backdropfx/fx_tanksmoke_backdrop_01/11e34c81048b2a4182ac0a625a279ca0
+    AutoStart False
+    SnapToWaterSurface False
+    EmitterParameter1 0.0
+    EmitterParameter2 0.0
+    EmitterParameter3 0.0
+EffectComponentData afa2e419f0f9e24f81ae7470b11c7af2
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 0.372270405293
+                z -0.928124308586
+            forward::Vec3
+                x 0.0
+                y 0.928124308586
+                z 0.372270405293
+            trans::Vec3
+                x 0.290409088135
+                y 0.651805639267
+                z 2.88806080818
+        Components *nullArray*
+        Excluded False
+    Effect fx/ambient/levelspecific/sp_tank/backdropfx/fx_tanksmoke_backdrop_02/5bf58126aa0f9e4e8aba5aa27662abd8
+    AutoStart False
+    SnapToWaterSurface False
+    EmitterParameter1 0.0
+    EmitterParameter2 0.0
+    EmitterParameter3 0.0
+HealthStateData 6db7cdf98ae98851a65a3af2017f60e7
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 100.0
+    PartIndex 0
+    CanSupportOtherParts True
+InterfaceDescriptorData 70d3be1598282c46b4ff291aaaf7bcee
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1174111641
+                AccessType FieldAccessType_Source
+    InputEvents::array
+        member::DynamicEvent
+            Id -567950349
+        member::DynamicEvent
+            Id -639346773
+    OutputEvents *nullArray*
+    InputLinks::array
+        member::DynamicLink
+            Id -1270949607
+    OutputLinks *nullArray*
+ObjectBlueprint 967bca991f26b81ca1aaf2fa8bc8fabb #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name Levels/SP_Tank/Props/LVTP7/LVTP7_static
+                PropertyConnections::array
+                    member::PropertyConnection
+                        Source d6551fe1bf4345428ef0778b92cb0c58
+                        Target 422eac07675467419e106f8a9559ed41
+                        SourceFieldId -1174111641
+                        TargetFieldId 5862146
+                    member::PropertyConnection
+                        Source 422eac07675467419e106f8a9559ed41
+                        Target 70d3be1598282c46b4ff291aaaf7bcee
+                        SourceFieldId 193453899
+                        TargetFieldId -1174111641
+                LinkConnections::array
+                    member::LinkConnection
+                        Source 70d3be1598282c46b4ff291aaaf7bcee
+                        Target 457a21b7e7e7154a948bc26b3a0daa40
+                        SourceFieldId -1270949607
+                        TargetFieldId 0
+                    member::LinkConnection
+                        Source d6551fe1bf4345428ef0778b92cb0c58
+                        Target ba14a08610dddf11877db9cbf7dcf459
+                        SourceFieldId -900749990
+                        TargetFieldId 0
+            EventConnections::array
+                member::EventConnection
+                    Source 70d3be1598282c46b4ff291aaaf7bcee
+                    Target 264092d4657d8b448fd4e6bfdff2f368
+                    SourceEvent::EventSpec
+                        Id -567950349
+                    TargetEvent::EventSpec
+                        Id 230748069
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 70d3be1598282c46b4ff291aaaf7bcee
+                    Target 264092d4657d8b448fd4e6bfdff2f368
+                    SourceEvent::EventSpec
+                        Id -639346773
+                    TargetEvent::EventSpec
+                        Id 2089401213
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 70d3be1598282c46b4ff291aaaf7bcee
+                    Target afa2e419f0f9e24f81ae7470b11c7af2
+                    SourceEvent::EventSpec
+                        Id -639346773
+                    TargetEvent::EventSpec
+                        Id 2089401213
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 70d3be1598282c46b4ff291aaaf7bcee
+                    Target afa2e419f0f9e24f81ae7470b11c7af2
+                    SourceEvent::EventSpec
+                        Id -567950349
+                    TargetEvent::EventSpec
+                        Id 230748069
+                    TargetType EventConnectionTargetType_Client
+            Descriptor 70d3be1598282c46b4ff291aaaf7bcee
+            NeedNetworkId True
+            InterfaceHasConnections True
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Object ba14a08610dddf11877db9cbf7dcf459
+PartComponentData ab87221f09e26b73bc7a0c0fabab88e7
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components::array
+            member afa2e419f0f9e24f81ae7470b11c7af2
+            member 264092d4657d8b448fd4e6bfdff2f368
+        Excluded False
+    HealthStates::array
+        member 6db7cdf98ae98851a65a3af2017f60e7
+    PartLinks *nullArray*
+    IsSupported False
+    IsFragile False
+    IsNetworkable True
+    IsWindow False
+    AnimatePhysics False
+PathFollowingComponentData 457a21b7e7e7154a948bc26b3a0daa40
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components *nullArray*
+        Excluded False
+    UpdatePathAtDistancePercent 25.0
+    PreferredPathfindingIndex 0
+    AlternatePathfindingIndices *nullArray*
+    MovementCorridorRadius 0.0
+StaticModelEntityData ba14a08610dddf11877db9cbf7dcf459
+    $::GamePhysicsEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled False
+            Components::array
+                member ab87221f09e26b73bc7a0c0fabab88e7
+                member 457a21b7e7e7154a948bc26b3a0daa40
+                member d6551fe1bf4345428ef0778b92cb0c58
+                member 422eac07675467419e106f8a9559ed41
+            RuntimeComponentCount 5
+        PhysicsData *nullGuid*
+    PartLinks *nullArray*
+    Mesh levels/sp_tank/props/lvtp7/lvtp7_static_mesh/755499b7514c9f7cdcd98ba04be29cea
+    BoneCount 0
+    BasePoseTransforms *nullArray*
+    ExcludeFromNearbyObjectDestruction False
+    PhysicsPartInfos::array
+        member::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 0
+    NetworkInfo::StaticModelNetworkInfo
+        PartNetworkIdRanges::array
+            member::IndexRange
+                First 4294967295
+                Last 4294967295
+        NetworkIdCount 0
+        ChildNetworkInfos *nullArray*
+        ChildNetworkIdCount 0
+    AnimatePhysics False
+    Visible True
+SyncedTransformEntityData 422eac07675467419e106f8a9559ed41
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 4
+    Interpolate True
+    In::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0

@@ -1,0 +1,123 @@
+ModelAnimationEntityData 9e991cf3b4008542b403a0543e2bac56
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    AutoStart False
+    Looping True
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation FlagNormal_Anim
+    AnimationIndex 0
+    AnimationSet animations/characters/sp/shared/objects/cloths/flags/flagnormal_anim/25ac942e6f19e6da37ab5123702beaa6
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+RandomDelayEntityData 69dc1a17d87a844f9fd46544e066a4da
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    MinDelay 0.0
+    MaxDelay 3.0
+    Realm Realm_Client
+    AutoStart True
+    RunOnce False
+ReferenceObjectData b542be64a7747f4287e76fc756ad7701
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/sp/shared/objects/cloths/flags/flagnormalmodel/12ac18913abe98d7bb2d205df0aab94f
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 5818e60cbe007a61f236ff890139015f #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/SP/Shared/Objects/Cloths/Flags/FlagNormalPreFab
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 9e991cf3b4008542b403a0543e2bac56
+                            Target b542be64a7747f4287e76fc756ad7701
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 69dc1a17d87a844f9fd46544e066a4da
+                        Target 9e991cf3b4008542b403a0543e2bac56
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor *nullGuid*
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member b542be64a7747f4287e76fc756ad7701
+            member 9e991cf3b4008542b403a0543e2bac56
+            member 69dc1a17d87a844f9fd46544e066a4da

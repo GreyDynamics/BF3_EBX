@@ -1,0 +1,42 @@
+DataContainerAsset 3a4ca57d9f290f8d75b69f8f6ba6b45f #primary instance
+    $::Asset
+        $::DataContainer
+        Name Vehicles/common/WeaponData/spec/LaserPainter_SOFLAM
+    Data 1f34ea20b99e28fd336d7ad670931c00
+LaserPainterData 1f34ea20b99e28fd336d7ad670931c00
+    $::LockingWeaponData
+        $::WeaponData
+            $::ToolData
+                $::DataContainer
+                IsAlwaysActive True
+            ShowLaserPaintedVehicles False
+        LockingController 84bc1a52bbcea1890801eed1bf4ceb94
+        SecondaryLockingController *nullGuid*
+        IsHoming True
+        IsGuided False
+        IsGuidedWhenZoomed False
+        FireOnlyWhenLockedOn False
+        WarnLock wtWarnVehicle
+    TimeObjectIsPainted 0.5
+LockingControllerData 84bc1a52bbcea1890801eed1bf4ceb94
+    $::DataContainer
+    ZoomLevelLock::array
+        member::ZoomLevelLockData
+            OutlineTaggedDistance 0.0
+            LockType LockAlways
+    LockTime 2.0
+    ReleaseTime 1.0
+    ReleaseOnNewTargetTime 1.5
+    SampleRate 0.0599999986589
+    HoldStillThreshold 10.0
+    RayLength 500.0
+    LockOnVisibleTargetsOnly True
+    PositionOnly False
+    LockOnWorldSpacePos False
+    AcceptanceAngle 15.0
+    AngleConstant 50.0
+    DistanceConstant 1.0
+    Sensitivity 0.0
+    MinimumLockTime 0.0
+    LockOnEmptyVehicles True
+    IgnoreHeigthLockDistance False

@@ -1,0 +1,197 @@
+FiringFunctionData be106f1a345671498f9ea26fa5286ca9
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion *nullArray*
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_1p/9639bc4f82ed904b9ae7c29cbe063cc8
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.800000011921
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_shotgun_3p/b7d90b07a3b2a546817db27ab6ee7431
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.800000011921
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform True
+            StopLoopingEffects False
+    Sound sound/weapons/handheld/m26mass/weapon_shotgun_m26mass/dc29b4265f83bb439dd8771716016853
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 150.0
+        InheritWeaponSpeedAmount 0.0
+        MuzzleExplosion *nullGuid*
+        ProjectileData weapons/common/bullets/12g_frag_pump/6a5e00ed89a4854cba5267eb7a4458fb
+        SecondaryProjectileData *nullGuid*
+        Projectile *nullGuid*
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 1
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.0
+            BoltActionTime 0.550000011921
+            HoldBoltActionUntilFireRelease False
+            HoldBoltActionUntilZoomRelease False
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction False
+            ReturnToZoomAfterBoltAction False
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.649999976158
+        RateOfFire 300.0
+        RateOfFireForBurst 550.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 0.0
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 3.40000009537
+        ReloadTimeBulletsLeft 2.40000009537
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+        ReloadType rtMagazineWithPossibleShorterReload
+        FireLogicType fltSingleFireWithBoltAction
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 6
+        NumberOfMagazines 4
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.0
+        AmmoBagPickupAmount -1
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+GameDataContainerAsset 8fc18809f560a34c876ce7d486cb479a #primary instance
+    $::Asset
+        $::DataContainer
+        Name Weapons/Gadgets/M26Mass/12g_Frag_Firing
+    Data be106f1a345671498f9ea26fa5286ca9

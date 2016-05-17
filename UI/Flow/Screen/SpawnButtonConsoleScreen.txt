@@ -1,0 +1,84 @@
+InstanceOutputNode 02235602ca870944ab99fcf5cb1c9b36
+    $::UINodeData
+        $::DataContainer
+        Name Spawn
+        IsRootNode False
+        ParentGraph cad61cdfdac41940b37079060e481c22
+        ParentIsScreen True
+    In 1be56bbb5358744a8f74ff141bfcebf8
+    Id 230891742
+    DestroyGraph True
+UIDynamicDataBinding 84caf565a5024d4daef7a5cb235ad394
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member::UIDataSourceInfo
+            DataName Time
+            DataCategory ui/uicomponents/uispawnlogiccomp/44f7279f0941be907ede900d89a13bd9
+            DataKey -1005581981
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member::UIDataSourceInfo
+            DataName CanSpawn
+            DataCategory ui/uicomponents/uispawnpointcomp/601f5f5c8eacb63c99e8e320bdc65575
+            DataKey -990983020
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UINodeConnection 0d58d4f15a05364ab7df46d5298298dc
+    $::DataContainer
+    SourceNode 5a90cb9ed0d40b4fa7a1c8e04830821d
+    TargetNode 02235602ca870944ab99fcf5cb1c9b36
+    SourcePort 3227482e30982048ad9967ad80ca8b16
+    TargetPort 1be56bbb5358744a8f74ff141bfcebf8
+    NumScreensToPop 0
+UINodePort 3227482e30982048ad9967ad80ca8b16
+    $::DataContainer
+    Name Deploy
+    InstanceName SpawnTimer_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort 1be56bbb5358744a8f74ff141bfcebf8
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset cad61cdfdac41940b37079060e481c22 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/SpawnButtonConsoleScreen
+        Nodes::array
+            member 5a90cb9ed0d40b4fa7a1c8e04830821d
+            member 02235602ca870944ab99fcf5cb1c9b36
+        GlobalNode *nullGuid*
+        Connections::array
+            member 0d58d4f15a05364ab7df46d5298298dc
+        AudioEventMappings ui/flow/graph/audiomapping/defaultmaping/93137385a900e1b310012ead21f6cf0e
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal True
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode 5a90cb9ed0d40b4fa7a1c8e04830821d
+    $::UINodeData
+        $::DataContainer
+        Name SpawnTimer
+        IsRootNode False
+        ParentGraph cad61cdfdac41940b37079060e481c22
+        ParentIsScreen True
+    WidgetAsset ui/assets/spawntimer/2c57b159fdebbb5ebaa16ff4564ff51a
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 84caf565a5024d4daef7a5cb235ad394
+    InstanceName SpawnTimer_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 3227482e30982048ad9967ad80ca8b16
+    Inputs *nullArray*

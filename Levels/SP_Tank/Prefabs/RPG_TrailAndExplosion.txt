@@ -1,0 +1,365 @@
+EffectReferenceObjectData 9852c324bb01da4192c7325a9b91d404
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 1
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint fx/ambient/warfare/trails/fx_ambwar_at_trail/a366b1b94144e2a2479aac9afcada0eb
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+EffectReferenceObjectData 2680553445efa9469bf778cf706e84c1
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 5
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint fx/ambient/levelspecific/sp_tank/kornet/fx_amb_sp_tank_kornet_explosion_01/aa5a40b10fba5143a7b2587e64bd8e53
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+InterfaceDescriptorData 943830434edfc64ab625e416238b7bd5
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -1188545600
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LocatorEntityData 011743e8f678e9428be350a019cd183b
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+    Realm Realm_ClientAndServer
+LocatorEntityData 06d43c760dd8624098e6eea683087d7a
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 4
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z -150.0
+    Realm Realm_ClientAndServer
+SequenceEntityData 590824218da51f4ea0c9d780598df2be
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Events::array
+        member::SequenceEventData
+            Event::EventSpec
+                Id 613578040
+            Time 5000
+    SequenceStartTime 0
+    SequenceLength 5000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks::array
+        member 8082ba02d819ec4994c5222f379c9618
+        member a8fd5d9046284f45a76971b0e74267f9
+        member c8b2873ec3502340a295ab16c03d76f9
+        member 3396eedf36925f40aa21bdefb7acf81b
+        member 95134bcddc51d94db40dd8f40509a6e1
+        member 31b4357656662c4dbbb7804379dc2731
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint 9db5244c97e9c264e7ff59716699bbd3 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Tank/Prefabs/RPG_TrailAndExplosion
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 011743e8f678e9428be350a019cd183b
+                            Target e5c692dd2f83bc4088d30e8ba5d0abcf
+                            SourceFieldId 1925266716
+                            TargetFieldId 193450864
+                        member::PropertyConnection
+                            Source 590824218da51f4ea0c9d780598df2be
+                            Target e5c692dd2f83bc4088d30e8ba5d0abcf
+                            SourceFieldId 227190151
+                            TargetFieldId 193450867
+                        member::PropertyConnection
+                            Source e5c692dd2f83bc4088d30e8ba5d0abcf
+                            Target 2680553445efa9469bf778cf706e84c1
+                            SourceFieldId 193453899
+                            TargetFieldId -409930682
+                        member::PropertyConnection
+                            Source e5c692dd2f83bc4088d30e8ba5d0abcf
+                            Target 9852c324bb01da4192c7325a9b91d404
+                            SourceFieldId 193453899
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 590824218da51f4ea0c9d780598df2be
+                        Target 9852c324bb01da4192c7325a9b91d404
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 590824218da51f4ea0c9d780598df2be
+                        Target 9852c324bb01da4192c7325a9b91d404
+                        SourceEvent::EventSpec
+                            Id 650265526
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 590824218da51f4ea0c9d780598df2be
+                        Target 2680553445efa9469bf778cf706e84c1
+                        SourceEvent::EventSpec
+                            Id 613578040
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 943830434edfc64ab625e416238b7bd5
+                        Target 590824218da51f4ea0c9d780598df2be
+                        SourceEvent::EventSpec
+                            Id -1188545600
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                Descriptor 943830434edfc64ab625e416238b7bd5
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member 011743e8f678e9428be350a019cd183b
+            member 9852c324bb01da4192c7325a9b91d404
+            member e5c692dd2f83bc4088d30e8ba5d0abcf
+            member 590824218da51f4ea0c9d780598df2be
+            member 06d43c760dd8624098e6eea683087d7a
+            member 2680553445efa9469bf778cf706e84c1
+TransformMultiplierEntityData e5c692dd2f83bc4088d30e8ba5d0abcf
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 2
+    Realm Realm_Client
+    In1::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    In2::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+TransformPartPropertyTrackData 8082ba02d819ec4994c5222f379c9618
+    $::PropertyTrackData
+        $::DataContainer
+        Id 227190151
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Tank/Prefabs/AnimTrackData/21240859-A58D-4E1F-A0C9-D780598DF2BE_Trail
+    KeyStartIndex 0
+    KeyCount 14
+    IsStatic False
+TransformPartPropertyTrackData a8fd5d9046284f45a76971b0e74267f9
+    $::PropertyTrackData
+        $::DataContainer
+        Id 227190151
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Tank/Prefabs/AnimTrackData/21240859-A58D-4E1F-A0C9-D780598DF2BE_Trail
+    KeyStartIndex 14
+    KeyCount 14
+    IsStatic False
+TransformPartPropertyTrackData c8b2873ec3502340a295ab16c03d76f9
+    $::PropertyTrackData
+        $::DataContainer
+        Id 227190151
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Tank/Prefabs/AnimTrackData/21240859-A58D-4E1F-A0C9-D780598DF2BE_Trail
+    KeyStartIndex 28
+    KeyCount 14
+    IsStatic False
+TransformPartPropertyTrackData 3396eedf36925f40aa21bdefb7acf81b
+    $::PropertyTrackData
+        $::DataContainer
+        Id 227190151
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Tank/Prefabs/AnimTrackData/21240859-A58D-4E1F-A0C9-D780598DF2BE_Trail
+    KeyStartIndex 42
+    KeyCount 14
+    IsStatic True
+TransformPartPropertyTrackData 95134bcddc51d94db40dd8f40509a6e1
+    $::PropertyTrackData
+        $::DataContainer
+        Id 227190151
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Tank/Prefabs/AnimTrackData/21240859-A58D-4E1F-A0C9-D780598DF2BE_Trail
+    KeyStartIndex 56
+    KeyCount 14
+    IsStatic True
+TransformPartPropertyTrackData 31b4357656662c4dbbb7804379dc2731
+    $::PropertyTrackData
+        $::DataContainer
+        Id 227190151
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Tank/Prefabs/AnimTrackData/21240859-A58D-4E1F-A0C9-D780598DF2BE_Trail
+    KeyStartIndex 70
+    KeyCount 14
+    IsStatic True

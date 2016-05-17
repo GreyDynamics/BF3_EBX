@@ -1,0 +1,21 @@
+UIWidgetAsset a46e9f836e162ccee2a5fee756fe20cd #primary instance
+    $::UIAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Assets/IdleTimer
+    WidgetEvents::array
+        member::WidgetEventQueryPair
+            Name OnIdleTimeout
+            Query UIWidgetEventID_OnComplete
+            InstanceName *nullString*
+            IsOutput True
+        member::WidgetEventQueryPair
+            Name OnNotIdle
+            Query UIWidgetEventID_Clear
+            InstanceName *nullString*
+            IsOutput True
+        member::WidgetEventQueryPair
+            Name RestartTimer
+            Query UIWidgetEventID_Update
+            InstanceName *nullString*
+            IsOutput False

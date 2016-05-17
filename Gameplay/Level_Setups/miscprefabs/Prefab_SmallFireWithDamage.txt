@@ -1,0 +1,192 @@
+DamageAreaTriggerEntityData 48eefa836f55b947b50259100068a752
+    $::TriggerEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 1
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 2
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        Delay 0.0
+        RunOnce False
+    DamageCharacters True
+    DamageVehicles False
+    DamageBangers True
+    DamagePerSecond 20.0
+    DamageTime -1.0
+    ExcludeImmortalCharactersInTeam False
+    TeamOfImmortalCharacters Team1
+    ExcludeShieldedSoldiers True
+DelayEntityData 9ff98736b7d5594581b05af7d92b7275
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Delay 2.0
+    Realm Realm_Server
+    AutoStart True
+    RunOnce False
+    RemoveDuplicateEvents True
+EffectReferenceObjectData d84f29e6c0a372409d513a94d4ef3afb
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint fx/ambient/generic/firesmoke/fire/generic/fx_amb_generic_fire_s_01/71c2682430dff84080b42294f4b5313e
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart True
+InterfaceDescriptorData 8d90a50760d9104fa76a327f900f2fdf
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+SpatialPrefabBlueprint 1148db424f3e4b4e80a27304c8bac87e #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Level_Setups/MiscPrefabs/Prefab_SmallFireWithDamage
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 48eefa836f55b947b50259100068a752
+                            Target e4fbdcb81263a740a41fb5baa0db3d51
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 9ff98736b7d5594581b05af7d92b7275
+                        Target 48eefa836f55b947b50259100068a752
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -713836199
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 8d90a50760d9104fa76a327f900f2fdf
+                        Target d84f29e6c0a372409d513a94d4ef3afb
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 8d90a50760d9104fa76a327f900f2fdf
+                        Target 48eefa836f55b947b50259100068a752
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 8d90a50760d9104fa76a327f900f2fdf
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member e4fbdcb81263a740a41fb5baa0db3d51
+            member 9ff98736b7d5594581b05af7d92b7275
+            member 48eefa836f55b947b50259100068a752
+            member d84f29e6c0a372409d513a94d4ef3afb
+VolumeVectorShapeData e4fbdcb81263a740a41fb5baa0db3d51
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 1
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Points::array
+            member::Vec3
+                x -1.49127554893
+                y -0.471257776022
+                z 1.54403233528
+            member::Vec3
+                x -1.46080780029
+                y -0.471257776022
+                z -1.61010313034
+            member::Vec3
+                x 1.66401863098
+                y -0.471257776022
+                z -1.61038327217
+            member::Vec3
+                x 1.66632533073
+                y -0.471257776022
+                z 1.59858155251
+        Normals::array
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 2.0

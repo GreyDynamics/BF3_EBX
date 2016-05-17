@@ -1,0 +1,230 @@
+FloatEntityData 4e0ac5cac37eea44adb121b3b613bc1b
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Realm Realm_Client
+    DefaultValue 1.0
+    IncDecValue 0.20000000298
+FloatEntityData 2ecda8b264ef63459d6c3a66ccec0fb2
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 5
+    Realm Realm_Client
+    DefaultValue 0.0
+    IncDecValue 1.0
+InterfaceDescriptorData 83025eab0a0ebe45adfec29deeb7571e
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 258157264
+                AccessType FieldAccessType_Source
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+IrReverbEntityData 3ad13d5ac5f3ef4cb569abd15d9d4df3
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 2
+    ImpulseResponse sound/impulse_responses/ir_indoor_big_room/47a1bd93ff83f524bd289b07c65b541a
+    Gain -15.0
+    Volume 0.0
+    FadeCurve FadeCurveType_SineAmplitude
+MathOpEntityData ca8f70b63b478541876d065bdd674b39
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 3
+    Realm Realm_Client
+    Operators::array
+        member *nullEnum*
+MixerEntityData d7222137119d1e4c8a90e2b9a9b8f014
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 6
+    ActivateOnCreation True
+    Mixer sound/mixers/ambienttype_mixer/2a4dbe633068ee45be474c5d662e508c
+MixerEntityData 9144a2dd5aa80e41aba04e789935e0db
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 7
+    ActivateOnCreation True
+    Mixer sound/mixers/areatype_mixer/28eb2ae0ad4f4647aa5b882f6a2bc4ee
+OBBData 94fda1d70d5e9243a2fc4d47454cf972
+    $::BaseShapeData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.382285714149
+            y 2.68983101845
+            z 0.00732040219009
+    HalfExtents::Vec3
+        x 8.14694499969
+        y 2.59504008293
+        z 4.03907060623
+PrefabBlueprint 07a326337c7fbd40b015b1f5970e3a7b #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name xp3/objects/vehicleshed_m_xp3/vehicleshed_m_xp3_prefab_valley_nongroupable_autogen
+                PropertyConnections::array
+                    member::PropertyConnection
+                        Source fbd3209c15675b4bbc411971e289ef4b
+                        Target 3ad13d5ac5f3ef4cb569abd15d9d4df3
+                        SourceFieldId 258157264
+                        TargetFieldId -1136955571
+                    member::PropertyConnection
+                        Source fbd3209c15675b4bbc411971e289ef4b
+                        Target 83025eab0a0ebe45adfec29deeb7571e
+                        SourceFieldId 258157264
+                        TargetFieldId 258157264
+                    member::PropertyConnection
+                        Source fbd3209c15675b4bbc411971e289ef4b
+                        Target 9144a2dd5aa80e41aba04e789935e0db
+                        SourceFieldId 258157264
+                        TargetFieldId 1980168092
+                    member::PropertyConnection
+                        Source fbd3209c15675b4bbc411971e289ef4b
+                        Target d7222137119d1e4c8a90e2b9a9b8f014
+                        SourceFieldId 258157264
+                        TargetFieldId -1774245558
+                    member::PropertyConnection
+                        Source 2ecda8b264ef63459d6c3a66ccec0fb2
+                        Target ca8f70b63b478541876d065bdd674b39
+                        SourceFieldId 225375086
+                        TargetFieldId 193450867
+                    member::PropertyConnection
+                        Source 4e0ac5cac37eea44adb121b3b613bc1b
+                        Target ca8f70b63b478541876d065bdd674b39
+                        SourceFieldId 225375086
+                        TargetFieldId 193450866
+                    member::PropertyConnection
+                        Source ca8f70b63b478541876d065bdd674b39
+                        Target fbd3209c15675b4bbc411971e289ef4b
+                        SourceFieldId 193453899
+                        TargetFieldId 1947336347
+                LinkConnections::array
+                    member::LinkConnection
+                        Source fbd3209c15675b4bbc411971e289ef4b
+                        Target 94fda1d70d5e9243a2fc4d47454cf972
+                        SourceFieldId 838548383
+                        TargetFieldId 0
+            EventConnections::array
+                member::EventConnection
+                    Source 28abbcc5269edb4ab4f206eea74420f7
+                    Target 2ecda8b264ef63459d6c3a66ccec0fb2
+                    SourceEvent::EventSpec
+                        Id -1452333337
+                    TargetEvent::EventSpec
+                        Id -395651742
+                    TargetType EventConnectionTargetType_Client
+                member::EventConnection
+                    Source 28abbcc5269edb4ab4f206eea74420f7
+                    Target 4e0ac5cac37eea44adb121b3b613bc1b
+                    SourceEvent::EventSpec
+                        Id -847278421
+                    TargetEvent::EventSpec
+                        Id -395651742
+                    TargetType EventConnectionTargetType_NetworkedClient
+            Descriptor 83025eab0a0ebe45adfec29deeb7571e
+            NeedNetworkId True
+            InterfaceHasConnections False
+            AlwaysCreateEntityBusClient True
+            AlwaysCreateEntityBusServer True
+    Objects::array
+        member 94fda1d70d5e9243a2fc4d47454cf972
+        member fbd3209c15675b4bbc411971e289ef4b
+        member 3ad13d5ac5f3ef4cb569abd15d9d4df3
+        member ca8f70b63b478541876d065bdd674b39
+        member 4e0ac5cac37eea44adb121b3b613bc1b
+        member 2ecda8b264ef63459d6c3a66ccec0fb2
+        member d7222137119d1e4c8a90e2b9a9b8f014
+        member 9144a2dd5aa80e41aba04e789935e0db
+        member 28abbcc5269edb4ab4f206eea74420f7
+ReferenceObjectData 28abbcc5269edb4ab4f206eea74420f7
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 8
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint xp3/objects/vehicleshed_m_xp3/vehicleshed_m_xp3/b23830aa2c941d408c327e6c62f476b3
+    ObjectVariation xp3/objects/vehicleshed_m_xp3/vehicleshed_m_xp3_valley/c9b4d61a69902a852da2b0e07d224753
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundAreaEntityData fbd3209c15675b4bbc411971e289ef4b
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 1
+    Sound sound/levels/shared/object_interiors/shared_ambients_object_int_vehicleshed_m_01/4e802ebc8bf50940961b674cfe5fe51a
+    BigWorld *nullGuid*
+    FadeWidth 10.0
+    ProximityMultiplier 0.699999988079
+    FadeCurve FadeCurveType_LinearDecibel

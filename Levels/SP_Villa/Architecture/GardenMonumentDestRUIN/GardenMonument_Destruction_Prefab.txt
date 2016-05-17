@@ -1,0 +1,264 @@
+EventGateEntityData bafb78182eadc54b81a323b1cad434a6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 5
+    Default False
+    Realm Realm_Server
+EventSyncEntityData 49c05a6ea763a9418e619e91914590e5
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+InterfaceDescriptorData 60c1627693d1d04281401cb358b9f9fb
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 96541387
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData de2e7b3977e51941a6b2eaa3d6d3575f
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Realm Realm_ClientAndServer
+    AutoStart False
+    Looping False
+    ResetAfterStop False
+    PlayFirstFrame True
+    DefaultAnimation GardenMonumentDest_Anim
+    AnimationIndex 0
+    AnimationSet animations/characters/sp/sp_sniper/gardenmonumentdest/gardenmonumentdest_animset/bf5a3c170218caf30184e1ffb7487fc1
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData f5f3193dcc67a241a76069ebcd4fca27
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint levels/sp_villa/architecture/gardenmonumentdestruin/gardenmonumentdestruin/9a80bd5495e6ebc9a0f0382a877a479d
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 75c8cdbd909b6c49a4ba2b0ba37d4b23
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/sp/sp_sniper/gardenmonumentdest/gardenmonumentdest_model/822be0915201fc6912becfefcc80b532
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SaveGameLoadedEntityData b8b6e72ff3fdf147ad2bd40c85e05490
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+SpatialPrefabBlueprint 0784a8d7e1f148d9423c916fbcd29c57 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Villa/Architecture/GardenMonumentDestRUIN/GardenMonument_Destruction_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 561c1060dc42fe409766d79506d343f2
+                            Target f5f3193dcc67a241a76069ebcd4fca27
+                            SourceFieldId 193453899
+                            TargetFieldId 2662400
+                        member::PropertyConnection
+                            Source ff802918d8894746b5d62a320b17b612
+                            Target 75c8cdbd909b6c49a4ba2b0ba37d4b23
+                            SourceFieldId 193453899
+                            TargetFieldId 2662400
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source de2e7b3977e51941a6b2eaa3d6d3575f
+                            Target 75c8cdbd909b6c49a4ba2b0ba37d4b23
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source de2e7b3977e51941a6b2eaa3d6d3575f
+                        Target 49c05a6ea763a9418e619e91914590e5
+                        SourceEvent::EventSpec
+                            Id -1176973715
+                        TargetEvent::EventSpec
+                            Id -1573253508
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 60c1627693d1d04281401cb358b9f9fb
+                        Target de2e7b3977e51941a6b2eaa3d6d3575f
+                        SourceEvent::EventSpec
+                            Id 96541387
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 60c1627693d1d04281401cb358b9f9fb
+                        Target bafb78182eadc54b81a323b1cad434a6
+                        SourceEvent::EventSpec
+                            Id 96541387
+                        TargetEvent::EventSpec
+                            Id 2089008817
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source b8b6e72ff3fdf147ad2bd40c85e05490
+                        Target bafb78182eadc54b81a323b1cad434a6
+                        SourceEvent::EventSpec
+                            Id 1310442701
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 49c05a6ea763a9418e619e91914590e5
+                        Target bafb78182eadc54b81a323b1cad434a6
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 212633683
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source bafb78182eadc54b81a323b1cad434a6
+                        Target de2e7b3977e51941a6b2eaa3d6d3575f
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source 49c05a6ea763a9418e619e91914590e5
+                        Target 561c1060dc42fe409766d79506d343f2
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 49c05a6ea763a9418e619e91914590e5
+                        Target ff802918d8894746b5d62a320b17b612
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 60c1627693d1d04281401cb358b9f9fb
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member f5f3193dcc67a241a76069ebcd4fca27
+            member 75c8cdbd909b6c49a4ba2b0ba37d4b23
+            member 49c05a6ea763a9418e619e91914590e5
+            member de2e7b3977e51941a6b2eaa3d6d3575f
+            member b8b6e72ff3fdf147ad2bd40c85e05490
+            member bafb78182eadc54b81a323b1cad434a6
+            member 561c1060dc42fe409766d79506d343f2
+            member ff802918d8894746b5d62a320b17b612
+SyncedBoolEntityData 561c1060dc42fe409766d79506d343f2
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 6
+    In False
+SyncedBoolEntityData ff802918d8894746b5d62a320b17b612
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 7
+    In True

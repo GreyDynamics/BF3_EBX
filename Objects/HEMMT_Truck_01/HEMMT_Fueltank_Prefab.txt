@@ -1,0 +1,122 @@
+InterfaceDescriptorData 881c8fded57c0846867eba4b4192ff47
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1174111641
+                AccessType FieldAccessType_Source
+    InputEvents::array
+        member::DynamicEvent
+            Id -567950349
+        member::DynamicEvent
+            Id -639346773
+    OutputEvents *nullArray*
+    InputLinks::array
+        member::DynamicLink
+            Id -510838215
+    OutputLinks *nullArray*
+ReferenceObjectData a74ff952aceb7449962837221194b0d1
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/hemmt_truck_01/hemmt_main/863de88ee49a449ee81a6ebde0b65515
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData a25e66e44dde8a4eb9d5676e3fa4100d
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/hemmt_truck_01/hemmt_tank/9bc260177289819935f33ab5a62d3033
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 2eb594e8e8306b562a579079f2271a21 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/HEMMT_Truck_01/HEMMT_Fueltank_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source a74ff952aceb7449962837221194b0d1
+                            Target 881c8fded57c0846867eba4b4192ff47
+                            SourceFieldId -1174111641
+                            TargetFieldId -1174111641
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 881c8fded57c0846867eba4b4192ff47
+                            Target a74ff952aceb7449962837221194b0d1
+                            SourceFieldId -510838215
+                            TargetFieldId -510838215
+                EventConnections::array
+                    member::EventConnection
+                        Source 881c8fded57c0846867eba4b4192ff47
+                        Target a74ff952aceb7449962837221194b0d1
+                        SourceEvent::EventSpec
+                            Id -567950349
+                        TargetEvent::EventSpec
+                            Id -567950349
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 881c8fded57c0846867eba4b4192ff47
+                        Target a74ff952aceb7449962837221194b0d1
+                        SourceEvent::EventSpec
+                            Id -639346773
+                        TargetEvent::EventSpec
+                            Id -639346773
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 881c8fded57c0846867eba4b4192ff47
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member a74ff952aceb7449962837221194b0d1
+            member a25e66e44dde8a4eb9d5676e3fa4100d

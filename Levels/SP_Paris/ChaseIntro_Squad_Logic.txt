@@ -1,0 +1,190 @@
+CharacterStateTriggerEntityData 4bf46ae0055b014a8e3c0dff00f15482
+    $::TriggerEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 1
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 264
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        Delay 0.0
+        RunOnce False
+    UsePitch False
+    Pitch 0.0
+    CharacterPose CPTForceToStand
+    ExcludeConnectedVehicles False
+    StayInVehicleOnMove False
+    Weapon *nullGuid*
+    CheckAllWeapons False
+    ContinueToCheckIfHoldingWrongWeapon False
+    ShouldCheckSeatIndex False
+    SeatIndex 0
+    HealthToSet 100
+    HealthToCheck 100
+    CheckHealthGreaterOrEqual True
+    AmmoToSet 75
+    PoseToCheck CPTForceToStand
+    UseExitPointWhenLeavingVehicle True
+    DisablePhysicsWhenLeavingVehicle False
+    ActiveWeaponSlot 0
+EventAndGateEntityData 6aff14ade45e3a4391619a7fa99845c3
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 267
+    Realm Realm_Server
+    EventCount 2
+EventSplitterEntityData 12e0645cf86f6a4f896e0cb8fb1aa8a7
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 263
+    RunOnce True
+    Realm Realm_Server
+EventSplitterEntityData 43f60c2299a40645a3f30413b1360a8c
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 265
+    RunOnce False
+    Realm Realm_Server
+GeometryTriggerEntityData bdebfa31c0398741943a95b8213ca9ad
+    $::AreaTriggerEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 3
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 266
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce True
+        GeometryTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Include ATPlayers
+        UseCharacterEntity False
+        Radius 0.0
+        InsideAreaEventRepeatTime 0.0
+        OneInsideAreaEventPerSoldier False
+        TriggerOnlyOnLeave False
+        ResetOnEnable False
+        TriggerOnLeaveOnDeath True
+        TriggerOnLeaveOnDisable False
+PatrolOrderEntityData 2d4521d1be4dc04abdeb6f4e665c8c31
+    $::BFOrderEntityData
+        $::OrderEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 1
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 262
+            DebugName PatrolOrder D121452D-4DBE-4AC0-BDEB-6F4E665C8C31
+            IssueOrderDelay 1.0
+            OnCompleteTimeOut 0.0
+            OnFailedTimeOut 0.0
+            Enabled True
+            ReadinessOnStart RLNone
+        ForbiddenToFire False
+    TypeOfRoute RouteStop
+    UsePathFinding False
+    CombatMode CombatPatrolMode_MustStayOnPath
+    StartAtGeometricallyClosestWaypoint True
+    StartingWaypoint *nullGuid*
+WorldPartData 69e5611bbd7f224ea9911350e9ea0ce4 #primary instance
+    $::SpatialPrefabBlueprint
+        $::PrefabBlueprint
+            $::Blueprint
+                $::EntityBusData
+                    $::DataBusData
+                        $::Asset
+                            $::DataContainer
+                            Name Levels/SP_Paris/ChaseIntro_Squad_Logic
+                        PropertyConnections *nullArray*
+                        LinkConnections *nullArray*
+                    EventConnections *nullArray*
+                    Descriptor *nullGuid*
+                    NeedNetworkId False
+                    InterfaceHasConnections False
+                    AlwaysCreateEntityBusClient False
+                    AlwaysCreateEntityBusServer False
+            Objects::array
+                member 2d4521d1be4dc04abdeb6f4e665c8c31
+                member 12e0645cf86f6a4f896e0cb8fb1aa8a7
+                member 4bf46ae0055b014a8e3c0dff00f15482
+                member 43f60c2299a40645a3f30413b1360a8c
+                member bdebfa31c0398741943a95b8213ca9ad
+                member 6aff14ade45e3a4391619a7fa99845c3
+    Enabled True
+    UseDeferredEntityCreation False
+    HackToSolveRealTimeTweakingIssue CB68836B7853EBED04AD9498A2193825

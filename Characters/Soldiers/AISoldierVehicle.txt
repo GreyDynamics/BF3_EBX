@@ -1,0 +1,396 @@
+BFTargetEvaluatorComponentData 4ce638dd42fcef4a9351610331a8d77d
+    $::TargetEvaluatorComponentData
+        $::ComponentData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint -1
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 0.0
+                    z 0.0
+            Components *nullArray*
+            Excluded False
+        UpdateInterval 0.10000000149
+    Settings ai/settings/targetevaluationconstants/61811cada4d83543a11fc77c70c8a242
+EntityVoiceOverInfo ebc656ca642d254f9eb76207797c3c84
+    $::DataContainer
+    VoiceOverType sound/vo/vo_system/3758c047510788449d40a949481b5b79
+    Labels::array
+        member sound/vo/vo_system/4ded4cef75cb204d88a1e396bebf767e
+        member sound/vo/vo_system/417998ac3b1977469b839d3cba881c6b
+InterfaceDescriptorData 4421306617377440884a0ef1fdc7e4c4
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1978571616
+                AccessType FieldAccessType_Target
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -920078807
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member::DynamicEvent
+            Id 2089125447
+    OutputEvents::array
+        member::DynamicEvent
+            Id 2008897511
+        member::DynamicEvent
+            Id -1036968738
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+PlayerEntryComponentData 6fedf7a975642044b4f08bb54c7a58e0
+    $::EntryComponentData
+        $::ComponentData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint -1
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.599158704281
+                    y 0.0
+                    z 0.0
+            Components::array
+                member 4ce638dd42fcef4a9351610331a8d77d
+            Excluded False
+        EntryClass ecPrimary
+        AIData ai/entries/inf_enemy_ai_entry/04a5d00a3c4d854982f4fb678c1d60ed
+        ForbiddenForHuman False
+        InputConceptDefinition input/venicesoldierinputconcepts/086eb0d2a0133b4ebee5c674f06f9d44
+        InputMapping input/venicesoldierinputmapping/b4785d11ced4e54684dc73f5c092b882
+        InputCurves *nullArray*
+        HudData::EntryComponentHudData
+            Index 0
+            Frustum False
+            Visible True
+            SeatType EST_Driver
+            MaximizeMiniMapOnEntry False
+        EntryOrderNumber 0
+        EnterImpulse 0.0
+        EntryRadius 0.0
+        IsAllowedToExitInAir True
+        IsShielded False
+        LockSoldierAimingToEntry True
+        ShowSoldierInEntry True
+        Show1pSoldierInEntry False
+        SoldierTransitionInvisbleTime 0.0750000029802
+        NumberOfStances 1
+        StancesEnabled False
+        EntrySpottingSettings ESSDefault
+        ShowSoldierWeaponInEntry False
+        Show1pSoldierInEntryForPlayerOnly False
+        HideSoldierForPassengers False
+        Show3pSoldierWeaponInEntry True
+        ShowSoldierGearInEntry False
+        PoseConstraints::PoseConstraintsData
+            StandPose True
+            CrouchPose True
+            PronePose True
+        SoldierOffset::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        EntryComponentSound *nullGuid*
+        TriggerEventOnKey EIAUndefined
+    AntEntryID *nullString*
+    AntEntryId AntEntryIdEnum_Humvee_Driver
+    AntEntryEnumeration *nullGuid*
+    AnimationAccelerationMultiplier::Vec3
+        x 0.10000000149
+        y 0.10000000149
+        z 0.10000000149
+    ShieldedTransitionExitTime 0.0
+SoldierAimingConstraintsData c8c813ad8477304c817af38d3eeab581
+    $::DataContainer
+    SwimmingConstraints::AimingConstraintsData
+        MinYaw -180.0
+        MaxYaw 180.0
+        MinPitch -45.0
+        MaxPitch 45.0
+SoldierBlueprint d34a7129344bb84193111d3ef8329bdd #primary instance
+    $::CharacterBlueprint
+        $::ObjectBlueprint
+            $::Blueprint
+                $::EntityBusData
+                    $::DataBusData
+                        $::Asset
+                            $::DataContainer
+                            Name Characters/Soldiers/AISoldierVehicle
+                        PropertyConnections::array
+                            member::PropertyConnection
+                                Source 4421306617377440884a0ef1fdc7e4c4
+                                Target c81884a8cd9d3c4f89b929a089af231a
+                                SourceFieldId -1978571616
+                                TargetFieldId 875726273
+                            member::PropertyConnection
+                                Source 4421306617377440884a0ef1fdc7e4c4
+                                Target c81884a8cd9d3c4f89b929a089af231a
+                                SourceFieldId -920078807
+                                TargetFieldId 922982664
+                        LinkConnections *nullArray*
+                    EventConnections::array
+                        member::EventConnection
+                            Source c81884a8cd9d3c4f89b929a089af231a
+                            Target 4421306617377440884a0ef1fdc7e4c4
+                            SourceEvent::EventSpec
+                                Id 2008897511
+                            TargetEvent::EventSpec
+                                Id 2008897511
+                            TargetType EventConnectionTargetType_ClientAndServer
+                        member::EventConnection
+                            Source 4421306617377440884a0ef1fdc7e4c4
+                            Target c81884a8cd9d3c4f89b929a089af231a
+                            SourceEvent::EventSpec
+                                Id 2089125447
+                            TargetEvent::EventSpec
+                                Id 2089125447
+                            TargetType EventConnectionTargetType_Server
+                        member::EventConnection
+                            Source c81884a8cd9d3c4f89b929a089af231a
+                            Target 4421306617377440884a0ef1fdc7e4c4
+                            SourceEvent::EventSpec
+                                Id -1036968738
+                            TargetEvent::EventSpec
+                                Id -1036968738
+                            TargetType EventConnectionTargetType_ClientAndServer
+                    Descriptor 4421306617377440884a0ef1fdc7e4c4
+                    NeedNetworkId True
+                    InterfaceHasConnections True
+                    AlwaysCreateEntityBusClient False
+                    AlwaysCreateEntityBusServer False
+            Object c81884a8cd9d3c4f89b929a089af231a
+SoldierBodyComponentData db2f9a1648cc014ea48427d601328aa7
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components::array
+            member 6fedf7a975642044b4f08bb54c7a58e0
+        Excluded False
+    SprintMultiplier 1.0
+    OverrideGravity False
+    OverrideGravityValue 0.0
+    OverrideVelocity False
+    OverrideVelocityY 0.0
+SoldierEntityData c81884a8cd9d3c4f89b929a089af231a
+    $::CharacterEntityData
+        $::ControllableEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled True
+                    Components::array
+                        member db2f9a1648cc014ea48427d601328aa7
+                    RuntimeComponentCount 3
+                PhysicsData *nullGuid*
+            UsePrediction True
+            DefaultTeam TeamNeutral
+            ResetTeamOnLastPlayerExits False
+            Immortal False
+            FakeImmortal False
+            LowHealthThreshold 10.0
+            MaterialPair materials/materialcontainer/2fa1096636a19c42af09c9f67cfdbe58
+            ForceForegroundRendering False
+        DefaultViewMode PersonViewMode_ThirdPerson
+        PlayerSpawnType PlayerSpawnType_AiPlayer
+        CharacterLightingEnable True
+    FootMaterialPair materials/materialcontainer/e945a4fd7747db48a897100fa5032199
+    HeadMaterialPair materials/materialcontainer/a1bc818ba4ddae43b93ed346e940d832
+    BoneFakePhysics *nullArray*
+    AutoAim *nullGuid*
+    AimingConstraints c8c813ad8477304c817af38d3eeab581
+    HeadCollision *nullGuid*
+    CharacterPhysics characters/soldiers/aisoldiervehicle_generatedcharacterphysics/24ff298d74d101295cd8035459a406b4
+    SprintSettings *nullGuid*
+    UseSpineXRotation False
+    Meshes1p *nullArray*
+    Meshes3p *nullArray*
+    HidableMeshParts *nullArray*
+    Sound d304f266e0512bf456833e9496e97834
+    StreamGroup1p *nullGuid*
+    ImpulseReactionTime 0.0
+    ShowWeaponWhenDead False
+    MaxHealth 75.0
+    HealthModule af1483180f210748951d15b2d72791df
+    VoiceOverInfo ebc656ca642d254f9eb76207797c3c84
+    EnableGroundmapLighting False
+    LowerGunOnOwnTeam False
+    ProximityCheck False
+    FreeSpaceCheck False
+    UIParts *nullArray*
+    BreathControl *nullArray*
+    CollisionInfo *nullGuid*
+    FLIRValue 1.0
+    FLIRKeyColor::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    ExplosionDamageModifier 1.0
+    RegenerationDelayModifier 1.0
+    CollisionEnabled True
+    PhysicsControlled False
+    IsPushable False
+    HumanPlayerControlled False
+    InteractiveManDownAllowed True
+    ShowNametag True
+SoldierSoundData d304f266e0512bf456833e9496e97834
+    $::DataContainer
+    Movement *nullGuid*
+    Death *nullGuid*
+    BulletImpact *nullGuid*
+    Healing *nullGuid*
+    BreathControl *nullGuid*
+    HitIndicator *nullGuid*
+    PickupKit *nullGuid*
+    PickupAmmo *nullGuid*
+    SprintTimeForRecovery 5.0
+    MovementThreshold 0.10000000149
+    MinHealSoundTime 0.5
+VeniceSoldierHealthModuleData af1483180f210748951d15b2d72791df
+    $::SoldierHealthModuleData
+        $::DataContainer
+    TimeForCorpse 60.0
+    InteractiveManDown False
+    InteractiveManDownThreshold 10.0
+    InteractiveManDownPoseConstraints::PoseConstraintsData
+        StandPose True
+        CrouchPose True
+        PronePose True
+    ManDownStateTime 0.0
+    ManDownStateHealthPoints 0.0
+    ImmortalTimeAfterSpawn 0.0
+    AbortSpawnImmortalityInputs *nullArray*
+    PostReviveResponseTime 5.0
+    PostReviveHealth 10.0
+    RegenerationDelay 0.0
+    RegenerationRate 0.0
+    CriticalFakeImmortalTime 0.0
+    SprintDisabledWhenDamagedTime 0.0
+    SprintDisabledDamageThreshold 0.0
+    ManDownRotate::RotateToHitData
+        RotationSpeedFactor 5.0
+    Binding::SoldierHealthModuleBinding
+        HeadShot::AntRef
+            AssetId 357057774
+        LeftArmHit::AntRef
+            AssetId -1
+        RightArmHit::AntRef
+            AssetId -1
+        LeftLegHit::AntRef
+            AssetId -1
+        RightLegHit::AntRef
+            AssetId -1
+        OnGround::AntRef
+            AssetId -1
+        DeathAnimationTriggered::AntRef
+            AssetId 357088440
+        RandomAnimationIndex::AntRef
+            AssetId 357087258
+        Sprinting::AntRef
+            AssetId 357053793
+        HitLeft::AntRef
+            AssetId 357053028
+        HitRight::AntRef
+            AssetId 357098333
+        HitFront::AntRef
+            AssetId 357095253
+        HitBack::AntRef
+            AssetId 357097656
+        DeathHitDirection::AntRef
+            AssetId -1
+        Explosion::AntRef
+            AssetId 357082798
+        Dead::AntRef
+            AssetId 357048259
+        Revived::AntRef
+            AssetId 357095205
+        RandomValue::AntRef
+            AssetId 357076747
+        Pose::AntRef
+            AssetId -1
+        RightSpeed::AntRef
+            AssetId 357058969
+        ForwardSpeed::AntRef
+            AssetId 357068484
+        CriticallyHit::AntRef
+            AssetId 357043956
+        InteractiveManDown::AntRef
+            AssetId -1

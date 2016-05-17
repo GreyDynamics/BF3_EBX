@@ -1,0 +1,160 @@
+BoolEntityData 587b26ab5dffc04988d9e51ce545522f
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Client
+    DefaultValue False
+BoolToEventEntityData 69b6f40745c56141b0911f152096450d
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 1
+    Realm Realm_Client
+    Value False
+    InitalEvent False
+DelayEntityData 71a317cb5488214b8f6af4f412106939
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Delay 0.070000000298
+    Realm Realm_Client
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+InterfaceDescriptorData 86a31010ba9e8147aae1449f89be9ed7
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 1921607888
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member::DynamicEvent
+            Id -569252259
+        member::DynamicEvent
+            Id -1684556875
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint 5a56d51489e83bb7afd9ee2e55c1564c #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/common/DefaultJetHUD
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 86a31010ba9e8147aae1449f89be9ed7
+                            Target 11a0611ecb333d4583cd3288f5ece3b3
+                            SourceFieldId 1921607888
+                            TargetFieldId 193450867
+                        member::PropertyConnection
+                            Source 587b26ab5dffc04988d9e51ce545522f
+                            Target 11a0611ecb333d4583cd3288f5ece3b3
+                            SourceFieldId 225375086
+                            TargetFieldId 193450864
+                        member::PropertyConnection
+                            Source 11a0611ecb333d4583cd3288f5ece3b3
+                            Target 69b6f40745c56141b0911f152096450d
+                            SourceFieldId 193453899
+                            TargetFieldId 225375086
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 69b6f40745c56141b0911f152096450d
+                        Target 4881ff9a78e9bc498f9e006d04fea468
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id -1684556875
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 86a31010ba9e8147aae1449f89be9ed7
+                        Target 587b26ab5dffc04988d9e51ce545522f
+                        SourceEvent::EventSpec
+                            Id -569252259
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 86a31010ba9e8147aae1449f89be9ed7
+                        Target 587b26ab5dffc04988d9e51ce545522f
+                        SourceEvent::EventSpec
+                            Id -1684556875
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 69b6f40745c56141b0911f152096450d
+                        Target 71a317cb5488214b8f6af4f412106939
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 1303794898
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 69b6f40745c56141b0911f152096450d
+                        Target 71a317cb5488214b8f6af4f412106939
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 71a317cb5488214b8f6af4f412106939
+                        Target 4881ff9a78e9bc498f9e006d04fea468
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -569252259
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 86a31010ba9e8147aae1449f89be9ed7
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 4881ff9a78e9bc498f9e006d04fea468
+            member 69b6f40745c56141b0911f152096450d
+            member 587b26ab5dffc04988d9e51ce545522f
+            member 11a0611ecb333d4583cd3288f5ece3b3
+            member 71a317cb5488214b8f6af4f412106939
+OrEntityData 11a0611ecb333d4583cd3288f5ece3b3
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 3
+    Realm Realm_Client
+    In1 False
+    In2 False
+UIGraphEntityData 4881ff9a78e9bc498f9e006d04fea468
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Events *nullArray*
+    GraphAsset ui/flow/graph/vehicle/defaultairgraph/7a5e43aa592e159f372e97aa044fdc9a
+    GraphPriority UIGraphPriority_Low
+    PopPreviousGraph False
+    State UIState_Playing

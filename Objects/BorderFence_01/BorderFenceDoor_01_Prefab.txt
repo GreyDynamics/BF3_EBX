@@ -1,0 +1,103 @@
+InterfaceDescriptorData 2d692676a365d5408639189d9ee1ccbf
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 962573365
+                AccessType FieldAccessType_Target
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 49bcd894ae60b947b3423d9bcfa41299
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -1.0
+            y 0.0
+            z 8.74227765735e-08
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x -8.74227765735e-08
+            y 0.0
+            z -1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/borderfence_01/borderfencedoorframe_01/006af2c667d956f818498a8667bcd635
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 85e45aef7cc5744e930aa494c77cfa21
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 0.244764730334
+            y 0.0
+            z 0.969582498074
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x -0.969582498074
+            y 0.0
+            z 0.244764730334
+        trans::Vec3
+            x -0.457622766495
+            y 0.0
+            z 0.640797615051
+    Blueprint objects/borderfence_01/borderfencedoor_01/83eed2bfba262cd2237a29bc6da00164
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 210ed8cdf36bcf616c6f7edcb2399ab2 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/BorderFence_01/BorderFenceDoor_01_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 2d692676a365d5408639189d9ee1ccbf
+                            Target 85e45aef7cc5744e930aa494c77cfa21
+                            SourceFieldId 962573365
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 49bcd894ae60b947b3423d9bcfa41299
+                        Target 85e45aef7cc5744e930aa494c77cfa21
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 2d692676a365d5408639189d9ee1ccbf
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 49bcd894ae60b947b3423d9bcfa41299
+            member 85e45aef7cc5744e930aa494c77cfa21

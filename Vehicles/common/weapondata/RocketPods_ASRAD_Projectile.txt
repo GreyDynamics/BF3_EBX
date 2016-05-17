@@ -1,0 +1,221 @@
+HavokAsset 6e1932643fbeabf0f65751a53aa76361
+    $::Asset
+        $::DataContainer
+        Name Vehicles/common/WeaponData/RocketPods_ASRAD_Projectile_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+MissileEntityData de877a6371fc2a4198ac522fa7005bb6
+    $::MeshProjectileEntityData
+        $::ProjectileEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled False
+                    Components *nullArray*
+                    RuntimeComponentCount 0
+                PhysicsData 3f53de395b1bee4bbc695fcf5920543f
+            InitialSpeed 350.0
+            TimeToLive 10.0
+            MaxCount 0
+            InitMeshHideTime 0.0
+            VisualConvergeDistance 10.0
+            DetonateOnTimeout False
+            ServerProjectileDisabled False
+            Explosion 365e3dcef8885647afa727eba0db4d77
+            SuppressionData *nullGuid*
+            AmmunitionType *nullString*
+            MaterialPair materials/materialcontainer/0620365604d4bd4d97c8fce5da0e9a7d
+            HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+            SuppressOwnerVehicleDamage False
+        Mesh vehicles/common/weapondata/rocketpods_asrad_projectile_mesh/a14a323e9f4e6948b47cf0207de9299a
+        TrailEffect fx/weapons/trails/fx_trail_thinsmoke_xp5/f0ef58af0645264681413835b4a1f221
+        IsAttachable False
+        MaxAttachableInclination 45.0
+        ExtraDamping False
+        InitialAngularVelocity::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    EngineEffect fx/weapons/trailengine/fx_trailengine_smallmissile/e91bc314a01a8649a5cf063cb45fda2a
+    DudExplosion *nullGuid*
+    FlyBySound *nullGuid*
+    EngineStrength 100.0
+    MaxSpeed 150.0
+    EngineTimeToIgnition 0.0
+    EngineTimeToLive 40.0
+    TimeToActivateGuidingSystem 0.0
+    TimeToArm 0.0
+    MaxTurnAngle 90.0
+    Drag 0.0
+    Gravity -1.5
+    ApplyGravityWhenGuided True
+    FlyBySoundRadius 5.0
+    FlyBySoundSpeed 10.0
+    ImpactImpulse 500.0
+    Damage 50.0
+    DefaultTeam TeamNeutral
+    WarnTarget wtWarnNone
+    WarnOnPointingMissile False
+    LockingController *nullGuid*
+    LockableInfo::MissileLockableInfoData
+        HeatSignature 0.0
+        RadarSignature 0.0
+    UnguidedData::MissileUnguidedData
+        UseStaticPosition False
+        StaticPosition::Vec2
+            x 0.0
+            y 0.0
+        UseTargetPosition False
+        TargetPositionOffset::Vec2
+            x 0.0
+            y 0.0
+    NearTargetDetonation::NearTargetDetonationData
+        DetonateNearTarget False
+        DetonationRadius 10.0
+        MaxDetonationDelay 3.0
+        MinDetonationDelay 0.0
+PhysicsEntityData 3f53de395b1bee4bbc695fcf5920543f
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+    Asset *nullGuid*
+    ScaledAssets::array
+        member 6e1932643fbeabf0f65751a53aa76361
+    RigidBodies::array
+        member d4dc9a6948def74c9ff5261615696678
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ProjectileBlueprint 80d1d9907b438949bb1e473145c904b9 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/common/WeaponData/RocketPods_ASRAD_Projectile
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object de877a6371fc2a4198ac522fa7005bb6
+RigidBodyData d4dc9a6948def74c9ff5261615696678
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 1.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Dynamic
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+VeniceExplosionEntityData 365e3dcef8885647afa727eba0db4d77
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint -1
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect sound/explosions/modularmodel/sfx_explosion_25mmhe/240f0462a2029d444989c199941c11bd
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair materials/materialcontainer/0620365604d4bd4d97c8fce5da0e9a7d
+        DamageIndicationType DamageIndicationType_GiverPlayer
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.5
+        InnerBlastRadius 2.0
+        BlastDamage 50.0
+        BlastRadius 5.0
+        BlastImpulse 100.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 8.0
+        ShockwaveImpulse 40.0
+        ShockwaveTime 0.5
+        DisableOcclusion False
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 3.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0

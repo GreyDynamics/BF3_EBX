@@ -1,0 +1,151 @@
+EffectReferenceObjectData 0ed038134397f9409fabf2ad98bafd28
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0900850296021
+                y 2.13843727112
+                z 2.68472671509
+        Blueprint fx/ambient/generic/firesmoke/fire/generic/fx_amb_generic_fire_m_01/e13e078919562344a1e1b60c87ea9f34
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+InterfaceDescriptorData dd7aa666b889404d98183fdaf2915dd9
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member::DynamicEvent
+            Id -1452333337
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData f4719a0ce8c3004e9864639bd68d94f3
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/star1466-truck_01/star1466-truck_01/2e18ccde775d59af01264a7f290b01cb
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData ffecd22842c9944dab5df117bfb3451e
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/star1466-truck_01/star1466-flatbed_01/8467b7b6da9ecef40eb8517e48382cf3
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 1391f66775a3e942128c7e1865c80828 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/Star1466-Truck_01/STAR_1466_Flatbed_Prefab
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source ffecd22842c9944dab5df117bfb3451e
+                        Target f4719a0ce8c3004e9864639bd68d94f3
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source f4719a0ce8c3004e9864639bd68d94f3
+                        Target ffecd22842c9944dab5df117bfb3451e
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source ffecd22842c9944dab5df117bfb3451e
+                        Target dd7aa666b889404d98183fdaf2915dd9
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1452333337
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source ffecd22842c9944dab5df117bfb3451e
+                        Target 0ed038134397f9409fabf2ad98bafd28
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor dd7aa666b889404d98183fdaf2915dd9
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member f4719a0ce8c3004e9864639bd68d94f3
+            member ffecd22842c9944dab5df117bfb3451e
+            member 0ed038134397f9409fabf2ad98bafd28

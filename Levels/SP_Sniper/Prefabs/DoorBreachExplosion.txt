@@ -1,0 +1,350 @@
+DelayEntityData 021fed72c171254bb2c5dc48142493b9
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Delay 0.259999990463
+    Realm Realm_Server
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+DelayEntityData ee1591c4e7bce84187fc5c9bf33cb3c2
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 6
+    Delay 2.0
+    Realm Realm_Client
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+EffectReferenceObjectData d66c4129d015714fbb7f94cb6974a726
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 5
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint fx/ambient/generic/firesmoke/smoke/condensationsmoke/fx_condensationsmoke_01_l/1f41763e6382244b94ecba404ff99fce
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+FloatPropertyTrackData da7332212293174795c0a4de23a83012
+    $::SimplePropertyTrackData
+        $::PropertyTrackData
+            $::DataContainer
+            Id -458572566
+            Times::array
+                member 0
+                member 175
+                member 200
+                member 500
+                member 1000
+        InterpolationType InterpolationType_CatmullRom
+    Values::array
+        member 0.0
+        member 0.0
+        member 30.0
+        member 15.0
+        member 0.0
+InterfaceDescriptorData b2a3175fec47f94f97949b2189e4f1d5
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 2088812746
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LocatorEntityData ed881a30cb45b043b5495d2a9bcbd47f
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+    Realm Realm_ClientAndServer
+PointLightEntityData 8ba68053aeba8e4aa197fd2a3ee06f65
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 0
+                    IndexInBlueprint 2
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 1.5
+                    z 0.0
+        Color::Vec3
+            x 1.0
+            y 0.40000000596
+            z 0.10000000149
+        Radius 20.0
+        Intensity 10.0
+        AttenuationOffset 0.00999999977648
+        Visible False
+        SpecularEnable True
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Width 0.0
+    TranslucencyAmbient 0.0
+    TranslucencyScale 0.0
+    TranslucencyPower 8
+    TranslucencyDistortion 0.10000000149
+SequenceEntityData 1e7c0d11887f61408d910307537d1a59
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 1000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks::array
+        member da7332212293174795c0a4de23a83012
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint f45f520ed0268f4aae0011f7d2c119fd #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Sniper/Prefabs/DoorBreachExplosion
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source ed881a30cb45b043b5495d2a9bcbd47f
+                            Target a3a0c3b3645a8a4fb303028830aac20c
+                            SourceFieldId 1925266716
+                            TargetFieldId -2024647575
+                        member::PropertyConnection
+                            Source 1e7c0d11887f61408d910307537d1a59
+                            Target 8ba68053aeba8e4aa197fd2a3ee06f65
+                            SourceFieldId -458572566
+                            TargetFieldId -458572566
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source b2a3175fec47f94f97949b2189e4f1d5
+                        Target a3a0c3b3645a8a4fb303028830aac20c
+                        SourceEvent::EventSpec
+                            Id 2088812746
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 1e7c0d11887f61408d910307537d1a59
+                        Target 8ba68053aeba8e4aa197fd2a3ee06f65
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 1e7c0d11887f61408d910307537d1a59
+                        Target 8ba68053aeba8e4aa197fd2a3ee06f65
+                        SourceEvent::EventSpec
+                            Id 650265526
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source b2a3175fec47f94f97949b2189e4f1d5
+                        Target 1e7c0d11887f61408d910307537d1a59
+                        SourceEvent::EventSpec
+                            Id 2088812746
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source b2a3175fec47f94f97949b2189e4f1d5
+                        Target 021fed72c171254bb2c5dc48142493b9
+                        SourceEvent::EventSpec
+                            Id 2088812746
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 021fed72c171254bb2c5dc48142493b9
+                        Target a3a0c3b3645a8a4fb303028830aac20c
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member::EventConnection
+                        Source a3a0c3b3645a8a4fb303028830aac20c
+                        Target d66c4129d015714fbb7f94cb6974a726
+                        SourceEvent::EventSpec
+                            Id -1635202463
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source a3a0c3b3645a8a4fb303028830aac20c
+                        Target ee1591c4e7bce84187fc5c9bf33cb3c2
+                        SourceEvent::EventSpec
+                            Id -1635202463
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source ee1591c4e7bce84187fc5c9bf33cb3c2
+                        Target d66c4129d015714fbb7f94cb6974a726
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor b2a3175fec47f94f97949b2189e4f1d5
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member a3a0c3b3645a8a4fb303028830aac20c
+            member ed881a30cb45b043b5495d2a9bcbd47f
+            member 8ba68053aeba8e4aa197fd2a3ee06f65
+            member 1e7c0d11887f61408d910307537d1a59
+            member 021fed72c171254bb2c5dc48142493b9
+            member d66c4129d015714fbb7f94cb6974a726
+            member ee1591c4e7bce84187fc5c9bf33cb3c2
+VeniceExplosionEntityData a3a0c3b3645a8a4fb303028830aac20c
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 2.0
+                        z 0.0
+            Enabled False
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect fx/ambient/warfare/flashbang/fx_ambwar_flashbang/b6d7014fbccee546a662229affe0e808
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair *nullGuid*
+        DamageIndicationType DamageIndicationType_ExplosionCenter
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.5
+        InnerBlastRadius 1.0
+        BlastDamage 1.0
+        BlastRadius 2.0
+        BlastImpulse 2.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 4.0
+        ShockwaveImpulse 2.0
+        ShockwaveTime 0.25
+        DisableOcclusion True
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 3.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0

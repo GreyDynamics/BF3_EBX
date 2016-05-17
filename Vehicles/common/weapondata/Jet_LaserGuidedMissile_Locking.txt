@@ -1,0 +1,62 @@
+DataContainerAsset bb6349e19f86fa48841d6fe4fc601011 #primary instance
+    $::Asset
+        $::DataContainer
+        Name Vehicles/common/WeaponData/Jet_LaserGuidedMissile_Locking
+    Data cc2d1353a266c041b9e0dbc0740e81bc
+LockingControllerData 2caae411950502499885067914592c53
+    $::DataContainer
+    ZoomLevelLock::array
+        member::ZoomLevelLockData
+            OutlineTaggedDistance 0.0
+            LockType LockOnLaserPainted
+    LockTime 1.0
+    ReleaseTime 1.0
+    ReleaseOnNewTargetTime 1.5
+    SampleRate 0.0599999986589
+    HoldStillThreshold 10.0
+    RayLength 900.0
+    LockOnVisibleTargetsOnly False
+    PositionOnly False
+    LockOnWorldSpacePos False
+    AcceptanceAngle 3.0
+    AngleConstant 5.0
+    DistanceConstant 0.10000000149
+    Sensitivity 0.0
+    MinimumLockTime 0.0
+    LockOnEmptyVehicles True
+    IgnoreHeigthLockDistance False
+LockingControllerData 9d838cb6c2f7304f931e14b7abb1ddbe
+    $::DataContainer
+    ZoomLevelLock::array
+        member::ZoomLevelLockData
+            OutlineTaggedDistance 0.0
+            LockType LockOnRadar
+    LockTime 1.75
+    ReleaseTime 1.0
+    ReleaseOnNewTargetTime 1.5
+    SampleRate 0.0599999986589
+    HoldStillThreshold 10.0
+    RayLength 900.0
+    LockOnVisibleTargetsOnly True
+    PositionOnly False
+    LockOnWorldSpacePos False
+    AcceptanceAngle 3.0
+    AngleConstant 5.0
+    DistanceConstant 0.10000000149
+    Sensitivity 8.0
+    MinimumLockTime 0.0
+    LockOnEmptyVehicles True
+    IgnoreHeigthLockDistance False
+LockingWeaponData cc2d1353a266c041b9e0dbc0740e81bc
+    $::WeaponData
+        $::ToolData
+            $::DataContainer
+            IsAlwaysActive False
+        ShowLaserPaintedVehicles False
+    LockingController 2caae411950502499885067914592c53
+    SecondaryLockingController 9d838cb6c2f7304f931e14b7abb1ddbe
+    IsHoming True
+    IsGuided False
+    IsGuidedWhenZoomed False
+    FireOnlyWhenLockedOn True
+    WarnLock wtWarnVehicle

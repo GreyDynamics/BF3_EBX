@@ -1,0 +1,55 @@
+PeerServerBackendData 11caa9c1ec133556a6a19d0f3f404dae #primary instance
+    $::ServerBackendData
+        $::Asset
+            $::DataContainer
+            Name Persistence/OnlineBackends/PeerServerBackend
+        Mappings::array
+            member::ServerBackendAttributeMapping
+                Attribute ServerBackendAttribute_Mission
+                Setting mission
+                DefaultValue *nullString*
+            member::ServerBackendAttributeMapping
+                Attribute ServerBackendAttribute_Difficulty
+                Setting difficulty
+                DefaultValue NORMAL
+            member::ServerBackendAttributeMapping
+                Attribute ServerBackendAttribute_GameMode
+                Setting mode
+                DefaultValue Cooperative
+            member::ServerBackendAttributeMapping
+                Attribute ServerBackendAttribute_Level
+                Setting level
+                DefaultValue *nullString*
+    CreateParameters::PeerCreateGameParameters
+        Base::MatchmakingCreateGameParameters
+            GameTopology MatchmakingNetworkTopology_PeerHosted
+            PeerMode MatchmakingPeer2PeerMode_FullMesh
+            VoipTopology MatchmakingNetworkTopology_Disabled
+            Settings::MatchmakingGameSettings
+                OpenToBrowsing False
+                OpenToInvites True
+                OpenToMatchmaking False
+                OpenToJoinByPlayer False
+                HostMigratable False
+                Ranked True
+                AdminOnlyInvites False
+                EnforceSingleGroupJoin False
+                JoinInProgressSupported True
+                AdminInvitesOnlyIgnoreEntryChecks False
+                EnablePersistedGameId False
+                AllowSameTeamId False
+            Attributes::array
+                member::MatchmakingGameAttribute
+                    Attribute mission
+                    Value *nullString*
+                    Override False
+                member::MatchmakingGameAttribute
+                    Attribute difficulty
+                    Value *nullString*
+                    Override False
+                member::MatchmakingGameAttribute
+                    Attribute mode
+                    Value Cooperative
+                    Override False
+            QueueCapacity 0
+        PlayerCapacity 2

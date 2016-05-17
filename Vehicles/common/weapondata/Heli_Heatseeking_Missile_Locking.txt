@@ -1,0 +1,40 @@
+DataContainerAsset b703b045a6917548b215595da56d83d7 #primary instance
+    $::Asset
+        $::DataContainer
+        Name Vehicles/common/WeaponData/Heli_Heatseeking_Missile_Locking
+    Data c821ef295cbed54c956b1d3ffc36bb27
+LockingControllerData de45d130bfacf34f9c174a13e883becc
+    $::DataContainer
+    ZoomLevelLock::array
+        member::ZoomLevelLockData
+            OutlineTaggedDistance 0.0
+            LockType LockOnHeat
+    LockTime 1.25
+    ReleaseTime 0.5
+    ReleaseOnNewTargetTime 1.5
+    SampleRate 0.0599999986589
+    HoldStillThreshold 10.0
+    RayLength 550.0
+    LockOnVisibleTargetsOnly True
+    PositionOnly False
+    LockOnWorldSpacePos False
+    AcceptanceAngle 10.0
+    AngleConstant 5.0
+    DistanceConstant 1.0
+    Sensitivity 10.0
+    MinimumLockTime 0.0
+    LockOnEmptyVehicles False
+    IgnoreHeigthLockDistance False
+LockingWeaponData c821ef295cbed54c956b1d3ffc36bb27
+    $::WeaponData
+        $::ToolData
+            $::DataContainer
+            IsAlwaysActive False
+        ShowLaserPaintedVehicles False
+    LockingController de45d130bfacf34f9c174a13e883becc
+    SecondaryLockingController *nullGuid*
+    IsHoming True
+    IsGuided False
+    IsGuidedWhenZoomed False
+    FireOnlyWhenLockedOn True
+    WarnLock wtWarnVehicle

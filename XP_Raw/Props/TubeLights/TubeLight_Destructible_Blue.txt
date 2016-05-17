@@ -1,0 +1,158 @@
+FloatEntityData 442bab3099e1f744a02027d132371796
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_ClientAndServer
+    DefaultValue 20.0
+    IncDecValue 10.0
+InterfaceDescriptorData a0ceffb7e98c8348bd1f4c1a86ec4180
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+PointLightEntityData f7f1b46124032d4a9ac6a9ea72f4652f
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 2
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x -0.999999880791
+                    y 7.54978941586e-08
+                    z 5.960463767e-08
+                up::Vec3
+                    x 1.26465977274e-22
+                    y 5.96046341172e-08
+                    z 0.999999940395
+                forward::Vec3
+                    x 1.58932547123e-08
+                    y 0.999999880791
+                    z 3.55271494935e-15
+                trans::Vec3
+                    x 0.0103338770568
+                    y -1.1876527071
+                    z -0.0451965294778
+        Color::Vec3
+            x 0.381999999285
+            y 0.588999986649
+            z 0.730000019073
+        Radius 5.0
+        Intensity 6.0
+        AttenuationOffset 1.0
+        Visible True
+        SpecularEnable False
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 4.0
+            y 4.0
+            z 4.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Width 3.0
+    TranslucencyAmbient 0.0
+    TranslucencyScale 0.0
+    TranslucencyPower 8
+    TranslucencyDistortion 0.10000000149
+ReferenceObjectData dd4ed61883b0ff4baf18d2fae7a6689c
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -1.0
+            y 1.59104558861e-07
+            z 8.74227765735e-08
+        up::Vec3
+            x 1.59104558861e-07
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x -8.74227765735e-08
+            y 1.3909362655e-14
+            z -1.0
+        trans::Vec3
+            x 0.0149091258645
+            y 0.00689361291006
+            z -9.15631462703e-05
+    Blueprint props/streetprops/lightceiling_01/lightceiling_01/191ddfa01676298183dd24fbf7f9c14b
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint f94430109ca4a8479087cb7a0f8c6181 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP_Raw/Props/TubeLights/TubeLight_Destructible_Blue
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 442bab3099e1f744a02027d132371796
+                            Target f7f1b46124032d4a9ac6a9ea72f4652f
+                            SourceFieldId 225375086
+                            TargetFieldId -458572566
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source dd4ed61883b0ff4baf18d2fae7a6689c
+                        Target 442bab3099e1f744a02027d132371796
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source dd4ed61883b0ff4baf18d2fae7a6689c
+                        Target f7f1b46124032d4a9ac6a9ea72f4652f
+                        SourceEvent::EventSpec
+                            Id 1630515206
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source dd4ed61883b0ff4baf18d2fae7a6689c
+                        Target f7f1b46124032d4a9ac6a9ea72f4652f
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source a0ceffb7e98c8348bd1f4c1a86ec4180
+                        Target dd4ed61883b0ff4baf18d2fae7a6689c
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor a0ceffb7e98c8348bd1f4c1a86ec4180
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member f7f1b46124032d4a9ac6a9ea72f4652f
+            member dd4ed61883b0ff4baf18d2fae7a6689c
+            member 442bab3099e1f744a02027d132371796

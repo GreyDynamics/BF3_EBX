@@ -1,0 +1,162 @@
+InterfaceDescriptorData 3aac7e5a3db5dd4c8ed715e5cc7602ab
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -1688613187
+    OutputEvents::array
+        member::DynamicEvent
+            Id -1434059356
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LocatorEntityData 91e4c5f9d86a7a4bbe64c427975d57ad
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+    Realm Realm_Client
+LookAtTriggerEntityData ca5fcc7159f8b3409af9ba95fa07a75f
+    $::TriggerEventEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 1
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 2
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled False
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce True
+    FOV 5.0
+    Weapon *nullGuid*
+    ZoomLevel 0
+    MinDistanceToObject 0.0
+    MaxDistanceToObject 0.0
+    StartTriggerLookingAt True
+    CheckOcclusion False
+PlayerLookAtEntityData 292035574a46db46b48b0c465d340dec
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 0
+    TargetTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+SpatialPrefabBlueprint 3f1ed430e2e94e5cb1d2d74b92487640 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/ForcePlayerLookAt
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 91e4c5f9d86a7a4bbe64c427975d57ad
+                            Target 292035574a46db46b48b0c465d340dec
+                            SourceFieldId 1925266716
+                            TargetFieldId 927994776
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 3aac7e5a3db5dd4c8ed715e5cc7602ab
+                        Target 292035574a46db46b48b0c465d340dec
+                        SourceEvent::EventSpec
+                            Id -1688613187
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 3aac7e5a3db5dd4c8ed715e5cc7602ab
+                        Target ca5fcc7159f8b3409af9ba95fa07a75f
+                        SourceEvent::EventSpec
+                            Id -1688613187
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source ca5fcc7159f8b3409af9ba95fa07a75f
+                        Target 292035574a46db46b48b0c465d340dec
+                        SourceEvent::EventSpec
+                            Id 1975570652
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source ca5fcc7159f8b3409af9ba95fa07a75f
+                        Target 3aac7e5a3db5dd4c8ed715e5cc7602ab
+                        SourceEvent::EventSpec
+                            Id 1975570652
+                        TargetEvent::EventSpec
+                            Id -1434059356
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 3aac7e5a3db5dd4c8ed715e5cc7602ab
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member 292035574a46db46b48b0c465d340dec
+            member 91e4c5f9d86a7a4bbe64c427975d57ad
+            member ca5fcc7159f8b3409af9ba95fa07a75f

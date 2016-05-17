@@ -1,0 +1,335 @@
+ExplosionEntityData 457a3b872e471a41bc87cae86c205d31
+    $::GameEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 3
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint -1
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 1.5
+                    z 0.0
+        Enabled True
+        Components *nullArray*
+        RuntimeComponentCount 0
+    DetonationEffect fx/destruction/generic/props/gas/fx_gasexplosion_m/3b3819721e0858dac211d0969c9b65fb
+    UseEntityTransformForDetonationEffect False
+    MaskVolume *nullGuid*
+    DestructionMaskVolume *nullGuid*
+    MaterialPair materials/materialcontainer/c5b732515904dc4f9708c908fbf20b62
+    DamageIndicationType DamageIndicationType_GiverPlayer
+    EmpTime 0.0
+    MaxOcclusionRaycastRadius 0.5
+    InnerBlastRadius 3.0
+    BlastDamage 400.0
+    BlastRadius 8.0
+    BlastImpulse 7000.0
+    HasStunEffect False
+    ShockwaveDamage 1.0
+    ShockwaveRadius 15.0
+    ShockwaveImpulse 700.0
+    ShockwaveTime 0.140000000596
+    DisableOcclusion True
+    DisableStaticEntityOcclusion True
+    CameraShockwaveRadius 0.0
+    SpawnDelay 0.0
+    TriggerImpairedHearing True
+    DetonateOnce True
+    ShowOnMinimap False
+HavokAsset cdcb221b1e4c695817a49f5a6e370dab
+    $::Asset
+        $::DataContainer
+        Name Objects/PressureTank_01/PressureTank_02_Physics_0_Win32
+    Scale 0.800000011921
+    ExternalAssets *nullArray*
+HavokAsset 5d8f060ce4bc687f99689a5752eccf9b
+    $::Asset
+        $::DataContainer
+        Name Objects/PressureTank_01/PressureTank_02_Physics_1_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+HavokAsset c8b8cf424f41450caba5267ec342a1dc
+    $::Asset
+        $::DataContainer
+        Name Objects/PressureTank_01/PressureTank_02_Physics_2_Win32
+    Scale 1.20000004768
+    ExternalAssets *nullArray*
+HealthStateData b472de165dba2c61ca102e1f0076ec33
+    $::DataContainer
+    Objects::array
+        member 19ddb1d8ff48694c9c9b435674233fc8
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 100.0
+    PartIndex 0
+    CanSupportOtherParts True
+HealthStateData 89a7118ffb637d46b98b19bdae74e57c
+    $::DataContainer
+    Objects::array
+        member 7f7c0c1c04f1ae428171efa0b0c237c6
+        member 457a3b872e471a41bc87cae86c205d31
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 0.0
+    PartIndex 1
+    CanSupportOtherParts False
+ObjectBlueprint 6afa500c2c1687e162714c0bf8772fef #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name Objects/PressureTank_01/PressureTank_02
+                PropertyConnections *nullArray*
+                LinkConnections *nullArray*
+            EventConnections *nullArray*
+            Descriptor *nullGuid*
+            NeedNetworkId False
+            InterfaceHasConnections False
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Object a521c401c1aee011b8cea331bb0047af
+PartComponentData f2ab254977e32aa7799b78e76c71de64
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components *nullArray*
+        Excluded False
+    HealthStates::array
+        member b472de165dba2c61ca102e1f0076ec33
+        member 89a7118ffb637d46b98b19bdae74e57c
+    PartLinks *nullArray*
+    IsSupported False
+    IsFragile False
+    IsNetworkable True
+    IsWindow False
+    AnimatePhysics False
+PhysicsEntityData 68a3ffafeadac6f8764c4dc6a92d9566
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+    Asset *nullGuid*
+    ScaledAssets::array
+        member cdcb221b1e4c695817a49f5a6e370dab
+        member 5d8f060ce4bc687f99689a5752eccf9b
+        member c8b8cf424f41450caba5267ec342a1dc
+    RigidBodies::array
+        member baed9c55c68d016d39b517f5aab0e154
+        member 913341765020526f76d07043841bf9dd
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ReferenceObjectData 7f7c0c1c04f1ae428171efa0b0c237c6
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint -1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 1.04943597317
+            z 0.00225973129272
+    Blueprint objects/pressuretank_01/pressuretank_01_cluster/4080dcf27e1b840fe41187ae646b76fd
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+RigidBodyData baed9c55c68d016d39b517f5aab0e154
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 0.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Fixed
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+RigidBodyData 913341765020526f76d07043841bf9dd
+    $::DataContainer
+    RigidBodyType RBTypeRaycast
+    Mass 0.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Fixed
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+SoundEffectEntityData 19ddb1d8ff48694c9c9b435674233fc8
+    $::EffectEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 3
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint -1
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 0.0
+                    z 0.0
+        Components *nullArray*
+        MaxInstanceCount 1
+        CullDistance 0.0
+        StartDelay 0.0
+        ResetInstanceWhenStarted True
+        HighEndPc True
+        MediumPc True
+        LowEndPc True
+    Sound sound/levels/shared/props/machinehums/shared_ambients_object_silo_m_01/13d909672d0ab44b9d3502d4a1699202
+StaticModelEntityData a521c401c1aee011b8cea331bb0047af
+    $::GamePhysicsEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components::array
+                member f2ab254977e32aa7799b78e76c71de64
+            RuntimeComponentCount 1
+        PhysicsData 68a3ffafeadac6f8764c4dc6a92d9566
+    PartLinks *nullArray*
+    Mesh objects/pressuretank_01/pressuretank_02_mesh/0feeabb0cbdf71ff708114652be7a023
+    BoneCount 0
+    BasePoseTransforms *nullArray*
+    ExcludeFromNearbyObjectDestruction False
+    PhysicsPartInfos::array
+        member::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 0
+        member::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 1
+    NetworkInfo::StaticModelNetworkInfo
+        PartNetworkIdRanges::array
+            member::IndexRange
+                First 0
+                Last 0
+        NetworkIdCount 1
+        ChildNetworkInfos *nullArray*
+        ChildNetworkIdCount 0
+    AnimatePhysics False
+    Visible True

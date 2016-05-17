@@ -1,0 +1,348 @@
+BangerEntityData 5f001de2e4d3204c95f53c3a8ec03f02
+    $::DynamicGamePhysicsEntityData
+        $::GamePhysicsEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 2
+                            IsPropertyConnectionTarget 2
+                            IndexInBlueprint 0
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components::array
+                    member 5fd20250612abd449d883a590cf17b49
+                    member 462c801800e6a3498e309ac950819b05
+                RuntimeComponentCount 1
+            PhysicsData ca650b70f187bf4f85d3c4b553af4b0d
+    Scales::array
+        member 1.0
+    Mesh levels/sp_villa/props/oilbarrel_01_villa_mesh/8b62fbc8992b9c488b3c8ce8c43d5df7
+    Explosion *nullGuid*
+    TimeToLive 0.0
+    UseVariableNetworkFrequency True
+    DestructiblePartCount 1
+ExplosionEntityData fc5301ba63c79e4ea583634c55b1302c
+    $::GameEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 3
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint -1
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 0.0
+                    z 0.0
+        Enabled True
+        Components *nullArray*
+        RuntimeComponentCount 0
+    DetonationEffect fx/destruction/generic/props/gas/fx_gasexplosion_s/68d198d329127e40a5e18b67176afa2b
+    UseEntityTransformForDetonationEffect False
+    MaskVolume *nullGuid*
+    DestructionMaskVolume *nullGuid*
+    MaterialPair *nullGuid*
+    DamageIndicationType DamageIndicationType_ExplosionCenter
+    EmpTime 0.0
+    MaxOcclusionRaycastRadius 0.5
+    InnerBlastRadius 2.0
+    BlastDamage 150.0
+    BlastRadius 3.0
+    BlastImpulse 1000.0
+    HasStunEffect False
+    ShockwaveDamage 1.0
+    ShockwaveRadius 5.0
+    ShockwaveImpulse 500.0
+    ShockwaveTime 0.25
+    DisableOcclusion False
+    DisableStaticEntityOcclusion False
+    CameraShockwaveRadius 3.0
+    SpawnDelay 0.0
+    TriggerImpairedHearing True
+    DetonateOnce True
+    ShowOnMinimap False
+HavokAsset d24091efa57082dc4dde102cf3b4dc44
+    $::Asset
+        $::DataContainer
+        Name Levels/SP_Villa/Props/OilBarrel_01_Villa_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+HealthStateData df4bee42f14e464d86525e06740c81a1
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 300.0
+    PartIndex 0
+    CanSupportOtherParts True
+HealthStateData aeaf884d7decef44b41516e71c86bf6a
+    $::DataContainer
+    Objects::array
+        member 8cf546a13d87aa419313f8f15c0d80b0
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 100.0
+    PartIndex 0
+    CanSupportOtherParts False
+HealthStateData bb8fac322bdde44997061a2e769fc848
+    $::DataContainer
+    Objects::array
+        member cc989d32b9377d4aa659bd20c1839a49
+        member fc5301ba63c79e4ea583634c55b1302c
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger False
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 0.0
+    PartIndex 4294967295
+    CanSupportOtherParts False
+InterfaceDescriptorData 631a78a478f40140856f4dbe1759ac8a
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -3142077
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ObjectBlueprint 2bcb503a1be9ef45a379d99d738d341b #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name Levels/SP_Villa/Props/OilBarrel_01_Villa
+                PropertyConnections *nullArray*
+                LinkConnections *nullArray*
+            EventConnections::array
+                member::EventConnection
+                    Source 631a78a478f40140856f4dbe1759ac8a
+                    Target 5fd20250612abd449d883a590cf17b49
+                    SourceEvent::EventSpec
+                        Id -3142077
+                    TargetEvent::EventSpec
+                        Id -3142077
+                    TargetType EventConnectionTargetType_Server
+                member::EventConnection
+                    Source 5fd20250612abd449d883a590cf17b49
+                    Target 462c801800e6a3498e309ac950819b05
+                    SourceEvent::EventSpec
+                        Id -2120949219
+                    TargetEvent::EventSpec
+                        Id 230748069
+                    TargetType EventConnectionTargetType_Client
+            Descriptor 631a78a478f40140856f4dbe1759ac8a
+            NeedNetworkId True
+            InterfaceHasConnections True
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Object 5f001de2e4d3204c95f53c3a8ec03f02
+PartComponentData 5fd20250612abd449d883a590cf17b49
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components *nullArray*
+        Excluded False
+    HealthStates::array
+        member df4bee42f14e464d86525e06740c81a1
+        member aeaf884d7decef44b41516e71c86bf6a
+        member bb8fac322bdde44997061a2e769fc848
+    PartLinks *nullArray*
+    IsSupported False
+    IsFragile False
+    IsNetworkable True
+    IsWindow False
+    AnimatePhysics False
+PhysicsEntityData ca650b70f187bf4f85d3c4b553af4b0d
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+    Asset *nullGuid*
+    ScaledAssets::array
+        member d24091efa57082dc4dde102cf3b4dc44
+    RigidBodies::array
+        member 400e6ccb707137428c6dcf5343159af1
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ReferenceObjectData 8cf546a13d87aa419313f8f15c0d80b0
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint -1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.185065090656
+            y 0.974968194962
+            z 0.0
+    Blueprint fx/ambient/generic/firesmoke/simplefire/fx_simplefire_m/d2b675e3b3ebdd119b7a8baba5e8173f
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData cc989d32b9377d4aa659bd20c1839a49
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint -1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/oilbarrel_01/oilbarrel_01_cluster/e5dd8b8df50d7dcaaf477759b13ee0eb
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+RigidBodyData 400e6ccb707137428c6dcf5343159af1
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 20.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Dynamic
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+SoundEntityData 462c801800e6a3498e309ac950819b05
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/explosions/modularmodel/explosion_handgrenade/ee20a1171a1d13459c4976aaff92677a
+    PlayOnCreation False
+    ObstructionHandle -1

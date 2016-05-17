@@ -1,0 +1,181 @@
+ActionNode 5ee8a09e5b437042b0fd693cbce6f667
+    $::UINodeData
+        $::DataContainer
+        Name PressStart
+        IsRootNode False
+        ParentGraph 438a0610684ab8170dbf6da458fbed25
+        ParentIsScreen True
+    ActionKey 1965619586
+    Params *nullArray*
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In adf192063f525941bdaf99a35209db56
+    DataInputs *nullArray*
+    Out 9bfbcbca9608494db419c0467f979702
+ActionNode 2201a34575fe2946b9301de67f733088
+    $::UINodeData
+        $::DataContainer
+        Name ActiveController
+        IsRootNode False
+        ParentGraph 438a0610684ab8170dbf6da458fbed25
+        ParentIsScreen True
+    ActionKey 712392631
+    Params *nullArray*
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 976e4482dbabe64fb329763af23e4605
+    DataInputs *nullArray*
+    Out dfb767243ffe3a4f99305cb878d6b4ae
+InstanceInputNode f8e9f7f68062c845965e76f63f9d6b15
+    $::UINodeData
+        $::DataContainer
+        Name Run
+        IsRootNode False
+        ParentGraph 438a0610684ab8170dbf6da458fbed25
+        ParentIsScreen True
+    Out 429bdf9ff7b558429b2f22c118f613b2
+InstanceOutputNode 237a5f606c7e3f408b84a68a03530f08
+    $::UINodeData
+        $::DataContainer
+        Name RequestEnterFrontend
+        IsRootNode False
+        ParentGraph 438a0610684ab8170dbf6da458fbed25
+        ParentIsScreen True
+    In cb1829c3465f3e41811d961b55b58233
+    Id 985409074
+    DestroyGraph True
+UINodeConnection d2ac27c96cfb4b4087ede041ee531c57
+    $::DataContainer
+    SourceNode 08f64cf1a1b6e74c90baceb8a425464b
+    TargetNode 237a5f606c7e3f408b84a68a03530f08
+    SourcePort 7f81f483fcb9074c8d91b1982bb7bea4
+    TargetPort cb1829c3465f3e41811d961b55b58233
+    NumScreensToPop 0
+UINodeConnection 27f2f618e8a0774f9934b887b1e8b73d
+    $::DataContainer
+    SourceNode f8e9f7f68062c845965e76f63f9d6b15
+    TargetNode 5ee8a09e5b437042b0fd693cbce6f667
+    SourcePort 429bdf9ff7b558429b2f22c118f613b2
+    TargetPort adf192063f525941bdaf99a35209db56
+    NumScreensToPop 0
+UINodeConnection 27df54f8fe95a24fb51264bc3e01dcb9
+    $::DataContainer
+    SourceNode 5ee8a09e5b437042b0fd693cbce6f667
+    TargetNode 2201a34575fe2946b9301de67f733088
+    SourcePort 9bfbcbca9608494db419c0467f979702
+    TargetPort 976e4482dbabe64fb329763af23e4605
+    NumScreensToPop 0
+UINodePort 7f81f483fcb9074c8d91b1982bb7bea4
+    $::DataContainer
+    Name GraphEvent
+    InstanceName InputListener_01
+    Query UIWidgetEventID_OnToggle
+    AllowManualRemove False
+UINodePort 38fb2d8ce205b240913eb08b04c699f3
+    $::DataContainer
+    Name TabPressed
+    InstanceName InputListener_01
+    Query UIWidgetEventID_OnItemPressed
+    AllowManualRemove False
+UINodePort 2a4f69106ce14540b0afd8846d8992a9
+    $::DataContainer
+    Name TabRelease
+    InstanceName InputListener_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort cb1829c3465f3e41811d961b55b58233
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort adf192063f525941bdaf99a35209db56
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 9bfbcbca9608494db419c0467f979702
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 429bdf9ff7b558429b2f22c118f613b2
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 976e4482dbabe64fb329763af23e4605
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort dfb767243ffe3a4f99305cb878d6b4ae
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 438a0610684ab8170dbf6da458fbed25 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Frontend/DeviceSelectionScreen
+        Nodes::array
+            member 08f64cf1a1b6e74c90baceb8a425464b
+            member 237a5f606c7e3f408b84a68a03530f08
+            member 5ee8a09e5b437042b0fd693cbce6f667
+            member f8e9f7f68062c845965e76f63f9d6b15
+            member 2201a34575fe2946b9301de67f733088
+        GlobalNode *nullGuid*
+        Connections::array
+            member d2ac27c96cfb4b4087ede041ee531c57
+            member 27f2f618e8a0774f9934b887b1e8b73d
+            member 27df54f8fe95a24fb51264bc3e01dcb9
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UIWidgetPathBinding c1e68cdb40c6264d80a1e112b2001d51
+    $::UIDataBinding
+        $::DataContainer
+    WidgetPathQuery::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory ui/uicomponents/usercomp/31313efc513a98e0516e9b8f722f6db8
+        DataKey -1736487976
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+WidgetNode 08f64cf1a1b6e74c90baceb8a425464b
+    $::UINodeData
+        $::DataContainer
+        Name InputListener
+        IsRootNode False
+        ParentGraph 438a0610684ab8170dbf6da458fbed25
+        ParentIsScreen True
+    WidgetAsset ui/assets/inputlistener/14ee61e05af9aa6adec3ebfab940df98
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding c1e68cdb40c6264d80a1e112b2001d51
+    InstanceName InputListener_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member 7f81f483fcb9074c8d91b1982bb7bea4
+        member 38fb2d8ce205b240913eb08b04c699f3
+        member 2a4f69106ce14540b0afd8846d8992a9
+    Inputs *nullArray*

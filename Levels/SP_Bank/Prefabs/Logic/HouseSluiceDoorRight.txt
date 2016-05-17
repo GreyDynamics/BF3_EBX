@@ -1,0 +1,326 @@
+BoolEntityData fbff38078ad7614daf3a8331ee91dd28
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_ClientAndServer
+    DefaultValue True
+InterfaceDescriptorData 0b09197cfb6c12488b03dcc12799f49b
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 632505285
+    OutputEvents::array
+        member::DynamicEvent
+            Id 1708769942
+        member::DynamicEvent
+            Id -78369614
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LocatorEntityData 61b0f95b23bd6f48853a93749c2c1f4c
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 4
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x -0.854570508003
+                y 1.25998282433
+                z 0.0328068733215
+    Realm Realm_ClientAndServer
+ReferenceObjectData e73bd9ff542f994ea3f94f2f3b2cb433
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 0.087155893445
+            y 0.0
+            z -0.996194779873
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.996194779873
+            y 0.0
+            z 0.087155893445
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint props/buildingprops/doorsteelframe_128_240_01/doorsteelframe_128_240_02/01c549a84440344ab316084e36dd5a3d
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData b1aebf5cb42e404b99e4a6d4c6e6af4a
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 1000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame True
+    PlayInReverse False
+    Realm Realm_Server
+    PropertyTracks::array
+        member 7dfe7310b418f6488e0471f2fababe0c
+        member 4401e5b4eaaba94fa8414c38e17415c8
+        member 6750cd436fb11e47bbbdc51b4c718ab3
+        member 21754df39b1b9940a1bbf3bc5380d084
+        member a6f9ec6a1642ce42a85072f3bb5d375d
+        member d88fae7679026c47bb700b501f085c58
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SoundEntityData a283ecdf59d46548b3ba251f16fbdde8
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 3
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/levels/sp03/sfx/sp03_sfx_first_door_kick/a787e330fbeeb4479966958729616091
+    PlayOnCreation False
+    ObstructionHandle -1
+SpatialPrefabBlueprint 1838f5272cd29f469d3335d6447e319b #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Bank/Prefabs/Logic/HouseSluiceDoorRight
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source fbff38078ad7614daf3a8331ee91dd28
+                            Target e73bd9ff542f994ea3f94f2f3b2cb433
+                            SourceFieldId 225375086
+                            TargetFieldId 443997333
+                        member::PropertyConnection
+                            Source 61b0f95b23bd6f48853a93749c2c1f4c
+                            Target a283ecdf59d46548b3ba251f16fbdde8
+                            SourceFieldId 1925266716
+                            TargetFieldId -2024647575
+                        member::PropertyConnection
+                            Source b1aebf5cb42e404b99e4a6d4c6e6af4a
+                            Target 16ff708ed82fd248b960317fa8f52774
+                            SourceFieldId 2088749075
+                            TargetFieldId 5862146
+                        member::PropertyConnection
+                            Source 16ff708ed82fd248b960317fa8f52774
+                            Target e73bd9ff542f994ea3f94f2f3b2cb433
+                            SourceFieldId 193453899
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 0b09197cfb6c12488b03dcc12799f49b
+                        Target b1aebf5cb42e404b99e4a6d4c6e6af4a
+                        SourceEvent::EventSpec
+                            Id 632505285
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source b1aebf5cb42e404b99e4a6d4c6e6af4a
+                        Target 0b09197cfb6c12488b03dcc12799f49b
+                        SourceEvent::EventSpec
+                            Id 650265526
+                        TargetEvent::EventSpec
+                            Id 1708769942
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member::EventConnection
+                        Source b1aebf5cb42e404b99e4a6d4c6e6af4a
+                        Target 0b09197cfb6c12488b03dcc12799f49b
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id -78369614
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member::EventConnection
+                        Source b1aebf5cb42e404b99e4a6d4c6e6af4a
+                        Target fbff38078ad7614daf3a8331ee91dd28
+                        SourceEvent::EventSpec
+                            Id 650265526
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                Descriptor 0b09197cfb6c12488b03dcc12799f49b
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member b1aebf5cb42e404b99e4a6d4c6e6af4a
+            member e73bd9ff542f994ea3f94f2f3b2cb433
+            member fbff38078ad7614daf3a8331ee91dd28
+            member a283ecdf59d46548b3ba251f16fbdde8
+            member 61b0f95b23bd6f48853a93749c2c1f4c
+            member 16ff708ed82fd248b960317fa8f52774
+SyncedTransformEntityData 16ff708ed82fd248b960317fa8f52774
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 1
+            IndexInBlueprint 5
+    Interpolate True
+    In::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+TransformPartPropertyTrackData 7dfe7310b418f6488e0471f2fababe0c
+    $::PropertyTrackData
+        $::DataContainer
+        Id 2088749075
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Bank/Prefabs/Logic/AnimTrackData/5CBFAEB1-2EB4-4B40-99E4-A6D4C6E6AF4A_Door
+    KeyStartIndex 0
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 4401e5b4eaaba94fa8414c38e17415c8
+    $::PropertyTrackData
+        $::DataContainer
+        Id 2088749075
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Bank/Prefabs/Logic/AnimTrackData/5CBFAEB1-2EB4-4B40-99E4-A6D4C6E6AF4A_Door
+    KeyStartIndex 2
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 6750cd436fb11e47bbbdc51b4c718ab3
+    $::PropertyTrackData
+        $::DataContainer
+        Id 2088749075
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Bank/Prefabs/Logic/AnimTrackData/5CBFAEB1-2EB4-4B40-99E4-A6D4C6E6AF4A_Door
+    KeyStartIndex 4
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData 21754df39b1b9940a1bbf3bc5380d084
+    $::PropertyTrackData
+        $::DataContainer
+        Id 2088749075
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Bank/Prefabs/Logic/AnimTrackData/5CBFAEB1-2EB4-4B40-99E4-A6D4C6E6AF4A_Door
+    KeyStartIndex 6
+    KeyCount 2
+    IsStatic True
+TransformPartPropertyTrackData a6f9ec6a1642ce42a85072f3bb5d375d
+    $::PropertyTrackData
+        $::DataContainer
+        Id 2088749075
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Bank/Prefabs/Logic/AnimTrackData/5CBFAEB1-2EB4-4B40-99E4-A6D4C6E6AF4A_Door
+    KeyStartIndex 8
+    KeyCount 2
+    IsStatic False
+TransformPartPropertyTrackData d88fae7679026c47bb700b501f085c58
+    $::PropertyTrackData
+        $::DataContainer
+        Id 2088749075
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Levels/SP_Bank/Prefabs/Logic/AnimTrackData/5CBFAEB1-2EB4-4B40-99E4-A6D4C6E6AF4A_Door
+    KeyStartIndex 10
+    KeyCount 2
+    IsStatic True

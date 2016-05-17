@@ -1,0 +1,258 @@
+DelayEntityData 7f4335776018b341bcae2dabcbebf313
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Delay 0.25
+    Realm Realm_Client
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+EffectReferenceObjectData da35d62a53951c4bb87159c0ae9ff8c0
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.00177681446075
+                y 1.51988434792
+                z -0.697987556458
+        Blueprint fx/ambient/generic/firesmoke/fire/generic/fx_amb_generic_fire_l_01/8d292d392dcd8f49af2e2c2f5b2af137
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+EffectReferenceObjectData 67bef9b2d15abd4b8b64b9936213c36b
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0329036712646
+                y 1.51826334
+                z 0.0218534469604
+        Blueprint fx/ambient/levelspecific/sp_tank/ammodump/fx_sptank_ammodumpexplosion/510b9906475e58614f01130df1101ec1
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+EventSplitterEntityData 0c44074c40ffc44e9e6013396017a0ed
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    RunOnce False
+    Realm Realm_Server
+InterfaceDescriptorData e3f907c64a596b4c9f6fd9abd704381b
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -274579609
+    OutputEvents::array
+        member::DynamicEvent
+            Id -1452333337
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 075f8c534b415044a1822491f40c6e6d
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 4
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/star1466-truck_01/star1466-artillery_01/1eba98a8c22f176c0a7fdc88f5a83cf1
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData a07c8bf4a7c526499c7247cf613b97ab
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 5
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint gameplay/prefabs/coop/star1466-truck_01_coop/a64b074a00b12145971abcd4c678cd7a
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 26f5df285943eb40b7a8e905f97c8d1d #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/STAR_1466_COOP_Artillery_Prefab
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 0c44074c40ffc44e9e6013396017a0ed
+                        Target 075f8c534b415044a1822491f40c6e6d
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 0c44074c40ffc44e9e6013396017a0ed
+                        Target a07c8bf4a7c526499c7247cf613b97ab
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source e3f907c64a596b4c9f6fd9abd704381b
+                        Target 0c44074c40ffc44e9e6013396017a0ed
+                        SourceEvent::EventSpec
+                            Id -274579609
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source a07c8bf4a7c526499c7247cf613b97ab
+                        Target da35d62a53951c4bb87159c0ae9ff8c0
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source a07c8bf4a7c526499c7247cf613b97ab
+                        Target 075f8c534b415044a1822491f40c6e6d
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 075f8c534b415044a1822491f40c6e6d
+                        Target a07c8bf4a7c526499c7247cf613b97ab
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source a07c8bf4a7c526499c7247cf613b97ab
+                        Target 7f4335776018b341bcae2dabcbebf313
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source a07c8bf4a7c526499c7247cf613b97ab
+                        Target e3f907c64a596b4c9f6fd9abd704381b
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1452333337
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 075f8c534b415044a1822491f40c6e6d
+                        Target e3f907c64a596b4c9f6fd9abd704381b
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1452333337
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 7f4335776018b341bcae2dabcbebf313
+                        Target 67bef9b2d15abd4b8b64b9936213c36b
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor e3f907c64a596b4c9f6fd9abd704381b
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 0c44074c40ffc44e9e6013396017a0ed
+            member da35d62a53951c4bb87159c0ae9ff8c0
+            member 7f4335776018b341bcae2dabcbebf313
+            member 67bef9b2d15abd4b8b64b9936213c36b
+            member 075f8c534b415044a1822491f40c6e6d
+            member a07c8bf4a7c526499c7247cf613b97ab

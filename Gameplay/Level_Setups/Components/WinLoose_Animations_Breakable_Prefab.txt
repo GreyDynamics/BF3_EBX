@@ -1,0 +1,352 @@
+CameraEntityData 1635b9e0020cee48be52bbfb7cc5a74c
+    $::CameraEntityBaseData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 0
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x -0.576812803745
+                    y 0.0
+                    z -0.816876351833
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.816876351833
+                    y 0.0
+                    z -0.576812803745
+                trans::Vec3
+                    x 17.6828346252
+                    y -1.47053432465
+                    z -4.07101345062
+        NameId *nullString*
+        Priority 1
+        Enabled True
+    Fov 30.0
+InterfaceDescriptorData 0b4f99263daa0c4fba24224e509e68d0
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -1055891891
+        member::DynamicEvent
+            Id -1315965780
+        member::DynamicEvent
+            Id 1825249151
+    OutputEvents::array
+        member::DynamicEvent
+            Id 1472306861
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicVisualEnvironmentEntityData 29e28dc68fbf3d4dbd4d4c047f4d9c2f
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    VisualEnvironment fx/visualenviroments/fullscreen/ve_fs_camerafilter/f8d581cfa07282f7a6dc1063e938c952
+    Visibility 1.0
+SequenceEntityData be7756fa8169954ca3e363ea7c78e1f1
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 10500
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks *nullArray*
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PreSim
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SequenceEntityData 6e148ed4588ba446a2579fb29f712380
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 21000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks::array
+        member 67fea5ccdfc6f048bf7b980c8ad49ef0
+        member fdf79def9e94a245bc4f2d0a72057694
+        member e60fc4f80d163d4f8f297816a4b516a7
+        member a2373968da50db44878f13346548d7ea
+        member 645d93be2a484c4ca90f7c2df0f3a5f9
+        member bcb2d851a681a341834e462659db1dd3
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PreSim
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint 1fe8cf2772a25ecab95f4fa1b63586c2 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Level_Setups/Components/WinLoose_Animations_Breakable_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 6e148ed4588ba446a2579fb29f712380
+                            Target c6a0b6a4b8ee634da57a2fa90597f19b
+                            SourceFieldId -1146240002
+                            TargetFieldId 193450867
+                        member::PropertyConnection
+                            Source c6a0b6a4b8ee634da57a2fa90597f19b
+                            Target 1635b9e0020cee48be52bbfb7cc5a74c
+                            SourceFieldId 193453899
+                            TargetFieldId -2024647575
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 0f338bc2cd19f14698f21c3bd9590589
+                        Target 1635b9e0020cee48be52bbfb7cc5a74c
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 777187609
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 0f338bc2cd19f14698f21c3bd9590589
+                        Target be7756fa8169954ca3e363ea7c78e1f1
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source be7756fa8169954ca3e363ea7c78e1f1
+                        Target 6e148ed4588ba446a2579fb29f712380
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source be7756fa8169954ca3e363ea7c78e1f1
+                        Target 0b4f99263daa0c4fba24224e509e68d0
+                        SourceEvent::EventSpec
+                            Id 650265526
+                        TargetEvent::EventSpec
+                            Id 1472306861
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source be7756fa8169954ca3e363ea7c78e1f1
+                        Target 29e28dc68fbf3d4dbd4d4c047f4d9c2f
+                        SourceEvent::EventSpec
+                            Id -1193365339
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source be7756fa8169954ca3e363ea7c78e1f1
+                        Target 29e28dc68fbf3d4dbd4d4c047f4d9c2f
+                        SourceEvent::EventSpec
+                            Id 650265526
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 0b4f99263daa0c4fba24224e509e68d0
+                        Target 0f338bc2cd19f14698f21c3bd9590589
+                        SourceEvent::EventSpec
+                            Id -1055891891
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 0b4f99263daa0c4fba24224e509e68d0
+                        Target 0f338bc2cd19f14698f21c3bd9590589
+                        SourceEvent::EventSpec
+                            Id -1315965780
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 0b4f99263daa0c4fba24224e509e68d0
+                        Target 0f338bc2cd19f14698f21c3bd9590589
+                        SourceEvent::EventSpec
+                            Id 1825249151
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 0b4f99263daa0c4fba24224e509e68d0
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 1635b9e0020cee48be52bbfb7cc5a74c
+            member be7756fa8169954ca3e363ea7c78e1f1
+            member 29e28dc68fbf3d4dbd4d4c047f4d9c2f
+            member 0f338bc2cd19f14698f21c3bd9590589
+            member 6e148ed4588ba446a2579fb29f712380
+            member c6a0b6a4b8ee634da57a2fa90597f19b
+SyncedBoolEntityData 0f338bc2cd19f14698f21c3bd9590589
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    In False
+TransformMultiplierEntityData c6a0b6a4b8ee634da57a2fa90597f19b
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 5
+    Realm Realm_Client
+    In1::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    In2::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+TransformPartPropertyTrackData 67fea5ccdfc6f048bf7b980c8ad49ef0
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1146240002
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Gameplay/Level_Setups/Components/AnimTrackData/D48E146E-8B58-46A4-A257-9FB29F712380_CamShake
+    KeyStartIndex 0
+    KeyCount 685
+    IsStatic True
+TransformPartPropertyTrackData fdf79def9e94a245bc4f2d0a72057694
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1146240002
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Gameplay/Level_Setups/Components/AnimTrackData/D48E146E-8B58-46A4-A257-9FB29F712380_CamShake
+    KeyStartIndex 685
+    KeyCount 685
+    IsStatic False
+TransformPartPropertyTrackData e60fc4f80d163d4f8f297816a4b516a7
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1146240002
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Gameplay/Level_Setups/Components/AnimTrackData/D48E146E-8B58-46A4-A257-9FB29F712380_CamShake
+    KeyStartIndex 1370
+    KeyCount 685
+    IsStatic True
+TransformPartPropertyTrackData a2373968da50db44878f13346548d7ea
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1146240002
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Gameplay/Level_Setups/Components/AnimTrackData/D48E146E-8B58-46A4-A257-9FB29F712380_CamShake
+    KeyStartIndex 2055
+    KeyCount 685
+    IsStatic False
+TransformPartPropertyTrackData 645d93be2a484c4ca90f7c2df0f3a5f9
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1146240002
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Gameplay/Level_Setups/Components/AnimTrackData/D48E146E-8B58-46A4-A257-9FB29F712380_CamShake
+    KeyStartIndex 2740
+    KeyCount 685
+    IsStatic False
+TransformPartPropertyTrackData bcb2d851a681a341834e462659db1dd3
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1146240002
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Gameplay/Level_Setups/Components/AnimTrackData/D48E146E-8B58-46A4-A257-9FB29F712380_CamShake
+    KeyStartIndex 3425
+    KeyCount 685
+    IsStatic False

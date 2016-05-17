@@ -1,0 +1,158 @@
+AnimationSignalEntityData e706aa75aedb2b4eb15150613e2f3d9c
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    Signal::AntRef
+        AssetId 357072917
+    IntGameState::AntRef
+        AssetId -1
+    FloatGameState::AntRef
+        AssetId -1
+    ValueInt 0
+    ValueFloat 0.0
+    Reset False
+    Continuous False
+EventSplitterEntityData 2a538d5aadd4334381b5b1a2fb6a8ce9
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    RunOnce True
+    Realm Realm_Server
+InterfaceDescriptorData dc2e9ff6393e534da28ce56d0f0c828a
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 1851906734
+        member::DynamicEvent
+            Id 764201467
+    OutputEvents::array
+        member::DynamicEvent
+            Id 1762125924
+        member::DynamicEvent
+            Id 1189488771
+        member::DynamicEvent
+            Id 946447544
+    InputLinks *nullArray*
+    OutputLinks::array
+        member::DynamicLink
+            Id -1086273423
+        member::DynamicLink
+            Id 966302209
+        member::DynamicLink
+            Id 1122649000
+LogicPrefabBlueprint c2c7f480b83b604b87ead2103458d684 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/CoOp_003_SimKill_Logic_SoldierReaction
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source e706aa75aedb2b4eb15150613e2f3d9c
+                            Target dc2e9ff6393e534da28ce56d0f0c828a
+                            SourceFieldId -1086273423
+                            TargetFieldId -1086273423
+                        member::LinkConnection
+                            Source 222ce3da53103d41ac11b307e7fa4ddc
+                            Target dc2e9ff6393e534da28ce56d0f0c828a
+                            SourceFieldId -1481696500
+                            TargetFieldId 966302209
+                        member::LinkConnection
+                            Source 222ce3da53103d41ac11b307e7fa4ddc
+                            Target dc2e9ff6393e534da28ce56d0f0c828a
+                            SourceFieldId -616190660
+                            TargetFieldId 1122649000
+                EventConnections::array
+                    member::EventConnection
+                        Source 222ce3da53103d41ac11b307e7fa4ddc
+                        Target dc2e9ff6393e534da28ce56d0f0c828a
+                        SourceEvent::EventSpec
+                            Id 1762125924
+                        TargetEvent::EventSpec
+                            Id 1762125924
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 2a538d5aadd4334381b5b1a2fb6a8ce9
+                        Target 222ce3da53103d41ac11b307e7fa4ddc
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -770075886
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 2a538d5aadd4334381b5b1a2fb6a8ce9
+                        Target dc2e9ff6393e534da28ce56d0f0c828a
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 1189488771
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source dc2e9ff6393e534da28ce56d0f0c828a
+                        Target 2a538d5aadd4334381b5b1a2fb6a8ce9
+                        SourceEvent::EventSpec
+                            Id 1851906734
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 2a538d5aadd4334381b5b1a2fb6a8ce9
+                        Target dc2e9ff6393e534da28ce56d0f0c828a
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 946447544
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source dc2e9ff6393e534da28ce56d0f0c828a
+                        Target e706aa75aedb2b4eb15150613e2f3d9c
+                        SourceEvent::EventSpec
+                            Id 764201467
+                        TargetEvent::EventSpec
+                            Id 434301581
+                        TargetType EventConnectionTargetType_Client
+                Descriptor dc2e9ff6393e534da28ce56d0f0c828a
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 222ce3da53103d41ac11b307e7fa4ddc
+            member e706aa75aedb2b4eb15150613e2f3d9c
+            member 2a538d5aadd4334381b5b1a2fb6a8ce9
+PatrolOrderEntityData 222ce3da53103d41ac11b307e7fa4ddc
+    $::BFOrderEntityData
+        $::OrderEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 1
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 0
+            DebugName PatrolOrder DAE32C22-1053-413D-AC11-B307E7FA4DDC
+            IssueOrderDelay 0.0
+            OnCompleteTimeOut 0.0
+            OnFailedTimeOut 0.0
+            Enabled True
+            ReadinessOnStart RLCombat
+        ForbiddenToFire False
+    TypeOfRoute RouteStop
+    UsePathFinding True
+    CombatMode CombatPatrolMode_FreeToFight
+    StartAtGeometricallyClosestWaypoint False
+    StartingWaypoint *nullGuid*

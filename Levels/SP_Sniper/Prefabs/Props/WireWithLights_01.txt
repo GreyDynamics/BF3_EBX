@@ -1,0 +1,169 @@
+InterfaceDescriptorData 59a1fa9edaea0e4180b843ecd7659a3f
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 191049462
+                AccessType FieldAccessType_Source
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1312383531
+                AccessType FieldAccessType_Source
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 1188203099
+                AccessType FieldAccessType_Target
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 85dafe716bb8734db76aec3dd369ca10
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Realm Realm_ClientAndServer
+    AutoStart False
+    Looping True
+    ResetAfterStop False
+    PlayFirstFrame True
+    DefaultAnimation WireLight_01_Anim
+    AnimationIndex 0
+    AnimationSet animations/characters/sp/sp_sniper/wirelights/wirelight_animset/e7a31f1922138ffa598a9b4e17461203
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName AITrajectory
+    RootMeshBoneName AITrajectory
+    EnableJointWorldTransformOutput True
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds::array
+        member -1031074154
+        member 2015841709
+        member 2015841710
+        member -381747463
+        member 2015841711
+        member 2015841704
+        member -381747462
+        member 2015841705
+RandomDelayEntityData 9835abd5670ede43a45dd380a671ce89
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    MinDelay 3.0
+    MaxDelay 5.0
+    Realm Realm_ClientAndServer
+    AutoStart True
+    RunOnce True
+ReferenceObjectData ed50a605ffa44447856aabe4b1d9601f
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/sp/sp_sniper/wirelights/wirelights_model/9d1ee1688dee88377bc7fa0e918b0968
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint ecdaa5930ae9189f9e3b2a9adec8776a #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Sniper/Prefabs/Props/WireWithLights_01
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 85dafe716bb8734db76aec3dd369ca10
+                            Target 59a1fa9edaea0e4180b843ecd7659a3f
+                            SourceFieldId -381747462
+                            TargetFieldId 191049462
+                        member::PropertyConnection
+                            Source 85dafe716bb8734db76aec3dd369ca10
+                            Target 59a1fa9edaea0e4180b843ecd7659a3f
+                            SourceFieldId -381747463
+                            TargetFieldId -1312383531
+                        member::PropertyConnection
+                            Source 59a1fa9edaea0e4180b843ecd7659a3f
+                            Target 85dafe716bb8734db76aec3dd369ca10
+                            SourceFieldId 1188203099
+                            TargetFieldId 1188203099
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 85dafe716bb8734db76aec3dd369ca10
+                            Target ed50a605ffa44447856aabe4b1d9601f
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 9835abd5670ede43a45dd380a671ce89
+                        Target 85dafe716bb8734db76aec3dd369ca10
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 59a1fa9edaea0e4180b843ecd7659a3f
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member ed50a605ffa44447856aabe4b1d9601f
+            member 85dafe716bb8734db76aec3dd369ca10
+            member 9835abd5670ede43a45dd380a671ce89

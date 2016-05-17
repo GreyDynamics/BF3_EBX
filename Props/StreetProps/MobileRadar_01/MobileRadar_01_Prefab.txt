@@ -1,0 +1,268 @@
+BoolEntityData d6a0578576900c41921daad6891d8e2e
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Realm Realm_ClientAndServer
+    DefaultValue True
+ReferenceObjectData f587d8ac18fd8f47a191202170c1a31b
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint props/streetprops/mobileradar_01/mobileradar_01_nodish/12745b75c43ae235dff8bf6a8c1afa72
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 2a4ec544a3f16b4f8ab06252ae223de0
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.000344848638633
+            y 3.49218630791
+            z 1.83175230026
+    Blueprint props/streetprops/mobileradar_01/mobileradar_01_dish/e316f053c2cd492eb85dfd7845438475
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundEntityData aee95b0963fec645b65aff7f0dcdc885
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/objects/military/radardish_rotating/263e3fdb08be8bd832ae27e70f5d4a56
+    PlayOnCreation True
+    ObstructionHandle -1
+SpatialPrefabBlueprint 778565b4d339a58ebfb5cd0511ac3e18 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Props/StreetProps/MobileRadar_01/MobileRadar_01_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 23ec175afc841042b0063e760603e4b6
+                            Target 2a4ec544a3f16b4f8ab06252ae223de0
+                            SourceFieldId -1178330879
+                            TargetFieldId -2024647575
+                        member::PropertyConnection
+                            Source d6a0578576900c41921daad6891d8e2e
+                            Target 2a4ec544a3f16b4f8ab06252ae223de0
+                            SourceFieldId 225375086
+                            TargetFieldId 443997333
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source *nullGuid*
+                            Target 23ec175afc841042b0063e760603e4b6
+                            SourceFieldId 0
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 2a4ec544a3f16b4f8ab06252ae223de0
+                        Target 23ec175afc841042b0063e760603e4b6
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 2a4ec544a3f16b4f8ab06252ae223de0
+                        Target aee95b0963fec645b65aff7f0dcdc885
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member f587d8ac18fd8f47a191202170c1a31b
+            member 2a4ec544a3f16b4f8ab06252ae223de0
+            member 23ec175afc841042b0063e760603e4b6
+            member aee95b0963fec645b65aff7f0dcdc885
+            member d6a0578576900c41921daad6891d8e2e
+SyncedSequenceEntityData 23ec175afc841042b0063e760603e4b6
+    $::SequenceEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 2
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 2
+        Events *nullArray*
+        SequenceStartTime 0
+        SequenceLength 4000
+        Looping True
+        AutoStart True
+        AutoPlayFirstFrame False
+        PlayInReverse False
+        Realm Realm_ClientAndServer
+        PropertyTracks::array
+            member 5663881b945a4e448fa8d1969eaf6492
+            member 5a880da577bab5419ebce57693ba56c2
+            member 0e139703295e484bb26d14b2e051495e
+            member cf305b49f60ef44fbda7f789da488c65
+            member c8e5ec9ca4c9ee4abec3cc99ed99e02b
+            member 753e261588db4a4899003faf66483804
+        CustomSequenceTracks *nullArray*
+        ClientUpdatePass UpdatePass_PreSim
+        ServerUpdatePass UpdatePass_PreSim
+        ExternalTime 0.0
+    InterpolateTime True
+TransformPartPropertyTrackData 5663881b945a4e448fa8d1969eaf6492
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1178330879
+        Times *nullArray*
+    TransformPart TransformPart_TranslationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False
+TransformPartPropertyTrackData 5a880da577bab5419ebce57693ba56c2
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1178330879
+        Times *nullArray*
+    TransformPart TransformPart_TranslationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False
+TransformPartPropertyTrackData 0e139703295e484bb26d14b2e051495e
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1178330879
+        Times *nullArray*
+    TransformPart TransformPart_TranslationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName *nullString*
+    KeyStartIndex 0
+    KeyCount 0
+    IsStatic False
+TransformPartPropertyTrackData cf305b49f60ef44fbda7f789da488c65
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1178330879
+        Times *nullArray*
+    TransformPart TransformPart_RotationX
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Props/StreetProps/MobileRadar_01/AnimTrackData/5A17EC23-84FC-4210-B006-3E760603E4B6_SqFld_326281b4011b41a8a4bf2495b8fe3103
+    KeyStartIndex 0
+    KeyCount 1
+    IsStatic True
+TransformPartPropertyTrackData c8e5ec9ca4c9ee4abec3cc99ed99e02b
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1178330879
+        Times *nullArray*
+    TransformPart TransformPart_RotationY
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Props/StreetProps/MobileRadar_01/AnimTrackData/5A17EC23-84FC-4210-B006-3E760603E4B6_SqFld_326281b4011b41a8a4bf2495b8fe3103
+    KeyStartIndex 1
+    KeyCount 2
+    IsStatic False
+TransformPartPropertyTrackData 753e261588db4a4899003faf66483804
+    $::PropertyTrackData
+        $::DataContainer
+        Id -1178330879
+        Times *nullArray*
+    TransformPart TransformPart_RotationZ
+    PreInfinity CurveInfinityType_Constant
+    PostInfinity CurveInfinityType_Constant
+    Values *nullArray*
+    EvaluatorFps 1.0
+    Weighted False
+    ResourceName Props/StreetProps/MobileRadar_01/AnimTrackData/5A17EC23-84FC-4210-B006-3E760603E4B6_SqFld_326281b4011b41a8a4bf2495b8fe3103
+    KeyStartIndex 3
+    KeyCount 1
+    IsStatic True

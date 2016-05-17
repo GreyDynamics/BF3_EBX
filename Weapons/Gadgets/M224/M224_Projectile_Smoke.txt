@@ -1,0 +1,227 @@
+HavokAsset b7dec4a790fec190fbdec469055eb333
+    $::Asset
+        $::DataContainer
+        Name Weapons/Gadgets/M224/M224_Projectile_Smoke_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+MissileEntityData d8bd20a49ff8e349b6dbe8327253a589
+    $::MeshProjectileEntityData
+        $::ProjectileEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled True
+                    Components *nullArray*
+                    RuntimeComponentCount 0
+                PhysicsData bc35568e05a90149be174ee892a95fea
+            InitialSpeed 350.0
+            TimeToLive 5.0
+            MaxCount 1
+            InitMeshHideTime 0.0
+            VisualConvergeDistance 30.0
+            DetonateOnTimeout False
+            ServerProjectileDisabled False
+            Explosion 20a9e5a78cfa1145aa6ccaf00c967c3e
+            SuppressionData 95b7ee8083c9074897eccbde055490fd
+            AmmunitionType *nullString*
+            MaterialPair materials/materialcontainer/585c0f471d311c46a3ddb22b30c3a5f7
+            HitReactionWeaponType AntHitReactionWeaponType_Explosion
+            SuppressOwnerVehicleDamage False
+        Mesh weapons/gadgets/m224/m224_projectile_smoke_mesh/875ce14d560fcf40b6fad65062dfa888
+        TrailEffect fx/weapons/trails/fx_trail_thinsmoke/0da686d2bb9fbe4cc4cb07ac1e0bd50c
+        IsAttachable False
+        MaxAttachableInclination 45.0
+        ExtraDamping False
+        InitialAngularVelocity::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    EngineEffect *nullGuid*
+    DudExplosion *nullGuid*
+    FlyBySound *nullGuid*
+    EngineStrength 100.0
+    MaxSpeed 250.0
+    EngineTimeToIgnition 0.0
+    EngineTimeToLive 40.0
+    TimeToActivateGuidingSystem 0.0
+    TimeToArm 0.5
+    MaxTurnAngle 90.0
+    Drag 0.0
+    Gravity -9.80000019073
+    ApplyGravityWhenGuided False
+    FlyBySoundRadius 5.0
+    FlyBySoundSpeed 10.0
+    ImpactImpulse 500.0
+    Damage 100.0
+    DefaultTeam TeamNeutral
+    WarnTarget wtWarnNone
+    WarnOnPointingMissile False
+    LockingController *nullGuid*
+    LockableInfo::MissileLockableInfoData
+        HeatSignature 0.0
+        RadarSignature 0.0
+    UnguidedData::MissileUnguidedData
+        UseStaticPosition False
+        StaticPosition::Vec2
+            x 0.0
+            y 0.0
+        UseTargetPosition False
+        TargetPositionOffset::Vec2
+            x 0.0
+            y 0.0
+    NearTargetDetonation::NearTargetDetonationData
+        DetonateNearTarget False
+        DetonationRadius 10.0
+        MaxDetonationDelay 3.0
+        MinDetonationDelay 0.0
+PhysicsEntityData bc35568e05a90149be174ee892a95fea
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint -1
+    Asset *nullGuid*
+    ScaledAssets::array
+        member b7dec4a790fec190fbdec469055eb333
+    RigidBodies::array
+        member 712057c21158484fbd5ee275665b6ed9
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ProjectileBlueprint 290c24dc261b42419095ee385e6a1374 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Weapons/Gadgets/M224/M224_Projectile_Smoke
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object d8bd20a49ff8e349b6dbe8327253a589
+RigidBodyData 712057c21158484fbd5ee275665b6ed9
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 1.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Dynamic
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+VeniceExplosionEntityData 20a9e5a78cfa1145aa6ccaf00c967c3e
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint -1
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect fx/vehicles/misc/fx_40mm_smoke/f9d2c3004613b847956d10cc23ad8b4d
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair materials/materialcontainer/55ba6e5077d9054487b603fb2a7e900d
+        DamageIndicationType DamageIndicationType_ExplosionCenter
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.0
+        InnerBlastRadius 0.0
+        BlastDamage 0.0
+        BlastRadius 7.0
+        BlastImpulse 0.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 8.0
+        ShockwaveImpulse 0.0
+        ShockwaveTime 0.25
+        DisableOcclusion True
+        DisableStaticEntityOcclusion False
+        CameraShockwaveRadius 3.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing False
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression False
+    UnspotsOnExplode True
+    SpotsOnExplode False
+    UnspottableTime 6.0
+WeaponSuppressionData 95b7ee8083c9074897eccbde055490fd
+    $::DataContainer
+    MaxMultiplier 50.0
+    MinMultiplier 50.0
+    MinDistance 3.0
+    MaxDistance 500.0

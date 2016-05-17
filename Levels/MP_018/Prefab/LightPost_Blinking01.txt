@@ -1,0 +1,75 @@
+InterfaceDescriptorData 516d30665f476040a47c6dd7552cc0ce
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -274579609
+    OutputEvents::array
+        member::DynamicEvent
+            Id -1452333337
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 53f270afa27dda42ba41910a66f58c5b
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/lightpost_01/lightpost_01_destruction/1ccbc5181f4c3b4a944777a379a1ba53
+    ObjectVariation objects/lightpost_01/lightpost_01_destruction_v_02/0f7dd077f8298aad41219ea17b02d153
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 7e14492c2466164a9be696890e872733 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/MP_018/Prefab/LightPost_Blinking01
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 516d30665f476040a47c6dd7552cc0ce
+                        Target 53f270afa27dda42ba41910a66f58c5b
+                        SourceEvent::EventSpec
+                            Id -274579609
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 53f270afa27dda42ba41910a66f58c5b
+                        Target 516d30665f476040a47c6dd7552cc0ce
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1452333337
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 516d30665f476040a47c6dd7552cc0ce
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 53f270afa27dda42ba41910a66f58c5b

@@ -1,0 +1,275 @@
+FloatPropertyTrackData c43ab2810392284993f38da999bbd2cf
+    $::SimplePropertyTrackData
+        $::PropertyTrackData
+            $::DataContainer
+            Id 177556
+            Times::array
+                member 0
+                member 101
+                member 188
+                member 299
+        InterpolationType InterpolationType_Linear
+    Values::array
+        member 0.0
+        member 0.0
+        member 15.0
+        member 15.0
+FloatPropertyTrackData a84b526f1e90d5438eadf15915fd94ec
+    $::SimplePropertyTrackData
+        $::PropertyTrackData
+            $::DataContainer
+            Id 177559
+            Times::array
+                member 0
+                member 83
+                member 188
+                member 288
+        InterpolationType InterpolationType_Linear
+    Values::array
+        member 15.0
+        member 15.0
+        member 0.0
+        member 0.0
+InterfaceDescriptorData f51b908c61146843b4e1cf9e405e71e5
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id 1260054886
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+RandomDelayEntityData fe65095c0b4a3244b5440d4798183990
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    MinDelay 0.0
+    MaxDelay 1.0
+    Realm Realm_Server
+    AutoStart True
+    RunOnce False
+RandomDelayEntityData df024907d4d38a4eb9baa82a2ab3a0cd
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    MinDelay 0.5
+    MaxDelay 2.5
+    Realm Realm_Server
+    AutoStart False
+    RunOnce False
+SequenceEntityData 2f2e5d80a2a0b240a22606c1991b1b0b
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 300
+    Looping True
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks::array
+        member c43ab2810392284993f38da999bbd2cf
+        member a84b526f1e90d5438eadf15915fd94ec
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint 1a68f6860eed8921fb20d9aebae9fcd2 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/COOP_003/prefabs/Pf_PoliceCarStrobes_01
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 2f2e5d80a2a0b240a22606c1991b1b0b
+                            Target 97ad58ce612f1c48a339c062e5318d6a
+                            SourceFieldId 177556
+                            TargetFieldId -458572566
+                        member::PropertyConnection
+                            Source 2f2e5d80a2a0b240a22606c1991b1b0b
+                            Target 11a66c3de3aacb469364a87b7931169e
+                            SourceFieldId 177559
+                            TargetFieldId -996560163
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source fe65095c0b4a3244b5440d4798183990
+                        Target 2f2e5d80a2a0b240a22606c1991b1b0b
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member::EventConnection
+                        Source df024907d4d38a4eb9baa82a2ab3a0cd
+                        Target 11a66c3de3aacb469364a87b7931169e
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source df024907d4d38a4eb9baa82a2ab3a0cd
+                        Target 97ad58ce612f1c48a339c062e5318d6a
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source f51b908c61146843b4e1cf9e405e71e5
+                        Target df024907d4d38a4eb9baa82a2ab3a0cd
+                        SourceEvent::EventSpec
+                            Id 1260054886
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source df024907d4d38a4eb9baa82a2ab3a0cd
+                        Target 2f2e5d80a2a0b240a22606c1991b1b0b
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                Descriptor f51b908c61146843b4e1cf9e405e71e5
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member 97ad58ce612f1c48a339c062e5318d6a
+            member 11a66c3de3aacb469364a87b7931169e
+            member 2f2e5d80a2a0b240a22606c1991b1b0b
+            member fe65095c0b4a3244b5440d4798183990
+            member df024907d4d38a4eb9baa82a2ab3a0cd
+SpotLightEntityData 97ad58ce612f1c48a339c062e5318d6a
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 2
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 0.0
+                    z -0.491238325834
+        Color::Vec3
+            x 0.0560000017285
+            y 0.211999997497
+            z 1.0
+        Radius 12.0
+        Intensity 15.0
+        AttenuationOffset 0.00999999977648
+        Visible True
+        SpecularEnable False
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Shape SpotLightShape_Cone
+    ConeInnerAngle 0.0
+    ConeOuterAngle 150.0
+    FrustumFov 40.0
+    FrustumAspect 1.0
+    OrthoWidth 5.0
+    OrthoHeight 5.0
+    Texture *nullGuid*
+    CastShadowsEnable False
+    CastShadowsMinLevel QualityLevel_Low
+SpotLightEntityData 11a66c3de3aacb469364a87b7931169e
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 2
+                    IndexInBlueprint 1
+            Transform::LinearTransform
+                right::Vec3
+                    x -1.0
+                    y 0.0
+                    z 8.74227765735e-08
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x -8.74227765735e-08
+                    y 0.0
+                    z -1.0
+                trans::Vec3
+                    x 0.0
+                    y 0.0
+                    z 0.482622027397
+        Color::Vec3
+            x 0.0560000017285
+            y 0.211999997497
+            z 1.0
+        Radius 12.0
+        Intensity 15.0
+        AttenuationOffset 0.00999999977648
+        Visible True
+        SpecularEnable False
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Shape SpotLightShape_Cone
+    ConeInnerAngle 0.0
+    ConeOuterAngle 150.0
+    FrustumFov 40.0
+    FrustumAspect 1.0
+    OrthoWidth 5.0
+    OrthoHeight 5.0
+    Texture *nullGuid*
+    CastShadowsEnable False
+    CastShadowsMinLevel QualityLevel_Low

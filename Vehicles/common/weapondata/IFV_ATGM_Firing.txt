@@ -1,0 +1,225 @@
+FiringFunctionData 32df8c53bf5b0b4d849da59079d0aeea
+    $::GameDataContainer
+        $::DataContainer
+    Dispersion::array
+        member::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+    WeaponDispersion::SoldierWeaponDispersion
+        StandDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        CrouchDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        ProneDispersion::FiringDispersionData
+            MinAngle 0.0
+            MaxAngle 0.0
+            IncreasePerShot 0.0
+            DecreasePerSecond 5.0
+        JumpDispersionAngle 0.0
+        ProneTransitionDispersionAngle 0.0
+        MoveDispersionAngle 0.0
+        MoveZoomedDispersionAngle 0.0
+        DecreasePerSecond 5.0
+    FireEffects1p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_antitank_1p/88b054b71f907948a99fe17f9c27b587
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    FireEffects3p::array
+        member::FireEffectData
+            Effect fx/weapons/muzzleflashes/generic/fx_muzz_generic_antitank_3p/ea28d5e0581e864eaa83a65235602bdc
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    Sound sound/weapons/vehicles/tow/weapon_vehicle_at_tow_02/fc638ca1afa0b542a24e53e8468fc008
+    Shot::ShotConfigData
+        InitialPosition::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+        InitialDirection::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        InitialSpeed::Vec3
+            x 0.0
+            y 0.0
+            z 20.0
+        InheritWeaponSpeedAmount 0.15000000596
+        MuzzleExplosion *nullGuid*
+        ProjectileData vehicles/common/weapondata/ifv_atgm_projectile/0dd336e56e561f06e8c07dc34f394aab
+        SecondaryProjectileData *nullGuid*
+        Projectile vehicles/common/weapondata/ifv_atgm_projectile/5e0b7c2b3b2b2acf89bc9245a4221da0
+        SecondaryProjectile *nullGuid*
+        AlternateProjectiles *nullArray*
+        SpawnDelay 0.0
+        NumberOfBulletsPerShell 1
+        NumberOfBulletsPerShot 1
+        NumberOfBulletsPerBurst 3
+        RelativeTargetAiming False
+        ForceSpawnToCamera False
+        SpawnVisualAtWeaponBone False
+        ActiveForceSpawnToCamera True
+    FireLogic::FireLogicData
+        HoldAndRelease::HoldAndReleaseData
+            MaxHoldTime 10.0
+            MinPowerModifier 1.0
+            MaxPowerModifier 2.0
+            PowerIncreasePerSecond 0.10000000149
+            Delay 0.0
+            ForceFireWhenKilledHolding True
+            KilledHoldingPowerModifier 0.0
+        BoltAction::BoltActionData
+            BoltActionDelay 0.5
+            BoltActionTime 1.0
+            HoldBoltActionUntilFireRelease True
+            HoldBoltActionUntilZoomRelease True
+            ForceBoltActionOnFireTrigger False
+            UnZoomOnBoltAction True
+            ReturnToZoomAfterBoltAction True
+        Recoil::RecoilData
+            MaxRecoilAngleX 0.0
+            MinRecoilAngleX 0.0
+            MaxRecoilAngleY 0.0
+            MinRecoilAngleY 0.0
+            MaxRecoilAngleZ 0.0
+            MinRecoilAngleZ 0.0
+            MaxRecoilFov 0.0
+            MinRecoilFov 0.0
+            RecoilFollowsDispersion True
+        FireInputAction EIAFire
+        ReloadInputAction EIAReload
+        CycleFireModeInputAction EIACycleFireMode
+        TriggerPullWeight 0.10000000149
+        RateOfFire 150.0
+        RateOfFireForBurst 550.0
+        ClientFireRateMultiplier 0.670000016689
+        ReloadDelay 0.0
+        HoldOffReloadUntilFireRelease False
+        HoldOffReloadUntilZoomRelease False
+        ForceReloadActionOnFireTrigger False
+        ReloadTime 7.5
+        ReloadTimeBulletsLeft -1.0
+        ReloadThreshold 1.0
+        PreFireDelay 0.0
+        AutomaticDelay 0.0
+        ReloadLogic rlReloadUnaffectedByWeaponSwitch
+        ReloadType rtMagazine
+        FireLogicType fltSingleFire
+        FireLogicTypeArray *nullArray*
+        AlwaysAutoReload True
+    Ammo::AmmoConfigData
+        MagazineCapacity 1
+        NumberOfMagazines -1
+        TraceFrequency 1
+        AmmoPickupMinAmount 0
+        AmmoPickupMaxAmount 0
+        AutoReplenishMagazine False
+        AutoReplenishDelay 5.0
+        AmmoBagPickupDelayMultiplier 1.0
+        AmmoBagPickupAmount -1
+    OverHeat::OverHeatData
+        HeatPerBullet 0.0
+        HeatDropPerSecond 0.20000000298
+        OverHeatPenaltyTime 3.0
+        OverHeatThreshold 0.800000011921
+        OverHeatEffect::FireEffectData
+            Effect *nullGuid*
+            Offset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            Rotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            ZoomOffset::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomOffset False
+            ZoomRotation::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+            UseZoomRotation False
+            DisableDuringZoom False
+            UpdateTransform False
+            StopLoopingEffects False
+    UsePrimaryAmmo True
+    UnlimitedAmmoForAI False
+    AmmoCrateReloadDelay 0.0
+    SelfHealTimeWhenDeployed 0.0
+WeaponFiringData 624536fddeec7b41a5d4450f19807329
+    $::GameDataContainer
+        $::DataContainer
+    PrimaryFire 32df8c53bf5b0b4d849da59079d0aeea
+    DeployTime 0.0
+    ReactivateCooldownTime 0.0
+    DisableZoomOnDeployTime 0.25
+    AltDeployTime 2.0
+    AltDeployId -1
+    UseAutoAiming False
+    WeaponSway *nullGuid*
+    InflictSelfDamage False
+    Rumble::RumbleFiringData
+        LowRumble 1.0
+        HighRumble 1.0
+        RumbleDuration 0.40000000596
+    SupportDelayStand 0.600000023842
+    SupportDelayProne 0.600000023842
+    ShowEnemyNametagOnAim True
+    ReloadWholeMags True
+    DisableReloadWhileSprinting False
+    AbortReloadOnSprint False
+WeaponFiringDataAsset 624536fddeec7b41a5d4450f1980732a #primary instance
+    $::GameDataContainerAsset
+        $::Asset
+            $::DataContainer
+            Name Vehicles/common/WeaponData/IFV_ATGM_Firing
+        Data 624536fddeec7b41a5d4450f19807329

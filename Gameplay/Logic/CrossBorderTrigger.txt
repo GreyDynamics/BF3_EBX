@@ -1,0 +1,235 @@
+BoolEntityData ab4aace3f8889e409d211a6e5a9e276c
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Server
+    DefaultValue False
+CompareBoolEntityData d46c29901861424096e3badd6b393ca6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 1
+            IndexInBlueprint 3
+    Realm Realm_Server
+    Bool False
+    TriggerOnPropertyChange True
+GeometryTriggerEntityData 89cd5f960d7efe4d95f405dd937bb33e
+    $::AreaTriggerEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 3
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 0
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce False
+        GeometryTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Include ATPlayers
+        UseCharacterEntity False
+        Radius 0.0
+        InsideAreaEventRepeatTime 0.0
+        OneInsideAreaEventPerSoldier False
+        TriggerOnlyOnLeave False
+        ResetOnEnable False
+        TriggerOnLeaveOnDeath True
+        TriggerOnLeaveOnDisable False
+GeometryTriggerEntityData 69a766dbaed31342b5f2371e38d2ef4e
+    $::AreaTriggerEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 3
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 1
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce False
+        GeometryTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Include ATPlayers
+        UseCharacterEntity False
+        Radius 0.0
+        InsideAreaEventRepeatTime 0.0
+        OneInsideAreaEventPerSoldier False
+        TriggerOnlyOnLeave False
+        ResetOnEnable False
+        TriggerOnLeaveOnDeath True
+        TriggerOnLeaveOnDisable False
+InterfaceDescriptorData 608e81526eeec84f9df86abd1f203f3b
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 703611427
+                AccessType FieldAccessType_Source
+    InputEvents *nullArray*
+    OutputEvents::array
+        member::DynamicEvent
+            Id -80368276
+        member::DynamicEvent
+            Id -70038721
+    InputLinks *nullArray*
+    OutputLinks::array
+        member::DynamicLink
+            Id 302073829
+        member::DynamicLink
+            Id -1445659985
+LogicPrefabBlueprint 159d40219dcf9cf5d0dabff5f86f81ce #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Logic/CrossBorderTrigger
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source ab4aace3f8889e409d211a6e5a9e276c
+                            Target d46c29901861424096e3badd6b393ca6
+                            SourceFieldId 225375086
+                            TargetFieldId 2088812747
+                        member::PropertyConnection
+                            Source ab4aace3f8889e409d211a6e5a9e276c
+                            Target 608e81526eeec84f9df86abd1f203f3b
+                            SourceFieldId 225375086
+                            TargetFieldId 703611427
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 89cd5f960d7efe4d95f405dd937bb33e
+                            Target 608e81526eeec84f9df86abd1f203f3b
+                            SourceFieldId 838548383
+                            TargetFieldId 302073829
+                        member::LinkConnection
+                            Source 69a766dbaed31342b5f2371e38d2ef4e
+                            Target 608e81526eeec84f9df86abd1f203f3b
+                            SourceFieldId 838548383
+                            TargetFieldId -1445659985
+                EventConnections::array
+                    member::EventConnection
+                        Source 69a766dbaed31342b5f2371e38d2ef4e
+                        Target ab4aace3f8889e409d211a6e5a9e276c
+                        SourceEvent::EventSpec
+                            Id -80368276
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 89cd5f960d7efe4d95f405dd937bb33e
+                        Target ab4aace3f8889e409d211a6e5a9e276c
+                        SourceEvent::EventSpec
+                            Id -80368276
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source d46c29901861424096e3badd6b393ca6
+                        Target 608e81526eeec84f9df86abd1f203f3b
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id -80368276
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source d46c29901861424096e3badd6b393ca6
+                        Target 608e81526eeec84f9df86abd1f203f3b
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id -70038721
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 608e81526eeec84f9df86abd1f203f3b
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 89cd5f960d7efe4d95f405dd937bb33e
+            member 69a766dbaed31342b5f2371e38d2ef4e
+            member ab4aace3f8889e409d211a6e5a9e276c
+            member d46c29901861424096e3badd6b393ca6

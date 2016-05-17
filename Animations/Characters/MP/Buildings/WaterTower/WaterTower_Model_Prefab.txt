@@ -1,0 +1,139 @@
+InterfaceDescriptorData e7415e4dcf59ff459441e2fcff7bee08
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -2132289043
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member::DynamicEvent
+            Id 2084504595
+    OutputEvents::array
+        member::DynamicEvent
+            Id 712501883
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 2afe5cf87d432148a4ac76f67a17b866
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Realm Realm_Client
+    AutoStart False
+    Looping False
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation WaterTower_Anim
+    AnimationIndex 0
+    AnimationSet animations/characters/mp/buildings/watertower/watertower_animset/324455015c7b21253da0f1bb71dacdfa
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData 0532542c71c6cd4f9d9971abb0e687d6
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint animations/characters/mp/buildings/watertower/watertower_model/d52084b4117c916da8b5f8a1ccb7df4f
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint b9fe6b28c928a4dddc87296984a12eec #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/MP/Buildings/WaterTower/WaterTower_Model_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source e7415e4dcf59ff459441e2fcff7bee08
+                            Target 2afe5cf87d432148a4ac76f67a17b866
+                            SourceFieldId -2132289043
+                            TargetFieldId -2132289043
+                    LinkConnections::array
+                        member::LinkConnection
+                            Source 2afe5cf87d432148a4ac76f67a17b866
+                            Target 0532542c71c6cd4f9d9971abb0e687d6
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member::EventConnection
+                        Source 2afe5cf87d432148a4ac76f67a17b866
+                        Target e7415e4dcf59ff459441e2fcff7bee08
+                        SourceEvent::EventSpec
+                            Id -1176973715
+                        TargetEvent::EventSpec
+                            Id 712501883
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source e7415e4dcf59ff459441e2fcff7bee08
+                        Target 2afe5cf87d432148a4ac76f67a17b866
+                        SourceEvent::EventSpec
+                            Id 2084504595
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor e7415e4dcf59ff459441e2fcff7bee08
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 0532542c71c6cd4f9d9971abb0e687d6
+            member 2afe5cf87d432148a4ac76f67a17b866

@@ -1,0 +1,108 @@
+EventSyncEntityData b91645050935c149b52a5788fdf6e9dd
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+InterfaceDescriptorData f4f80e606e28ff4e883658deaa7e5ef3
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -723047825
+        member::DynamicEvent
+            Id -742029385
+    OutputEvents::array
+        member::DynamicEvent
+            Id 1678019005
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint 565acfc4e800994abcbdbfa88a6062a6 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/CoOp_Stream_Controller
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source b91645050935c149b52a5788fdf6e9dd
+                        Target 71dde654c856f844adaefdbfc95ebd09
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -1688613187
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 71dde654c856f844adaefdbfc95ebd09
+                        Target f4f80e606e28ff4e883658deaa7e5ef3
+                        SourceEvent::EventSpec
+                            Id 1975570652
+                        TargetEvent::EventSpec
+                            Id 1678019005
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member::EventConnection
+                        Source f4f80e606e28ff4e883658deaa7e5ef3
+                        Target b91645050935c149b52a5788fdf6e9dd
+                        SourceEvent::EventSpec
+                            Id -723047825
+                        TargetEvent::EventSpec
+                            Id -1573253508
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source f4f80e606e28ff4e883658deaa7e5ef3
+                        Target 71dde654c856f844adaefdbfc95ebd09
+                        SourceEvent::EventSpec
+                            Id -742029385
+                        TargetEvent::EventSpec
+                            Id -1688613187
+                        TargetType EventConnectionTargetType_Server
+                Descriptor f4f80e606e28ff4e883658deaa7e5ef3
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member b91645050935c149b52a5788fdf6e9dd
+            member 71dde654c856f844adaefdbfc95ebd09
+MultipleTriggerEntityData 71dde654c856f844adaefdbfc95ebd09
+    $::TriggerEventEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 1
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 1
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce True
+    TriggerAmount 2

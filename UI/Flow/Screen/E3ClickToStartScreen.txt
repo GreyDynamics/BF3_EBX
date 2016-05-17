@@ -1,0 +1,164 @@
+InstanceInputNode 3d33750ceea76e4ab0b9ec3d7dd8ed0a
+    $::UINodeData
+        $::DataContainer
+        Name SP
+        IsRootNode False
+        ParentGraph 56ea54c525171226143f6f8ac234912a
+        ParentIsScreen True
+    Out eb5acdef3c905a49bde5a15bd9c0b781
+InstanceInputNode 9a4babd2b54dab48b7003c4fba6cf536
+    $::UINodeData
+        $::DataContainer
+        Name MP
+        IsRootNode False
+        ParentGraph 56ea54c525171226143f6f8ac234912a
+        ParentIsScreen True
+    Out f44f93057163a043b76cdeb955f9e83e
+UINodeConnection 4694dab0b251544b816ad31c906f89ef
+    $::DataContainer
+    SourceNode 3d33750ceea76e4ab0b9ec3d7dd8ed0a
+    TargetNode 7751236a506a9c4187dbeea32e0bbd25
+    SourcePort eb5acdef3c905a49bde5a15bd9c0b781
+    TargetPort 7969e46451a77244972879afcf562814
+    NumScreensToPop 0
+UINodeConnection 1b8b1c34bb1d90478d70b5076662b94b
+    $::DataContainer
+    SourceNode 9a4babd2b54dab48b7003c4fba6cf536
+    TargetNode dee4d61c86f97d4f8c26f1fee0765564
+    SourcePort f44f93057163a043b76cdeb955f9e83e
+    TargetPort daa6d269388c804e9860b1005e6cc943
+    NumScreensToPop 0
+UINodePort f42a85e2d71cb9439b7997fe833a9a76
+    $::DataContainer
+    Name Show
+    InstanceName TextField_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort daa6d269388c804e9860b1005e6cc943
+    $::DataContainer
+    Name Hide
+    InstanceName TextField_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort 61b1dd1210de6947bad40f42719366e1
+    $::DataContainer
+    Name Show
+    InstanceName TextField_02
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 7969e46451a77244972879afcf562814
+    $::DataContainer
+    Name Hide
+    InstanceName TextField_02
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort eb5acdef3c905a49bde5a15bd9c0b781
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort f44f93057163a043b76cdeb955f9e83e
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 56ea54c525171226143f6f8ac234912a #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/E3ClickToStartScreen
+        Nodes::array
+            member dee4d61c86f97d4f8c26f1fee0765564
+            member 7751236a506a9c4187dbeea32e0bbd25
+            member 3d33750ceea76e4ab0b9ec3d7dd8ed0a
+            member 9a4babd2b54dab48b7003c4fba6cf536
+        GlobalNode *nullGuid*
+        Connections::array
+            member 4694dab0b251544b816ad31c906f89ef
+            member 1b8b1c34bb1d90478d70b5076662b94b
+        AudioEventMappings ui/flow/graph/audiomapping/defaultuigraphaudiomapping/0b64b44173196984a254b1b23e4e6a04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UITextDataBinding 4fe0ef45bc92b642a174727aca3cb9c8
+    $::UIDataBinding
+        $::DataContainer
+    StaticText READY
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess True
+UITextDataBinding b57defa9ce7baf42ab8f70b022647eef
+    $::UIDataBinding
+        $::DataContainer
+    StaticText PRESS (SPACE) TO START
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess True
+WidgetNode dee4d61c86f97d4f8c26f1fee0765564
+    $::UINodeData
+        $::DataContainer
+        Name SpTextField
+        IsRootNode False
+        ParentGraph 56ea54c525171226143f6f8ac234912a
+        ParentIsScreen True
+    WidgetAsset ui/assets/textfield/9cde2e99f6361ef321405c1ec7fcf345
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Bottom
+    HorisontalAlign WHA_Right
+    ZDepthLevel 0
+    DataBinding 4fe0ef45bc92b642a174727aca3cb9c8
+    InstanceName TextField_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs::array
+        member f42a85e2d71cb9439b7997fe833a9a76
+        member daa6d269388c804e9860b1005e6cc943
+WidgetNode 7751236a506a9c4187dbeea32e0bbd25
+    $::UINodeData
+        $::DataContainer
+        Name MpTextField
+        IsRootNode False
+        ParentGraph 56ea54c525171226143f6f8ac234912a
+        ParentIsScreen True
+    WidgetAsset ui/assets/textfield/9cde2e99f6361ef321405c1ec7fcf345
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding b57defa9ce7baf42ab8f70b022647eef
+    InstanceName TextField_02
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs::array
+        member 61b1dd1210de6947bad40f42719366e1
+        member 7969e46451a77244972879afcf562814
